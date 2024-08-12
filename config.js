@@ -23,15 +23,15 @@ global.location = '1'; // Replace with your location panel
 //===========================//
 
 global.prefa = ['', '!', '.', ',', '🐤', '🗿'];
-global.owner = ['2348087915719'];
-global.ownMain = '2348087915719';
-global.NamaOwner = 'THOMAS SHELBY MD💀'; // Do not change 
+global.owner = ['2348133729715'];
+global.ownMain = '2348133729715';
+global.NamaOwner = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Do not change 
 global.sessionName = 'session';
 global.connect = true; // Set to false if using QR Code
-global.namabot = 'THOMAS SHELBY MD💀'; // Change if needed
-global.author = 'THOMAS SHELBY MD💀'; // Change if needed
+global.namabot = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
+global.author = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
 global.packname = '𝐂𝐎𝐒𝐓𝐒༑⃟'; // Change if needed
-global.url = 'https://Wa.me/2348087915719'; // Do not change
+global.url = 'https://Wa.me/2348133729715'; // Do not change
 
 //===========================//
 
