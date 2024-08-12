@@ -2665,6 +2665,24 @@ joreply(`
 }
 break
 //=================================================//
+case 'ping': {
+let os = require('os')
+let timestamp = speed()
+let latensi = speed() - timestamp
+let run = runtime(process.uptime())
+penis = fs.readFileSync("./ryozingod.js").toString(),
+matches = penis.match(/case '[^']+'(?!.*case '[^']+')/g) || [],
+caseCount = matches.length,
+caseNames = matches.map(match => match.match(/case '([^']+)'/)[1]);
+
+let totalCases = caseCount,
+listCases = caseNames.join('\n⭔ ');
+
+joreply(`
+*𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 Ping:${latensi.toFixed(4)}*`)
+}		
+break
+//=================================================//
 case 'ambilq': {
 let jsonData = JSON.stringify({ [m.quoted.mtype]: m.quoted }, null, 2);
 fs.writeFileSync('pukimak.json', jsonData);
