@@ -2173,7 +2173,7 @@ interactiveMessage: {
 {
 "header": "🎩 - BUG MENU ‼️",
 "title": "❗Displays All Bug Commands",
-"id": ".bugmenu"
+"id": ".killmenu"
 },
 {
 "header": "🔗 - DDOS MENU 📥",
@@ -2187,7 +2187,7 @@ interactiveMessage: {
 },
 {
 "name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"Saluran WhatsApp\",\"url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\",\"merchant_url\":\"https://chat.whatsapp.com/KsZgSGIMpzj7lT845IibW4\"}"
+"buttonParamsJson": "{\"display_text\":\"Saluran WhatsApp\",\"url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\",\"merchant_url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2871,7 +2871,7 @@ case 'runtime':
                         externalAdReply: {
                             showAdAttribution: true,
                             title: ` 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆`,
-                            body: `RIO 🏀`,
+                            body: `patron 🏀`,
                            thumbnailUrl: 'media/overlaid.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
