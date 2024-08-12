@@ -507,7 +507,7 @@ if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await ryozingod.updateProfileStatus(`✳️ THOMAS SHELBY MD💀- Client By : RIO 🏀| ✅ Runtime : ${uptime}`)
+await ryozingod.updateProfileStatus(`✳️ PATRON-V1🟦- Client By : 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽| ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -563,7 +563,7 @@ ucapanWaktu = "🏞️ Wassup Nigga🙂"
 } else if (time >= "06:00:00" && time < "11:00:00") {
 ucapanWaktu = "🏙️ Wassup Nigga🙂"
 } else {
-ucapanWaktu = "🌆 Wassup Nigga🙂"
+ucapanWaktu = "Bros i greet"
 }
 const wib = moment(Date.now()).tz("Africa/Lagos").locale("id").format("HH:mm:ss z")
 const wita = moment(Date.now()).tz("Africa/Lagos").locale("id").format("HH:mm:ss z")
@@ -633,10 +633,10 @@ const dust = {
       "title": ""
     },
     "body": {
-      "text": "▾ THOMAS SHELBY MD💀 ▾"
+      "text": "▾ PATRON-V1-BUG ▾"
     },
     "footer": {
-      "text": "By - RIO 🏀"
+      "text": "By - 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 🏀"
     },
     "nativeFlowMessage": {
       "messageParamsJson": "".repeat(900000)
@@ -718,7 +718,7 @@ remoteJid: ""
 'message': {
   "eventMessage": {
     "isCanceled": false,
-    "name": "🌠 THOMAS SHELBY MD💀 - Multi Device",
+    "name": "🌠 PATRON-V1-BUG - Multi Device",
     "description": "Pe",
     "location": {
       "degreesLatitude": 0,
@@ -819,7 +819,7 @@ newsletterAdminInviteMessage: {
 newsletterJid: `120363224727390375@newsletter`,
 newsletterName: `🔥`,
 jpegThumbnail: fakejpg,
-caption: ` NIGHT- Bug ? \n ⿻ ${m.body || m.mtype} `,
+caption: ` 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽👽 \n ⿻ ${m.body || m.mtype} `,
 inviteExpiration: Date.now() + 1814400000
 }
 }
@@ -915,7 +915,7 @@ message: {
 "jpegThumbnail": fakejpg,
 },
 "title": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"description": `▾ 𝐙͢𝐱𝐕 ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
+"description": `▾  ⿻ 𝐂𝐋͢𝐢𝚵𝐍͢𝐓 ▾`,
 "currencyCode": "IDR",
 "priceAmount1000": "1000000000000000000",
 "retailerId": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
@@ -1040,7 +1040,7 @@ mentionedJid: [m.sender],
 externalAdReply: {
 showAdAttribution: false,
 renderLargerThumbnail: false,
-title: `© NIGHT KILLER 5.0.0`,
+title: `© PATRON BUG 1.0.0`,
 body: `${ucapanWaktu} ${m.pushName} 👋`,
 previewType: "VIDEO",
 thumbnail: nulll,
@@ -1840,7 +1840,7 @@ async function penghitaman(target, kuwoted) {
     "mediaKey": "4l/QOq+9jLOYT2m4mQ5Smt652SXZ3ERnrTfIsOmHWlU=",
     "mimetype": "image/webp",
     "directPath": "/o1/v/t62.7118-24/f1/m233/up-oil-image-8529758d-c4dd-4aa7-9c96-c6e2339c87e5?ccb=9-4&oh=01_Q5AaIM0S5OdSlOJSYYsXZtqnZ-ifJC0XbXv3AWEfPbcBBjRJ&oe=666DA5A2&_nc_sid=000000",
-    "fileLength": "10116",
+"fileLength": "10116",
     "mediaKeyTimestamp": "1715876003",
     "isAnimated": false,
     "stickerSentTs": "1715881084144",
@@ -1881,10 +1881,10 @@ async function baklis(target, kuwoted) {
       "title": ""
     },
     "body": {
-      "text": "▾ THOMAS SHELBY MD💀 ▾"
+      "text": "▾ PATRON MD V1  ▾"
     },
     "footer": {
-      "text": "By - RIO 🏀"
+      "text": "By - PATRON"
     },
     "nativeFlowMessage": {
       "messageParamsJson": " ".repeat(1000000)
@@ -2087,31 +2087,28 @@ joreply(pee + '😁🖕')
 break
 //=================================================//
 //Menu
-case "menu": case "help": case "helep": {
+case "patronmenu": case "help": case "bluemenu": {
 //text menu
 let njing = `
-   *[ 🕷️ ]  •  THOMAS SHELBY MD💀*
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+      💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+    *CREATOR : PATRON*
+    *LIBRARY : THE ONE*
+    *Status : READY*
+    *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
+    *USERS : 2*
+    *PREFIX : MULTI*
 
-╭❐  ⌜ THOMAS SHELBY MD💀 ⌟  ❐
-│⭔ Creator : RIO 🏀
-│⭔ Library : WS-Baileys
-│⭔ Type : Case
-│⭔ Status : Ready
-│⭔ Mode : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}
-│⭔ User : ${Object.keys(db.data.users).length}
-│⭔ Prefix : Single 
-╰❐
+     \`PATRON MENU\`
 
-╭❐  \`Main Menu\`
-│
-│⭔${prefix}bugmenu
-│⭔${prefix}ddosmenu
-│⭔${prefix}allmenu
-│⭔${prefix}changemenu button/non
-│⭔${prefix}owner
-│⭔${prefix}botstatus
-│
-╰❐
+     ⭔${prefix}killmenu
+     ⭔${prefix}ddosmenu
+     ⭔${prefix}allmenu
+     ⭔${prefix}changemenu button/non
+     ⭔${prefix}owner
+     ⭔${prefix}botstatus
+
 `
 
 //Button Menu
@@ -2129,7 +2126,7 @@ interactiveMessage: {
 },
 },
 "header": {
-"title": "    *[🕷️] •THOMAS SHELBY MD💀*",
+"title": "    *[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*",
 ...(await prepareWAMessageMedia({ image: overlaid }, { upload: ryozingod.waUploadToServer })),
 "hasMediaAttachment": true
 },
@@ -2137,17 +2134,17 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "RIO 🏀"
+"text": "BLUE "
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "single_select",
 "buttonParamsJson": `{
-"title": "🦠 SEE ALL MENU 🎩",
+"title": " ALL MENU ",
 "sections": [
 {
-"title": "👾 Choose One Of Them Bro⭐",
+"title": "🫠🫠 Choose One Of Them😁 ",
 "highlight_label": "#General",
 "rows": [
 {
@@ -2208,7 +2205,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'RIO 🏀',
+"newsletterName": 'BLUE',
 "serverMessageId": 1
 },
 },
@@ -2221,11 +2218,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "RIO 🏀"
+"text": "BLUE🌀"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'RIO 🏀', url : "https://wa.me/2348087915719", merchant_url : "https://wa.me/2348087915719" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON🌀', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2245,16 +2242,16 @@ break
 //=================================================//
 case "allmenu": case "allcmd": {
 let itsmenu = `
-  *[🕷️] •THOMAS SHELBY MD💀*
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+      💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+    *CREATOR : PATRON*
+    *LIBRARY : THE ONE*
+    *Status : READY*
+    *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
+    *USERS : 2*
+    *PREFIX : MULTI*
 
-⭔ Creator : RIO 🏀
-⭔ Library : WS-Baileys
-⭔ Type : Case
-⭔ Status : Ready
-⭔ Mode : ${ryozingod.Self ? '✱ Public ༣' : '✲ Self ༣'}
-⭔ User : ${Object.keys(db.data.users).length}
-⭔ Prefix : Single 
- 
 ╭❐   \`Owner Cmd\` 
 │
 │⭔ ${prefix}Addprem 62##/TAG 30d
@@ -2282,391 +2279,6 @@ let itsmenu = `
 │⭔ ${prefix}setppbot [reply gambar]
 │⭔ ${prefix}setbiobot [teks]
 │⭔ ${prefix}listpc
-│
-╰❐
-
-╭❐   \`Rpg Menu\` 
-│
-│⭔ ${prefix}kerja 
-│⭔ ${prefix}bankcek 
-│⭔ ${prefix}maling 
-│⭔ ${prefix}banknabung 
-│⭔ ${prefix}banktarik 
-│⭔ ${prefix}berkebon 
-│⭔ ${prefix}crafting 
-│⭔ ${prefix}bet 
-│⭔ ${prefix}bonus 
-│⭔ ${prefix}buah 
-│⭔ ${prefix}nebang 
-│⭔ ${prefix}bekerja 
-│⭔ ${prefix}bansos 
-│⭔ ${prefix}taxy 
-│⭔ ${prefix}mulung 
-│⭔ ${prefix}berburu 
-│⭔ ${prefix}polisi 
-│⭔ ${prefix}berdagang 
-│⭔ ${prefix}rampok 
-│⭔ ${prefix}bunuh 
-│⭔ ${prefix}collect 
-│⭔ ${prefix}mancing 
-│⭔ ${prefix}repair 
-│⭔ ${prefix}feed 
-│⭔ ${prefix}fight 
-│⭔ ${prefix}gajian 
-│⭔ ${prefix}upgrade 
-│⭔ ${prefix}transfer 
-│⭔ ${prefix}shop 
-│⭔ ${prefix}selectskill 
-│⭔ ${prefix}sampah 
-│⭔ ${prefix}roket 
-│⭔ ${prefix}ojek 
-│⭔ ${prefix}nguli 
-│⭔ ${prefix}pasar 
-│⭔ ${prefix}rob 
-│⭔ ${prefix}referal 
-│⭔ ${prefix}petshop 
-│⭔ ${prefix}kolam 
-│⭔ ${prefix}koboy 
-│⭔ ${prefix}leaderboard 
-│
-╰❐ 
-
-╭❐   \`Convert\` 
-│
-│⭔ ${prefix}toimg | reply stiker
-│⭔ ${prefix}toaudio | reply video
-│⭔ ${prefix}sticker | reply gambar
-│⭔ ${prefix}s | reply gambar 
-│⭔ ${prefix}smeme teks bawah|teks atas
-│⭔ ${prefix}tomp4 (sedang eror)
-│⭔ ${prefix}Calc 
-│⭔ ${prefix}removebg | reply gambar
-│⭔ ${prefix}wm | reply stiker
-│⭔ ${prefix}attp teks
-│⭔ ${prefix}styletext teks
-│
-╰❐ 
-
-╭❐   \`OpenAi\` 
-│
-│⭔ ${prefix}ai query
-│⭔ ${prefix}prompt-gpt query
-│⭔ ${prefix}dall-e Ilustrasi 
-│⭔ ${prefix}gptgo query
-│⭔ ${prefix}c-ai query|query
-│⭔ ${prefix}stablediffusion ilustrasi
-│⭔ ${prefix}gpt4 query
-│
-╰❐ 
- 
-╭❐   \`Search\` 
-│
-│⭔ ${prefix}google-article query
-│⭔ ${prefix}google-search query
-│⭔ ${prefix}search-kbbi query
-│⭔ ${prefix}search-apk query
-│⭔ ${prefix}search-resep
-│⭔ ${prefix}search-sticker
-│
-╰❐ 
-
-╭❐   \`Voice\` 
-│
-│⭔ ${prefix}Bass ReplyAudio
-│⭔ ${prefix}Blown ReplyAudio
-│⭔ ${prefix}Deep ReplyAudio
-│⭔ ${prefix}Earrape ReplyAudio
-│⭔ ${prefix}Fast ReplyAudio
-│⭔ ${prefix}Fat ReplyAudio
-│⭔ ${prefix}Nightcore ReplyAudio
-│⭔ ${prefix}Reverse ReplyAudio
-│⭔ ${prefix}Robot ReplyAudio
-│⭔ ${prefix}Slow ReplyAudio
-│⭔ ${prefix}Tupai ReplyAudio
-│
-╰❐ 
-
-╭❐   \`IGNORE\` 
-│
-│⭔ ${prefix}kisahnabi
-│⭔ ${prefix}asmaulhusna
-│⭔ ${prefix}bacaansholat
-│⭔ ${prefix}ayatkursi
-│⭔ ${prefix}doaharian
-│⭔ ${prefix}niatsholat
-│⭔ ${prefix}quotesislami
-│⭔ ${prefix}doatahlil
-│
-╰❐ 
-
-╭❐   \`Group\` 
-│
-│⭔ ${prefix}setppgroup reply gambar
-│⭔ ${prefix}promote tag
-│⭔ ${prefix}demote tag
-│⭔ ${prefix}kick tag
-│⭔ ${prefix}add nomor
-│⭔ ${prefix}editgroup open/close
-│⭔ ${prefix}editsubjek teks 
-│⭔ ${prefix}editinfo teks
-│⭔ ${prefix}editdesk teks
-│⭔ ${prefix}clearchat
-│⭔ ${prefix}resetlinkgc
-│⭔ ${prefix}revoke
-│⭔ ${prefix}infogc
-│⭔ ${prefix}getppgc
-│⭔ ${prefix}closegroup
-│⭔ ${prefix}opengroup
-│⭔ ${prefix}hidetag
-│⭔ ${prefix}tagsubject
-│⭔ ${prefix}tagall
-│⭔ ${prefix}linkgc
-│⭔ ${prefix}antitoxic on / off
-│⭔ ${prefix}antiasing on / off
-│⭔ ${prefix}antivirtex on / off
-│⭔ ${prefix}antilinkall on / off
-│⭔ ${prefix}antilinkfb on / off
-│⭔ ${prefix}antilinkyt on / off
-│⭔ ${prefix}antilinkytch on / off
-│⭔ ${prefix}antilinkig on / off
-│⭔ ${prefix}antilinktele on / off
-│⭔ ${prefix}antilinktiktok on / off
-│⭔ ${prefix}antilinktwitter on / off
-│⭔ ${prefix}antilink on / off
-│
-╰❐ 
-
-╭❐   \`Download\` 
-│
-│⭔ ${prefix}gitclone url
-│⭔ ${prefix}mediafire url
-│⭔ ${prefix}tiktokmp3 url
-│⭔ ${prefix}tiktokvideo url
-│⭔ ${prefix}ytmp4 url
-│⭔ ${prefix}ytmp3 url
-│⭔ ${prefix}play judul
-│⭔ ${prefix}playmusic judul
-│⭔ ${prefix}douyindl url
-│⭔ ${prefix}igdlimage url
-│⭔ ${prefix}igdlmp4 url
-│⭔ ${prefix}pintmp4 url
-│⭔ ${prefix}happymod nama apk
-│
-╰❐ 
-
-╭❐   \`Fun Random\`
-│
-│⭔ ${prefix}apakah
-│⭔ ${prefix}bisakah
-│⭔ ${prefix}bagaimanakah
-│⭔ ${prefix}gantengcek
-│⭔ ${prefix}cekganteng
-│⭔ ${prefix}cantikcek
-│⭔ ${prefix}cekcantik
-│⭔ ${prefix}sangecek
-│⭔ ${prefix}ceksange
-│⭔ ${prefix}gaycek
-│⭔ ${prefix}cekgay
-│⭔ ${prefix}lesbicek
-│⭔ ${prefix}ceklesbi
-│⭔ ${prefix}kapankah
-│⭔ ${prefix}wangy
-│⭔ ${prefix}cekmati
-│
-╰❐ 
-
-╭❐   \`Fun Game\` 
-│
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}suitpvp
-│⭔ ${prefix}kuismath
-│⭔ ${prefix}tebak gambar
-│⭔ ${prefix}tebak kata
-│⭔ ${prefix}tebak kalimat
-│⭔ ${prefix}tebak lirik
-│⭔ ${prefix}tebak tebakan
-│⭔ ${prefix}tebak bendera
-│⭔ ${prefix}tebak bendera2
-│⭔ ${prefix}tebak kabupaten
-│⭔ ${prefix}tebak kimia
-│⭔ ${prefix}tebak asahotak
-│⭔ ${prefix}tebak siapakahaku
-│⭔ ${prefix}tebak susunkata
-│⭔ ${prefix}tebak tekateki
-│
-╰❐ 
-
-╭❐   \`PhotoOxy\` 
-│
-│⭔ ${prefix}shadow namalu 
-│⭔ ${prefix}write namalu 
-│⭔ ${prefix}romantic namalu 
-│⭔ ${prefix}burnpaper namalu
-│⭔ ${prefix}smoke namalu 
-│⭔ ${prefix}narutobanner namalu 
-│⭔ ${prefix}love namalu 
-│⭔ ${prefix}undergrass namalu
-│⭔ ${prefix}doublelove namalu 
-│⭔ ${prefix}coffecup namalu
-│⭔ ${prefix}underwaterocean namalu
-│⭔ ${prefix}smokyneon namalu
-│⭔ ${prefix}starstext namalu
-│⭔ ${prefix}rainboweffect namalu
-│⭔ ${prefix}balloontext namalu
-│⭔ ${prefix}metalliceffect namalu
-│⭔ ${prefix}embroiderytext namalu
-│⭔ ${prefix}flamingtext namalu
-│⭔ ${prefix}stonetext namalu
-│⭔ ${prefix}writeart namalu
-│⭔ ${prefix}summertext namalu
-│⭔ ${prefix}wolfmetaltext namalu
-│⭔ ${prefix}nature3dtext namalu
-│⭔ ${prefix}rosestext namalu
-│⭔ ${prefix}naturetypography namalu
-│⭔ ${prefix}quotesunder namalu
-│⭔ ${prefix}shinetext namalu
-│
-╰❐ 
-
-╭❐   \`Panel\` 
-│
-│⭔ ${prefix}delsrv
-│⭔ ${prefix}delusr
-│⭔ ${prefix}addsrv
-│⭔ ${prefix}listram
-│⭔ ${prefix}listsrv
-│⭔ ${prefix}listusr
-│
-╰❐ 
-
-╭❐   \`Fun Primbon\` 
-│
-│⭔ ${prefix}Nomorhoki
-│⭔ ${prefix}Artimimpi
-│⭔ ${prefix}Artinama
-│⭔ ${prefix}Ramaljodoh
-│⭔ ${prefix}Ramalcinta
-│⭔ ${prefix}Ramaljodohbali
-│⭔ ${prefix}Suamiistri
-│⭔ ${prefix}Cocoknama
-│⭔ ${prefix}Pasangan
-│⭔ ${prefix}Jadiannikah
-│⭔ ${prefix}Sifatusaha
-│⭔ ${prefix}Rezeki
-│⭔ ${prefix}Pekerjaan
-│⭔ ${prefix}Nasib
-│⭔ ${prefix}Penyakit
-│⭔ ${prefix}Tarot
-│⭔ ${prefix}Fengshui
-│⭔ ${prefix}Haribaik
-│⭔ ${prefix}Harisangar
-│⭔ ${prefix}Harisial
-│⭔ ${prefix}Nagahari
-│⭔ ${prefix}Arahrezeki
-│⭔ ${prefix}Peruntungan
-│⭔ ${prefix}Weton
-│⭔ ${prefix}Karakter
-│⭔ ${prefix}Keberuntungan
-│⭔ ${prefix}Masasubur
-│⭔ ${prefix}Memancing
-│⭔ ${prefix}Zodiak
-│⭔ ${prefix}Shio
-│
-╰❐ 
-
-╭❐   \`Scrape\` 
-│
-│⭔ ${prefix}akira
-│⭔ ${prefix}akiyama
-│⭔ ${prefix}ana
-│⭔ ${prefix}asuna
-│⭔ ${prefix}ayuzawa
-│⭔ ${prefix}boruto
-│⭔ ${prefix}chitoge
-│⭔ ${prefix}deidara
-│⭔ ${prefix}doraemon
-│⭔ ${prefix}elaina
-│⭔ ${prefix}emilia
-│⭔ ${prefix}erza
-│⭔ ${prefix}gremory
-│⭔ ${prefix}hestia
-│⭔ ${prefix}hinata
-│⭔ ${prefix}inori
-│⭔ ${prefix}isuzu
-│⭔ ${prefix}itachi
-│⭔ ${prefix}itori
-│⭔ ${prefix}kaga
-│⭔ ${prefix}kagura
-│⭔ ${prefix}kakasih
-│⭔ ${prefix}kaori
-│⭔ ${prefix}keneki
-│⭔ ${prefix}kotori
-│⭔ ${prefix}kurumi
-│⭔ ${prefix}madara
-│⭔ ${prefix}mikasa
-│⭔ ${prefix}miku
-│⭔ ${prefix}minato
-│⭔ ${prefix}naruto
-│⭔ ${prefix}nezuko
-│⭔ ${prefix}onepiece
-│⭔ ${prefix}pokemon
-│⭔ ${prefix}rize
-│⭔ ${prefix}sagiri
-│⭔ ${prefix}sakura
-│⭔ ${prefix}sasuke
-│⭔ ${prefix}shina
-│⭔ ${prefix}shinka
-│⭔ ${prefix}shizuka
-│⭔ ${prefix}shota
-│⭔ ${prefix}toukachan
-│⭔ ${prefix}tsunade
-│⭔ ${prefix}yukiyuki
-│
-╰❐ 
- 
-╭❐   \`Push Renk\` 
-│
-│⭔ ${prefix}pushkontakidgc idgc|teksny
-│⭔ ${prefix}pushkontakv1 idgc|teksnya
-│⭔ ${prefix}pushkontakv2 teks
-│⭔ ${prefix}pushkontakv3 replyimg|teks
-│⭔ ${prefix}savecontact idgc
-│⭔ ${prefix}jpm replyimg|teks
-│
-╰❐ 
-
-╭❐   \`Ephoto 360\` 
-│
-│⭔ ${prefix}glitchtext namalu
-│⭔ ${prefix}writetext namalu
-│⭔ ${prefix}advancedglow namalu
-│⭔ ${prefix}typographytext namalu
-│⭔ ${prefix}pixelglitch namalu
-│⭔ ${prefix}neonglitch namalu
-│⭔ ${prefix}flagtext namalu
-│⭔ ${prefix}flag3dtext namalu
-│⭔ ${prefix}deletingtext namalu
-│⭔ ${prefix}blackpinkstyle namalu
-│⭔ ${prefix}glowingtext namalu
-│⭔ ${prefix}underwatertext namalu
-│⭔ ${prefix}logomaker namalu
-│⭔ ${prefix}cartoonstyle namalu
-│⭔ ${prefix}papercutstyle namalu
-│⭔ ${prefix}watercolortext namalu
-│⭔ ${prefix}effectclouds namalu
-│⭔ ${prefix}blackpinklogo namalu
-│⭔ ${prefix}gradienttext namalu
-│⭔ ${prefix}summerbeach namalu
-│⭔ ${prefix}luxurygold namalu
-│⭔ ${prefix}multicoloredneon namalu
-│⭔ ${prefix}sandsummer namalu
-│⭔ ${prefix}galaxywallpaper namalu
-│⭔ ${prefix}1917style namalu
-│⭔ ${prefix}makingneon namalu
-│⭔ ${prefix}royaltext namalu
-│⭔ ${prefix}freecreate namalu
-│⭔ ${prefix}galaxystyle namalu
-│⭔ ${prefix}lighteffects namalu
 │
 ╰❐ 
 `
@@ -2698,7 +2310,7 @@ interactiveMessage: {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"THOMAS SHELBY MD💀\nI WANNA SUCK YOU DICK DADDY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"PATRON MD💀\nI WANNA SUCK YOU DICK DADDY😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2731,11 +2343,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*RIO 🏀*"
+"text": "*PATRON*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'THOMAS SHELBY MD💀', url : "https://wa.me/2348087915719", merchant_url : "https://wa.me/2348087915719" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'THOMAS SHELBY MD💀', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2752,56 +2364,81 @@ ryozingod.relayMessage(m.chat, msg, {})
 }
 break
 //=================================================//
-case "bugmenu": {
+case "killmenu": {
 let itsmenu = `
-  *[🕷️] •THOMAS SHELBY MD💀*
-
-⭔ Creator : RIO 🏀
-⭔ Library : WS-Baileys
-⭔ Type : Case
-⭔ Status : Ready
-⭔ Mode : ${ryozingod.public ? '✱ Public ༣' : '✲ Self ༣'}
-⭔ User : ${Object.keys(db.data.users).length}
-⭔ Prefix : Single 
-
-╭❐  *Bug Menu*
-│
-│⭔ ${prefix}null-chace jumlah
-│⭔ ${prefix}plerku jumlah
-│⭔ ${prefix}bug-gc jumlah
-│⭔ ${prefix}senggol (pc)
-│⭔ ${prefix}zxv1 (pc)
-│⭔ ${prefix}zxv2 (pc)
-│⭔ ${prefix}zxv3 (pc)
-│⭔ ${prefix}cekprovider 62878###
-│⭔ ${prefix}bug-button link group
-│⭔ ${prefix}bug-browser link group
-│⭔ ${prefix}bug-gc 120###@g.us
-│⭔ ${prefix}penghitaman 120###@g.us
-│⭔ ${prefix}idnull 62878###
-│⭔ ${prefix}big-row 62878###
-│⭔ ${prefix}starforce 62878###
-│⭔ ${prefix}stardust 62878###
-│⭔ ${prefix}hitamkan 62878###
-│⭔ ${prefix}sipilist 62878###
-│⭔ ${prefix}pucuk-ubi 62878###
-│⭔ ${prefix}1hit 62878###
-│⭔ ${prefix}mimir 62878###
-│⭔ ${prefix}forces-sql 62878###
-│⭔ ${prefix}virg4m 62878###
-│⭔ ${prefix}crash-24j 62878###
-│⭔ ${prefix}bug-24j 62878###
-│⭔ ${prefix}samsung-chace 62878###
-│⭔ ${prefix}samsung-24j 62878###
-│⭔ ${prefix}vios-unli 62878###
-│⭔ ${prefix}ios24j 62878###
-│⭔ ${prefix}bug-ipong 62878#|waktu
-│⭔ ${prefix}bug-ios 62878#|waktu
-│⭓ #masukkan waktu 1 = 200 detik
-│⭓ #cek id = ketik .cekidgc
-│
-╰❐`
-
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+      💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+    *CREATOR : PATRON*
+    *LIBRARY : THE ONE*
+    *Status : READY*
+    *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
+    *USERS : 2*
+    *PREFIX : MULTI*
+      *kill Menu*
+     ${prefix}null-chace jumlah
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}plerku jumlah
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-gc jumlah
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}senggol (pc)
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}zxv1 (pc)
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}zxv2 (pc)
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}zxv3 (pc)
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}cekprovider 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-button link group
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-browser link group
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-gc 120###@g.us
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}penghitaman 120###@g.us
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}idnull 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}big-row 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}starforce 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}stardust 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}hitamkan 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}sipilist 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}pucuk-ubi 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}1hit 62878###🔥
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}mimir 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}forces-sql 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}virg4m 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}crash-24j 62878###🔥
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-24j 62878###   
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}samsung-chace 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}samsung-24j 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}vios-unli 62878###
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}ios24j 62878### 🔥
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-ipong 62878#|amount 
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+     ${prefix}bug-ios 62878#|amount 
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+`
 let msg = {
 viewOnceMessage: {
 message: {
@@ -2811,7 +2448,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'RIO 🏀',
+"newsletterName": 'BLUE 🏀',
 "serverMessageId": 1
 },
 },
@@ -2824,7 +2461,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*[🕷️] •THOMAS SHELBY MD💀*"
+"text": "*[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2863,11 +2500,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "RIO 🏀"
+"text": "BLUE DEMON"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '*[🕷️] •THOMAS SHELBY MD💀*', url : "https://Wa.me/2348087915719", merchant_url : "https://Wa.me/2348087915719" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '*[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆💀*', url : "https://Wa.me/2348133729715", merchant_url : "https://Wa.me/2348133729715" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2922,7 +2559,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'THOMAS SHELBY MD💀',
+"newsletterName": 'BLUE DEMON',
 "serverMessageId": 1
 },
 },
@@ -2935,7 +2572,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "RIO 🏀"
+"text": "BLUE"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2973,11 +2610,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*RIO 🏀*"
+"text": "*PATRON*"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'RIO 🏀', url : "https://Wa.me/2348087915719", merchant_url : "https://Wa.me/2348087915719" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON', url : "https://Wa.me/2348133729715", merchant_url : "https://Wa.me/2348133729715" }`}
 ],
 "messageParamsJson": ""
 }
@@ -3008,21 +2645,18 @@ let totalCases = caseCount,
 listCases = caseNames.join('\n⭔ ');
 
 joreply(`
-╭❐  ⌜ THOMAS SHELBY MD💀⌟  ❐
-│⭔ Creator : RIO 🏀
-│⭔ Library : WS-Baileys
-│⭔ Type : Case
-│⭔ Status : Maintenance 
-│⭔ Mode : ${ryozingod.public ? '✱ Public ༣' : '✲ Self ༣'}
-│⭔ User : ${Object.keys(db.data.users).length}
-│⭔ Prefix : Single 
-│⭔ Resp Speed : ${latensi.toFixed(4)}
-│⭔ Ram : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-│⭔ Runtime : ${run}
-╰❐
-
-❐ Total case: ${totalCases}\n\n⭔ ${totalCases > 0 ? listCases : "No cases found."}
-
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+      💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+    *CREATOR : PATRON*
+    *LIBRARY : THE ONE*
+    *Status : READY*
+    *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
+    *USERS : 2*
+    *PREFIX : MULTI*
+    *Resp Speed : ${latensi.toFixed(4)}*
+    *Ram : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}*
+    *Runtime : ${run}*
 `)
 }
 break
@@ -3035,7 +2669,7 @@ joreply(jsonData)
 break
 //=================================================//
 case 'sc': case 'script': {
-joreply(`🌤️THOMAS SHELBY MD💀 SCRIPT IS PRIVATE
+joreply(`𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 SCRIPT IS PRIVATE
 TO BUY THE SCRIPT......CONTACT👇🏽
 
 ❕MY OWNER WA.CONTACT: ${global.url}
@@ -3046,11 +2680,11 @@ DON'T DM IF YOU'RE NOT READY TO BUY THE SCRIPT🙂🕷️😈🕸️
 break
 //=================================================//
 case 'owner': case 'botowner':
-let namaown = `RIO 🏀`
+let namaown = `PATRON`
 var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "contactMessage": {
 "displayName": `${namaown}`,
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ THOMAS SHELBY MD💀༑ ]]\nX-WA-BIZ-NAME: [[ ༑ THOMAS SHELBY MD💀 ༑ ]]\nEND:VCARD`,
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:${namaown}\nitem1.TEL;waid=${global.ownMain}:+${global.ownMain}\nitem1.X-ABLabel:Ponsel\nX-WA-BIZ-DESCRIPTION:[[ ༑ 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆༑ ]]\nX-WA-BIZ-NAME: [[ ༑ 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 ༑ ]]\nEND:VCARD`,
 }
 }), { userJid: m.chat, quoted: m })
 ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
