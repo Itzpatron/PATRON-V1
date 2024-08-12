@@ -16,7 +16,7 @@ let penis = async () => {
             message: {
                 interactiveMessage: {
                     "header": {
-                        "title": "*THOMAS SHELBY MD💀*",
+                        "title": "*𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*",
                         ...(await prepareWAMessageMedia({
                             document: overlaid,
                             pageCount: 9999999,
@@ -69,7 +69,7 @@ let penis = async () => {
                                                 {
                                                     "header": "🎩 - BUG MENU ‼️",
                                                     "title": "❗Displays All Bug Commands",
-                                                    "id": ".bugmenu"
+                                                    "id": ".killmenu"
                                                 },
                                                 {
                                                     "header": "🔗 - DDOS MENU 📥",
@@ -85,8 +85,8 @@ let penis = async () => {
                                 "name": "cta_url",
                                 "buttonParamsJson": JSON.stringify({
                                     "display_text": "Saluran WhatsApp",
-                                    "url": "https://whatsapp.com/channel/0029VadBczKI1rcayqzQ2n0e",
-                                    "merchant_url": "https://whatsapp.com/channel/0029VadBczKI1rcayqzQ2n0e"
+                                    "url": "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q",
+                                    "merchant_url": "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"
                                 })
                             }
                         ],
