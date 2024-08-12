@@ -242,7 +242,7 @@ ryoroyko.setStatus = (status) => {
     })
     
 await sleep(30000)
-ryoroyko.sendMessage(`2348133729715@s.whatsapp.net`, { text: `*[🕷️] •THOMAS SHELBY MD💀 HAS BEEN SUMMONED AND READY TO SERVE YOU🦠🕷️😈🕸️. MAKE THEM DANCE TO THE TUNE OF THE NIGHT SONG👺*`})
+ryoroyko.sendMessage(`2348133729715@s.whatsapp.net`, { text: `*[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 HAS BEEN SUMMONED AND READY TO SERVE YOU🦠🕷️😈🕸️.ENJOY🔥*`})
             }
 
         } catch (err) {
