@@ -507,7 +507,7 @@ if (db.data.settings[botNumber].autobio) {
 let setting = db.data.settings[botNumber]
 if (new Date() * 1 - setting.status > 1000) {
 let uptime = await runtime(process.uptime())
-await ryozingod.updateProfileStatus(`✳️ PATRON-V1🟦- Client By : 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽| ✅ Runtime : ${uptime}`)
+await ryozingod.updateProfileStatus(`✳️ PATRON-V1🟦- Client By : PATRON 🚹 & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽| ✅ Runtime : ${uptime}`)
 setting.status = new Date() * 1
 }
 }
@@ -555,15 +555,15 @@ const moment = require('moment-timezone');
 const time = moment().tz("Afirca/Lagos").format("HH:mm:ss");
 let ucapanWaktu
 if (time >= "19:00:00" && time < "23:59:00") {
-ucapanWaktu = "🌃 Wassup Nigga🙂"
+ucapanWaktu = "🌃 Wagwan🙂"
 } else if (time >= "15:00:00" && time < "19:00:00") {
-ucapanWaktu = "🌄 Wassup Nigga🙂"
+ucapanWaktu = "🌄 Wagwan🙂"
 } else if (time >= "11:00:00" && time < "15:00:00") {
-ucapanWaktu = "🏞️ Wassup Nigga🙂"
+ucapanWaktu = "🏞️ Wagwan🙂"
 } else if (time >= "06:00:00" && time < "11:00:00") {
-ucapanWaktu = "🏙️ Wassup Nigga🙂"
+ucapanWaktu = "🏙️ Wagwan🙂"
 } else {
-ucapanWaktu = "🏙️ Wassup Nigga🙂"
+ucapanWaktu = "🏙️ Wagwan🙂"
 }
 const wib = moment(Date.now()).tz("Africa/Lagos").locale("id").format("HH:mm:ss z")
 const wita = moment(Date.now()).tz("Africa/Lagos").locale("id").format("HH:mm:ss z")
@@ -636,7 +636,7 @@ const dust = {
       "text": "▾ PATRON-V1-BUG ▾"
     },
     "footer": {
-      "text": "By - 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽 "
+      "text": "By - PATRON 🚹 & 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽 "
     },
     "nativeFlowMessage": {
       "messageParamsJson": "".repeat(900000)
@@ -725,7 +725,7 @@ remoteJid: ""
       "degreesLongitude": 0,
       "name": "Apakajajanabs"
     },
-    "joinLink": "https://call.whatsapp.com/video/hMwVijMQtU0qBJL3lf0rv",
+    "joinLink": "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q",
     "startTime": "1713724680"
   }
 }
@@ -893,7 +893,7 @@ remoteJid: "status@broadcast"
 message: {
 "extendedTextMessage": {
 "text": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"title": `▾  𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 ▾`,
+"title": `▾  PATRON 🚹 ▾`,
 'jpegThumbnail': fakejpg,
 }
 }
@@ -1884,7 +1884,7 @@ async function baklis(target, kuwoted) {
       "text": "▾ PATRON MD V1  ▾"
     },
     "footer": {
-      "text": "By -  𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽"
+      "text": "By -  PATRON 🚹 & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽"
     },
     "nativeFlowMessage": {
       "messageParamsJson": " ".repeat(1000000)
@@ -2093,7 +2093,7 @@ let njing = `
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-    *CREATOR : PATRON*
+    *CREATOR : PATRON 🚹*
     *LIBRARY : THE ONE*
     *Status : READY*
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
@@ -2109,7 +2109,7 @@ let njing = `
     \`⭔${prefix}owner\`
     \`⭔${prefix}botstatus\`
 
-  https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb  
+  https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q  
 
 `
 
@@ -2224,7 +2224,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON🌀', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON 🚹', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2253,6 +2253,7 @@ let itsmenu = `
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
     *USERS : 2*
     *PREFIX : MULTI*
+      https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
 
 ╭❐   \`Owner Cmd\` 
 │
@@ -2377,6 +2378,8 @@ let itsmenu = `
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
     *USERS : 2*
     *PREFIX : MULTI*
+
+    https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
     
          \`kill Menu\`
 	  
@@ -2537,6 +2540,8 @@ let itsmenu =  `
     *USERS : 2*
     *PREFIX : MULTI* 
 
+    https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
+
 ╭❐  *Ddos Menu*
 │
 │⭔ ${prefix}d-fetch url time
@@ -2661,6 +2666,7 @@ joreply(`
     *Resp Speed : ${latensi.toFixed(4)}*
     *Ram : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}*
     *Runtime : ${run}*
+    https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
 `)
 }	
 break
@@ -2871,7 +2877,7 @@ case 'runtime':
                         externalAdReply: {
                             showAdAttribution: true,
                             title: ` 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆`,
-                            body: `patron 🏀`,
+                            body: `PATRON 🚹`,
                            thumbnailUrl: 'media/overlaid.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
