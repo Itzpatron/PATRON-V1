@@ -563,7 +563,7 @@ ucapanWaktu = "🏞️ Wassup Nigga🙂"
 } else if (time >= "06:00:00" && time < "11:00:00") {
 ucapanWaktu = "🏙️ Wassup Nigga🙂"
 } else {
-ucapanWaktu = "Bros i greet"
+ucapanWaktu = "🏙️ Wassup Nigga🙂"
 }
 const wib = moment(Date.now()).tz("Africa/Lagos").locale("id").format("HH:mm:ss z")
 const wita = moment(Date.now()).tz("Africa/Lagos").locale("id").format("HH:mm:ss z")
@@ -636,7 +636,7 @@ const dust = {
       "text": "▾ PATRON-V1-BUG ▾"
     },
     "footer": {
-      "text": "By - 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 🏀"
+      "text": "By - 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽 "
     },
     "nativeFlowMessage": {
       "messageParamsJson": "".repeat(900000)
@@ -893,7 +893,7 @@ remoteJid: "status@broadcast"
 message: {
 "extendedTextMessage": {
 "text": `🖥️༐✲ 𝐌𝐬𝐠 𒑊 ${m.body || m.mtype}`,
-"title": `▾ NIGHT KILLER ▾`,
+"title": `▾  𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 ▾`,
 'jpegThumbnail': fakejpg,
 }
 }
@@ -1884,7 +1884,7 @@ async function baklis(target, kuwoted) {
       "text": "▾ PATRON MD V1  ▾"
     },
     "footer": {
-      "text": "By - PATRON"
+      "text": "By -  𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽"
     },
     "nativeFlowMessage": {
       "messageParamsJson": " ".repeat(1000000)
@@ -2090,9 +2090,9 @@ break
 case "patronmenu": case "help": case "bluemenu": {
 //text menu
 let njing = `
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
     *CREATOR : PATRON*
     *LIBRARY : THE ONE*
     *Status : READY*
@@ -2102,12 +2102,14 @@ let njing = `
 
      \`PATRON MENU\`
 
-     ⭔${prefix}killmenu
-     ⭔${prefix}ddosmenu
-     ⭔${prefix}allmenu
-     ⭔${prefix}changemenu button/non
-     ⭔${prefix}owner
-     ⭔${prefix}botstatus
+    \`⭔${prefix}killmenu\`
+    \`⭔${prefix}ddosmenu\`
+    \`⭔${prefix}allmenu\`
+    \`⭔${prefix}changemenu button/non\`
+    \`⭔${prefix}owner\`
+    \`⭔${prefix}botstatus\`
+
+  https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb  
 
 `
 
@@ -2144,7 +2146,7 @@ interactiveMessage: {
 "title": " ALL MENU ",
 "sections": [
 {
-"title": "🫠🫠 Choose One Of Them😁 ",
+"title": "🫠 Choose One Of Them😁 ",
 "highlight_label": "#General",
 "rows": [
 {
@@ -2218,7 +2220,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "BLUE🌀"
+"text": " 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2242,9 +2244,9 @@ break
 //=================================================//
 case "allmenu": case "allcmd": {
 let itsmenu = `
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
     *CREATOR : PATRON*
     *LIBRARY : THE ONE*
     *Status : READY*
@@ -2291,7 +2293,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'THOMAS SHELBY MD💀',
+"newsletterName": '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆',
 "serverMessageId": 1
 },
 },
@@ -2304,7 +2306,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "RIO 🏀"
+"text": "PATRON"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2347,7 +2349,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'THOMAS SHELBY MD💀', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2366,78 +2368,80 @@ break
 //=================================================//
 case "killmenu": {
 let itsmenu = `
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
     *CREATOR : PATRON*
     *LIBRARY : THE ONE*
     *Status : READY*
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
     *USERS : 2*
     *PREFIX : MULTI*
-      *kill Menu*
+    
+         \`kill Menu\`
+	  
      ${prefix}null-chace jumlah
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}plerku jumlah
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-gc jumlah
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}senggol (pc)
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}zxv1 (pc)
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}zxv2 (pc)
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}zxv3 (pc)
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}cekprovider 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-button link group
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-browser link group
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-gc 120###@g.us
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}penghitaman 120###@g.us
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}idnull 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}big-row 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}starforce 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}stardust 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}hitamkan 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}sipilist 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}pucuk-ubi 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}1hit 62878###🔥
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}mimir 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}forces-sql 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}virg4m 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}crash-24j 62878###🔥
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-24j 62878###   
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}samsung-chace 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}samsung-24j 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}vios-unli 62878###
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}ios24j 62878### 🔥
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-ipong 62878#|amount 
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-ios 62878#|amount 
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
 `
 let msg = {
 viewOnceMessage: {
@@ -2448,7 +2452,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'BLUE 🏀',
+"newsletterName": 'BLUE ',
 "serverMessageId": 1
 },
 },
@@ -2487,7 +2491,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'NIGHT KILLER',
+"newsletterName": '𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽',
 "serverMessageId": 1
 },
 },
@@ -2522,16 +2526,16 @@ ryozingod.relayMessage(m.chat, msg, {})
 break
 //=================================================//
 case "ddosmenu": {
-let itsmenu = `
-  *[🕷️] •THOMAS SHELBY MD💀*
-
-⭔ Creator : RIO 🏀
-⭔ Library : WS-Baileys
-⭔ Type : Case
-⭔ Status : Ready
-⭔ Mode : ${ryozingod.public ? '✱ Public ༣' : '✲ Self ༣'}
-⭔ User : ${Object.keys(db.data.users).length}
-⭔ Prefix : Single 
+let itsmenu =  `
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
+      💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
+    *CREATOR : PATRON*
+    *LIBRARY : THE ONE*
+    *Status : READY*
+    *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
+    *USERS : 2*
+    *PREFIX : MULTI* 
 
 ╭❐  *Ddos Menu*
 │
@@ -2645,9 +2649,9 @@ let totalCases = caseCount,
 listCases = caseNames.join('\n⭔ ');
 
 joreply(`
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
-   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬▭▬▭
+   ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
     *CREATOR : PATRON*
     *LIBRARY : THE ONE*
     *Status : READY*
@@ -2855,18 +2859,18 @@ break
 case 'self': {
 if (!isDeveloper) return joreply(mess.owner)
 ryozingod.public = false
-joreply('THOMAS SHELBY MD💀 SET TO PRIVATE BOSS')
+joreply('𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 SET TO PRIVATE BOSS')
 }
 break
 //=================================================//
 case 'runtime':
-                let runtimetext = ` THOMAS SHELBY MD💀 Have Been Running For ${runtime(process.uptime())}`
+                let runtimetext = ` 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 Have Been Running For ${runtime(process.uptime())}`
                 ryozingod.readMessages(m.chat, {
                     text: runtimetext,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
-                            title: `THOMAS SHELBY MD💀`,
+                            title: ` 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆`,
                             body: `RIO 🏀`,
                            thumbnailUrl: 'media/overlaid.jpg',
                             sourceUrl: global.link,
@@ -2885,7 +2889,7 @@ if(isGroup){
 let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 if(users){
 await ryozingod.updateBlockStatus(users, "block")
-joreply(`Sukses block user`)
+joreply(`Sucessfully block user`)
 } else {
 joreply("Silakan reply pesan atau tag atau input nomer yang mau di block")
 }
