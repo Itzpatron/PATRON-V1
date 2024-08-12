@@ -84,9 +84,9 @@ global.mess = {
   premium: 'You are not a premium user.',
   seller: 'This feature can only be used by resellers and the owner.',
   usingsetpp: 'Setpp can only be used by the owner, do you think I\'m stupid? 😡🫵',
-  wait: '*processing♻️ please wait....♻️*',
-  success: 'Completed😈💯.....',
-  bugrespon: '♻️terminating victim with virus😈.....🦠🕷️👾'
+  wait: '*processing♻️ chillax....♻️*',
+  success: '*successfully terminated* 😈💯.....',
+  bugrespon: '♻️😈 *executing target.....* 🦠🕷️👾'
 };
 
 //===========================//
