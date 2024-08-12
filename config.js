@@ -86,7 +86,7 @@ global.mess = {
   usingsetpp: 'Setpp can only be used by the owner, do you think I\'m stupid? 😡🫵',
   wait: '*processing♻️ chillax....♻️*',
   success: '*successfully terminated* 😈💯.....',
-  bugrespon: '♻️😈 *executing target.....* 🦠🕷️👾'
+  bugrespon: '♻️😈😭 *Sent target to the afterlife.....* 🦠🕷️👾'
 };
 
 //===========================//
