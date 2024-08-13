@@ -2075,7 +2075,7 @@ let njing = `
 
     \`⭔${prefix}killmenu\`
     \`⭔${prefix}ddosmenu\`
-    \`⭔${prefix}allmenu\`
+    \`⭔${prefix}mainmenu\`
     \`⭔${prefix}changemenu button/non\`
     \`⭔${prefix}owner\`
     \`⭔${prefix}botstatus\`
@@ -2158,7 +2158,7 @@ interactiveMessage: {
 },
 {
 "name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"Saluran WhatsApp\",\"url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\",\"merchant_url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\"}"
+"buttonParamsJson": "{\"display_text\":\"JOIN GROUP\",\"url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\",\"merchant_url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2213,7 +2213,7 @@ ryozingod.relayMessage(m.chat, freesex, {});
 }
 break
 //=================================================//
-case "allmenu": case "allcmd": {
+case "mainmenu": case "allcmd": {
 let itsmenu = `
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
@@ -2353,20 +2353,20 @@ let itsmenu = `
     https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
     
          \`kill Menu\`
-	  
-     ${prefix}null-chace jumlah
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬	  
+     ${prefix}null-chace amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}plerku jumlah
+     ${prefix}plerku amount 
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}bug-gc jumlah
+     ${prefix}bug-gc amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}senggol (pc)
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}zxv1 (pc)
+     ${prefix}zxv1 (pc)🔥
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}zxv2 (pc)
+     ${prefix}zxv2 (pc)🔥
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}zxv3 (pc)
+     ${prefix}zxv3 (pc)🔥
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}cekprovider 62878###
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
