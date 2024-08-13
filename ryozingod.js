@@ -2158,7 +2158,7 @@ interactiveMessage: {
 },
 {
 "name": "cta_url",
-"buttonParamsJson": "{\"display_text\":\"JOIN GROUP\",\"url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\",\"merchant_url\":\"https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb\"}"
+"buttonParamsJson": "{\"display_text\":\"JOIN CHANNEL\",\"url\":\"https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q\",\"merchant_url\":\"https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2253,6 +2253,244 @@ let itsmenu = `
 │⭔ ${prefix}setppbot [reply gambar]
 │⭔ ${prefix}setbiobot [teks]
 │⭔ ${prefix}listpc
+│
+╰❐ 
+
+╭❐   \`Group\` 
+│
+│⭔ ${prefix}setppgroup reply gambar
+│⭔ ${prefix}promote tag
+│⭔ ${prefix}demote tag
+│⭔ ${prefix}kick tag
+│⭔ ${prefix}add nomor
+│⭔ ${prefix}editgroup open/close
+│⭔ ${prefix}editsubjek teks 
+│⭔ ${prefix}editinfo teks
+│⭔ ${prefix}editdesk teks
+│⭔ ${prefix}clearchat
+│⭔ ${prefix}resetlinkgc
+│⭔ ${prefix}revoke
+│⭔ ${prefix}infogc
+│⭔ ${prefix}getppgc
+│⭔ ${prefix}closegroup
+│⭔ ${prefix}opengroup
+│⭔ ${prefix}hidetag
+│⭔ ${prefix}tagsubject
+│⭔ ${prefix}tagall
+│⭔ ${prefix}linkgc
+│⭔ ${prefix}antitoxic on / off
+│⭔ ${prefix}antiasing on / off
+│⭔ ${prefix}antivirtex on / off
+│⭔ ${prefix}antilinkall on / off
+│⭔ ${prefix}antilinkfb on / off
+│⭔ ${prefix}antilinkyt on / off
+│⭔ ${prefix}antilinkytch on / off
+│⭔ ${prefix}antilinkig on / off
+│⭔ ${prefix}antilinktele on / off
+│⭔ ${prefix}antilinktiktok on / off
+│⭔ ${prefix}antilinktwitter on / off
+│⭔ ${prefix}antilink on / off
+│
+╰❐ 
+
+╭❐   \`Convert\` 
+│
+│⭔ ${prefix}toimg | reply stiker
+│⭔ ${prefix}toaudio | reply video
+│⭔ ${prefix}sticker | reply gambar
+│⭔ ${prefix}s | reply gambar 
+│⭔ ${prefix}smeme teks bawah|teks atas
+│⭔ ${prefix}tomp4 (sedang eror)
+│⭔ ${prefix}kalkulator 
+│⭔ ${prefix}removebg | reply gambar
+│⭔ ${prefix}wm | reply stiker
+│⭔ ${prefix}attp teks
+│⭔ ${prefix}styletext teks
+│
+╰❐ 
+
+╭❐   \`Panel\` 
+│
+│⭔ ${prefix}delsrv
+│⭔ ${prefix}delusr
+│⭔ ${prefix}addsrv
+│⭔ ${prefix}listram
+│⭔ ${prefix}listsrv
+│⭔ ${prefix}listusr
+│
+╰❐ 
+
+╭❐   \`OpenAi\` 
+│
+│⭔ ${prefix}ai query
+│⭔ ${prefix}prompt-gpt query
+│⭔ ${prefix}dall-e Ilustrasi 
+│⭔ ${prefix}gptgo query
+│⭔ ${prefix}c-ai query|query
+│⭔ ${prefix}stablediffusion ilustrasi
+│⭔ ${prefix}gpt4 query
+│
+╰❐ 
+  
+╭❐   \`Search\` 
+│
+│⭔ ${prefix}google-article query
+│⭔ ${prefix}google-search query
+│⭔ ${prefix}search-kbbi query
+│⭔ ${prefix}search-apk query
+│⭔ ${prefix}search-resep
+│⭔ ${prefix}search-sticker
+│
+╰❐ 
+
+╭❐   \`Voice\` 
+│
+│⭔ ${prefix}Bass ReplyAudio
+│⭔ ${prefix}Blown ReplyAudio
+│⭔ ${prefix}Deep ReplyAudio
+│⭔ ${prefix}Earrape ReplyAudio
+│⭔ ${prefix}Fast ReplyAudio
+│⭔ ${prefix}Fat ReplyAudio
+│⭔ ${prefix}Nightcore ReplyAudio
+│⭔ ${prefix}Reverse ReplyAudio
+│⭔ ${prefix}Robot ReplyAudio
+│⭔ ${prefix}Slow ReplyAudio
+│⭔ ${prefix}Tupai ReplyAudio
+│
+╰❐ 
+
+╭❐   \`Download\` 
+│
+│⭔ ${prefix}gitclone url
+│⭔ ${prefix}mediafire url
+│⭔ ${prefix}tiktokmp3 url
+│⭔ ${prefix}tiktokvideo url
+│⭔ ${prefix}ytmp4 url
+│⭔ ${prefix}ytmp3 url
+│⭔ ${prefix}play judul
+│⭔ ${prefix}playmusic judul
+│⭔ ${prefix}douyindl url
+│⭔ ${prefix}igdlimage url
+│⭔ ${prefix}igdlmp4 url
+│⭔ ${prefix}pintmp4 url
+│⭔ ${prefix}happymod nama apk
+│
+╰❐ 
+
+╭❐   \`PhotoOxy\` 
+│
+│⭔ ${prefix}shadow namalu 
+│⭔ ${prefix}write namalu 
+│⭔ ${prefix}romantic namalu 
+│⭔ ${prefix}burnpaper namalu
+│⭔ ${prefix}smoke namalu 
+│⭔ ${prefix}narutobanner namalu 
+│⭔ ${prefix}love namalu 
+│⭔ ${prefix}undergrass namalu
+│⭔ ${prefix}doublelove namalu 
+│⭔ ${prefix}coffecup namalu
+│⭔ ${prefix}underwaterocean namalu
+│⭔ ${prefix}smokyneon namalu
+│⭔ ${prefix}starstext namalu
+│⭔ ${prefix}rainboweffect namalu
+│⭔ ${prefix}balloontext namalu
+│⭔ ${prefix}metalliceffect namalu
+│⭔ ${prefix}embroiderytext namalu
+│⭔ ${prefix}flamingtext namalu
+│⭔ ${prefix}stonetext namalu
+│⭔ ${prefix}writeart namalu
+│⭔ ${prefix}summertext namalu
+│⭔ ${prefix}wolfmetaltext namalu
+│⭔ ${prefix}nature3dtext namalu
+│⭔ ${prefix}rosestext namalu
+│⭔ ${prefix}naturetypography namalu
+│⭔ ${prefix}quotesunder namalu
+│⭔ ${prefix}shinetext namalu
+│
+╰❐ 
+
+╭❐   \`Scrape\` 
+│
+│⭔ ${prefix}akira
+│⭔ ${prefix}akiyama
+│⭔ ${prefix}ana
+│⭔ ${prefix}asuna
+│⭔ ${prefix}ayuzawa
+│⭔ ${prefix}boruto
+│⭔ ${prefix}chitoge
+│⭔ ${prefix}deidara
+│⭔ ${prefix}doraemon
+│⭔ ${prefix}elaina
+│⭔ ${prefix}emilia
+│⭔ ${prefix}erza
+│⭔ ${prefix}gremory
+│⭔ ${prefix}hestia
+│⭔ ${prefix}hinata
+│⭔ ${prefix}inori
+│⭔ ${prefix}isuzu
+│⭔ ${prefix}itachi
+│⭔ ${prefix}itori
+│⭔ ${prefix}kaga
+│⭔ ${prefix}kagura
+│⭔ ${prefix}kakasih
+│⭔ ${prefix}kaori
+│⭔ ${prefix}keneki
+│⭔ ${prefix}kotori
+│⭔ ${prefix}kurumi
+│⭔ ${prefix}madara
+│⭔ ${prefix}mikasa
+│⭔ ${prefix}miku
+│⭔ ${prefix}minato
+│⭔ ${prefix}naruto
+│⭔ ${prefix}nezuko
+│⭔ ${prefix}onepiece
+│⭔ ${prefix}pokemon
+│⭔ ${prefix}rize
+│⭔ ${prefix}sagiri
+│⭔ ${prefix}sakura
+│⭔ ${prefix}sasuke
+│⭔ ${prefix}shina
+│⭔ ${prefix}shinka
+│⭔ ${prefix}shizuka
+│⭔ ${prefix}shota
+│⭔ ${prefix}toukachan
+│⭔ ${prefix}tsunade
+│⭔ ${prefix}yukiyuki
+│
+╰❐ 
+ 
+╭❐   \`Ephoto 360\` 
+│
+│⭔ ${prefix}glitchtext namalu
+│⭔ ${prefix}writetext namalu
+│⭔ ${prefix}advancedglow namalu
+│⭔ ${prefix}typographytext namalu
+│⭔ ${prefix}pixelglitch namalu
+│⭔ ${prefix}neonglitch namalu
+│⭔ ${prefix}flagtext namalu
+│⭔ ${prefix}flag3dtext namalu
+│⭔ ${prefix}deletingtext namalu
+│⭔ ${prefix}blackpinkstyle namalu
+│⭔ ${prefix}glowingtext namalu
+│⭔ ${prefix}underwatertext namalu
+│⭔ ${prefix}logomaker namalu
+│⭔ ${prefix}cartoonstyle namalu
+│⭔ ${prefix}papercutstyle namalu
+│⭔ ${prefix}watercolortext namalu
+│⭔ ${prefix}effectclouds namalu
+│⭔ ${prefix}blackpinklogo namalu
+│⭔ ${prefix}gradienttext namalu
+│⭔ ${prefix}summerbeach namalu
+│⭔ ${prefix}luxurygold namalu
+│⭔ ${prefix}multicoloredneon namalu
+│⭔ ${prefix}sandsummer namalu
+│⭔ ${prefix}galaxywallpaper namalu
+│⭔ ${prefix}1917style namalu
+│⭔ ${prefix}makingneon namalu
+│⭔ ${prefix}royaltext namalu
+│⭔ ${prefix}freecreate namalu
+│⭔ ${prefix}galaxystyle namalu
+│⭔ ${prefix}lighteffects namalu
 │
 ╰❐ 
 `
@@ -2353,7 +2591,7 @@ let itsmenu = `
     https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
     
          \`kill Menu\`
- ▬▭▬▭▬▭▬▭▬▬▭▬▭▬	  
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬	
      ${prefix}null-chace amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}plerku amount 
@@ -2733,20 +2971,18 @@ break
 //=================================================//
 case "getpp": {
 if (Input) {
-try {
-var ppWong = await ryozingod.profilePictureUrl(Input, "image")
-} catch {
-var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
-}
-ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
-} else {
-try {
-var ppWong = await ryozingod.profilePictureUrl(m.sender, "image")
-} catch {
-var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
-}
-ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
-}
+case "getpp": {
+    let ppWong;
+    try {
+        // Use the input if available, otherwise use the sender's ID
+        ppWong = await ryozingod.profilePictureUrl(Input || m.sender, "image");
+    } catch {
+        // Fallback image URL if profile picture retrieval fails
+        ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60";
+    }
+    
+    // Send the image to the chat
+    ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m });
 }
 break
 //=================================================//
@@ -2861,26 +3097,29 @@ case 'runtime':
                 break
 //=================================================//
 case 'block':
-if (!isDeveloper) return joreply(mess.owner);
-if(isGroup){
-let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-if(users){
-await ryozingod.updateBlockStatus(users, "block")
-joreply(`Sucessfully block user`)
-} else {
-joreply("Please reply to the message or tag or enter the number you want to block")
-}
-} else if(!isGroup){
-if(q){
-var woke = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
-if(woke.startsWith("08")) return joreply("Start the number with 62")
-if(!woke.startsWith("62")) return joreply("Please reply to the message or tag or enter the number you want to block")
-await ryozingod.updateBlockStatus(woke, "block")
-} else if(!q){
-joreply("Enter the number you want to block")
-}
-joreply(`Successfully Blocked user ${woke.split("@")[0]}`)
-}
+case 'block':
+    if (!isDeveloper) return joreply(mess.owner);
+
+    if (isGroup) {
+        let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
+        if (users) {
+            await ryozingod.updateBlockStatus(users, "block");
+            joreply(`Successfully blocked the user.`);
+        } else {
+            joreply("Please reply to a message, tag a user, or enter the number you want to block.");
+        }
+    } else { // For non-group (private) chats
+        if (q) {
+            var woke = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + '@s.whatsapp.net';
+            if (woke.startsWith("08")) return joreply("Start the number with 62.");
+            if (!woke.startsWith("62")) return joreply("Please enter a valid number starting with the country code (62).");
+
+            await ryozingod.updateBlockStatus(woke, "block");
+            joreply(`Successfully blocked user ${woke.split("@")[0]}.`);
+        } else {
+            joreply("Enter the number you want to block.");
+        }
+    }
 break
 //=================================================//
 case 'unblock':
