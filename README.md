@@ -80,3 +80,4 @@ SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"
 
 ## `Main Dev` 
 <a href="https://github.com/Itzpatron"><img src="https://telegra.ph/file/551d68eb74a30dda96c0c.jpg" width="250" height="250" alt="PATRON 🚹"/></a>
+<a href="https://github.com/asmakev930h"><img src="https://telegra.ph/file/229312c344db0a90bca65.jpg" width="250" height="250" alt="BLUE DEMON"/></a>
