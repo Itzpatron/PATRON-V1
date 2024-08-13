@@ -3,38 +3,9 @@
 Kalo Mau Recode Kasih Credit gw ›
 TheZetsubXygen / Ryo
 
-📝 > Created By thezetsuboxygen / Ryo
-🖥️ > Base Ori By thezetsuboxygen / Ryo
-
-🩸 Catatan: Jika Anda membeli Bot ini dan kemudian menjualnya kembali, akses Anda ke Bot akan dihapus, dan nomor yang terhubung dengan Bot akan diblokir secara permanen.
-
-❗ Thanks To -:
-
-Best Regards: >
- - Alif
- - Ryozingod (Gw)
-
-All 1S - Universe members, especially for: >
- - Kyuurzy
- - Reza
- - Taufik
- - Putzxzmoodz
-
-Tes - Bug: > 
- - Anas
- - Athena
- - Nug Hikari
- 
-Etc: >
- - Dika Ardnt
- - Hw Mods (Haikal)
- - Penyedia Scrape
- - Penyedia Api
- - My Brain
- - Davizinmaker - Inspirate
- - Thunder X7 - Inspirate
- - Yang Beli Sc V4 Kemarin (Khususnya Reseller Peler)
-                                   
+📝 > Created By PATRON 🚹
+🖥️ > Base Ori By BLUE DEMON
+               
 */
 const { ryozingodConnect, downloadContentFromMessage, emitGroupParticipantsUpdate, emitGroupUpdate, generateWAMessageContent, generateWAMessage, makeInMemoryStore, prepareWAMessageMedia, generateWAMessageFromContent, MediaType, areJidsSameUser, WAMessageStatus, downloadAndSaveMediaMessage, AuthenticationState, GroupMetadata, initInMemoryKeyStore, getContentType, MiscMessageGenerationOptions, useSingleFileAuthState, BufferJSON, WAMessageProto, MessageOptions, WAFlag, WANode, WAMetric, ChatModification, MessageTypeProto, WALocationMessage, ReconnectMode, WAContextInfo, proto, WAGroupMetadata, ProxyAgent, waChatKey, MimetypeMap, MediaPathMap, WAContactMessage, WAContactsArrayMessage, WAGroupInviteMessage, WATextMessage, WAMessageContent, WAMessage, BaileysError, WA_MESSAGE_STATUS_TYPE, MediaConnInfo, URL_REGEX, WAUrlInfo, WA_DEFAULT_EPHEMERAL, WAMediaUpload, mentionedJid, processTime, Browser, MessageType, Presence, WA_MESSAGE_STUB_TYPES, Mimetype, relayWAMessage, Browsers, GroupSettingChange, DisconnectReason, WASocket, getStream, WAProto, isBaileys, AnyMessageContent, fetchLatestBaileysVersion, templateMessage, InteractiveMessage, Header } = require('@whiskeysockets/baileys')
 //=================================================//
@@ -784,7 +755,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 listResponseMessage: {
-title: `pois0n - zxv`
+title: `pois0n - PATRON 🚹`
 }
 }
 }
@@ -798,7 +769,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 buttonsResponseMessage: {
-selectedButtonId: 'pois0n - zxv',
+selectedButtonId: 'pois0n - PATRON 🚹',
 type: 1,
 response: {
 selectedDisplayText: 'penis'
@@ -2224,7 +2195,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON 🚹', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON 🚹', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2247,7 +2218,7 @@ let itsmenu = `
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-    *CREATOR : PATRON*
+    *CREATOR : PATRON 🚹*
     *LIBRARY : THE ONE*
     *Status : READY*
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
@@ -2307,7 +2278,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "PATRON"
+"text": "PATRON 🚹"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2350,7 +2321,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆', url : "https://wa.me/2348133729715", merchant_url : "https://wa.me/2348133729715" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2372,7 +2343,7 @@ let itsmenu = `
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-    *CREATOR : PATRON*
+    *CREATOR : PATRON 🚹*
     *LIBRARY : THE ONE*
     *Status : READY*
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
@@ -2474,7 +2445,7 @@ interactiveMessage: {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"RIO 🏀\nI REALLY WANNA SUCK YOUR DICK DADDY\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"PATRON 🚹\nI REALLY WANNA SUCK YOUR DICK DADDY\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2494,7 +2465,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": '𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽',
+"newsletterName": 'PATRON 🚹 & 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽',
 "serverMessageId": 1
 },
 },
@@ -2511,7 +2482,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '*[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆💀*', url : "https://Wa.me/2348133729715", merchant_url : "https://Wa.me/2348133729715" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : '*[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆💀*', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2533,7 +2504,7 @@ let itsmenu =  `
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-    *CREATOR : PATRON*
+    *CREATOR : PATRON 🚹*
     *LIBRARY : THE ONE*
     *Status : READY*
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
@@ -2587,7 +2558,7 @@ interactiveMessage: {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"⿻𝐙͢𝐱𝐕⿻\nAKU SUKA AMA LOBANG BOOL KAMU, AYO NGEGAY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"PATRON 🚹\nGAY ASS NIGGA😋😘\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2623,7 +2594,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON', url : "https://Wa.me/2348133729715", merchant_url : "https://Wa.me/2348133729715" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON 🚹', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2657,7 +2628,7 @@ joreply(`
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
       💀  *𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆* 💀
    ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-    *CREATOR : PATRON*
+    *CREATOR : PATRON 🚹*
     *LIBRARY : THE ONE*
     *Status : READY*
     *MODE : ${ryozingod.self ? '✱ Public ༣' : '✲ Self ༣'}*
@@ -2690,7 +2661,7 @@ DON'T DM IF YOU'RE NOT READY TO BUY THE SCRIPT🙂🕷️😈🕸️
 break
 //=================================================//
 case 'owner': case 'botowner':
-let namaown = `PATRON`
+let namaown = `PATRON 🚹`
 var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "contactMessage": {
 "displayName": `${namaown}`,
@@ -3091,7 +3062,7 @@ joreply(`Tidak dapat menemukan case "${caseName}" untuk dihapus.`);
 break
 //=================================================//
 case 'iniryo' : {
-ryozingod.sendMessage(m.chat, { text: `_ryo itu ganteng banget, aku jdi suka ama dia 😣😖😫_` }, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `_GAYYYYYYYYYYYYYYYYYYY 😣😖😫_` }, { quoted: m })
 }
 break
 //=================================================//
