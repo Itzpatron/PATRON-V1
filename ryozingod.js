@@ -2426,7 +2426,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'BLUE ',
+"newsletterName": 'PATRON 🚹 & BLUE ',
 "serverMessageId": 1
 },
 },
@@ -2478,7 +2478,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "BLUE DEMON"
+"text": "PATRON 🚹 & BLUE DEMON"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2539,7 +2539,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'BLUE DEMON',
+"newsletterName": 'PATRON 🚹 & BLUE DEMON',
 "serverMessageId": 1
 },
 },
@@ -2825,7 +2825,7 @@ break
 //=================================================//
 case 'join': {
 if (!isDeveloper) return joreply(mess.owner)
-if (!text) return joreply('Masukkan Link Group!')
+if (!text) return joreply('Enter the Group Link!')
 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return 'Link Invalid!'
 joreply(mess.wait)
 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -2868,18 +2868,18 @@ if(users){
 await ryozingod.updateBlockStatus(users, "block")
 joreply(`Sucessfully block user`)
 } else {
-joreply("Silakan reply pesan atau tag atau input nomer yang mau di block")
+joreply("Please reply to the message or tag or enter the number you want to block")
 }
 } else if(!isGroup){
 if(q){
 var woke = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
-if(woke.startsWith("08")) return joreply("Awali nomer dengan 62")
-if(!woke.startsWith("62")) return joreply("Silakan reply pesan atau tag atau input nomer yang mau di block")
+if(woke.startsWith("08")) return joreply("Start the number with 62")
+if(!woke.startsWith("62")) return joreply("Please reply to the message or tag or enter the number you want to block")
 await ryozingod.updateBlockStatus(woke, "block")
 } else if(!q){
-joreply("Masukan nomer yang ingin di block")
+joreply("Enter the number you want to block")
 }
-joreply(`Berhasil Block user ${woke.split("@")[0]}`)
+joreply(`Successfully Blocked user ${woke.split("@")[0]}`)
 }
 break
 //=================================================//
@@ -2889,19 +2889,19 @@ let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsap
 if(isGroup){
 if(users){
 await ryozingod.updateBlockStatus(users, "unblock")
-await joreply(`Sukses unblock user`)
+await joreply(`Successfully unblocked the user`)
 } else if(!q){
-joreply("Silakan reply pesan atau tag atau input nomer yang mau di block")
+joreply("Please reply to the message or tag or enter the number you want to block")
 }
 } else if(!isGroup){
 if(q){
 let woke = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
-if(woke.startsWith("08")) return joreply("Awali nomer dengan 62")
-if(!woke.startsWith("62")) return joreply("Silakan reply pesan atau tag atau input nomer yang mau di block")
+if(woke.startsWith("08")) return joreply("Start the number with 62")
+if(!woke.startsWith("62")) return joreply("Please reply to the message or tag or enter the number you want to block")
 await ryozingod.updateBlockStatus(woke, "unblock")
 joreply(`Sukses unblock ${woke}`)
 } else if(!q){
-joreply("Masukan nomer yang ingin di unblock")
+joreply("Enter the number you want to unblock")
 }
 
 }
@@ -2920,7 +2920,7 @@ const media = await ryozingod.downloadAndSaveMediaMessage(quoted)
 const { img } = await generateProfilePicture(media)
 await ryozingod.query({ tag: 'iq',  attrs: { to: botNumber, type:'set', xmlns: 'w:profile:picture'}, content: [{ tag: 'picture', attrs: { type: 'image' }, content: img }]})   
 await joreply(`${mess.success}`)
-} else joreply("Reply fotonya")
+} else joreply("Reply to the photo")
 }
 break
 //=================================================//
@@ -2935,7 +2935,7 @@ case 'setbiobot':{
 if (!isDeveloper) return joreply(mess.owner);
 if (!q) return joreply(`Kirim perintah ${prefix+command} nama\n\nContoh : ${command} Paijo`)
 await ryozingod.updateProfileStatus(q)
-await joreply(`Berhasil mengganti status bio ke *${q}*`)
+await joreply(`Successfully changed bio status to *${q}*`)
 }
 break
 //=================================================//
@@ -2962,11 +2962,11 @@ for (const plugin of plugins) {
 if (plugin.command === mypler) {
 let filePath = plugin.filePath
 fs.writeFileSync(filePath, mypenis)
-await joreply(`Plugin di ${filePath} telah diganti`)
+await joreply(`Plugin di ${filePath} has been replaced`)
 return
 }
 }
-await joreply(`Plugin dengan command '${mypler}' tidak ditemukan`)
+await joreply(`Plugins with commands '${mypler}' not found`)
 }
 break
 //=================================================//
@@ -2979,11 +2979,11 @@ for (const plugin of plugins) {
 if (plugin.command === q) {
 let filePath = plugin.filePath
 fs.unlinkSync(filePath)
-await joreply(`Plugin di ${filePath} telah dihapus.`)
+await joreply(`plugin ${filePath} has been deleted.`)
 return
 }
 }
-await joreply(`Plugin dengan command '${q}' tidak ditemukan.`)
+await joreply(`Plugins with commands '${q}' not found.`)
 }
 break
 //=================================================//
@@ -2993,7 +2993,7 @@ const [pluginName, category, ...pluginContent] = q.split("|")
 const pluginFilePath = path.join(path.resolve(__dirname, './zetsubo', category), pluginName + ".js")
 if (!q.includes("|") || pluginContent.length === 0 || fs.existsSync(pluginFilePath)) return
 fs.writeFileSync(pluginFilePath, pluginContent.join('|'))
-await joreply(`Plugin baru telah dibuat di ${pluginFilePath}.`)
+await joreply(`A new plugin has been discovered. ${pluginFilePath}.`)
 }
 break
 //=================================================//
@@ -3002,20 +3002,20 @@ if (!isDeveloper) return joreply(mess.owner)
 if (!q) return joreply(`Add Input, Example: \n\n*.getplug ryocakep*`)
 let pluginsDirect = path.resolve(__dirname, './zetsubo')
 let plugin = loadPlugins(pluginsDirect).find(p => p.command === q)
-if (!plugin) return joreply(`Plugin dengan command '${q}' tidak ditemukan.`)
+if (!plugin) return joreply(`Plugins with commands '${q}' not found.`)
 await ryozingod.sendMessage(m.chat, {
 document: fs.readFileSync(plugin.filePath),
 fileName: path.basename(plugin.filePath),
 mimetype: '*/*'
 }, { quoted: m })
-await joreply(`Succes mengambil pllugin '${q}', plugin telah dikirim.`)
+await joreply(`Successfully downloaded the plugin '${q}', plugin has been shipped.`)
 }
 break
 //=================================================//
 case "addcase": {
 if (!isDeveloper) return joreply(mess.owner);
-if (!q) return joreply(`Masukan Input`);
-if (!q.includes("|")) return joreply("Format perintah tidak valid. Gunakan: addcase <tempat>|case \"casenya\">{ ... } break")
+if (!q) return joreply(`Input Input`);
+if (!q.includes("|")) return joreply("Invalid command format. Use: addcase <tempat>|case \"casenya\">{ ... } break")
 
 let tempat = q.split("|")[0];
 let casenya = q.split("|")[1];
@@ -3030,16 +3030,16 @@ fileContent = fileContent.slice(0, breakIndex + 6) + newCase + fileContent.slice
 
 fs.writeFileSync("./ryozingod.js", fileContent, "utf-8");
 
-joreply(`Case baru "${casenya}" berhasil ditambahkan di bawah case "${tempat}"!`);
+joreply(`New case "${casenya}" successfully added under case "${tempat}"!`);
 } else {
-joreply(`Tidak dapat menemukan break di case "${tempat}".`);
+joreply(`Can't find break in case "${tempat}".`);
 }
 }
 break
 //=================================================//
 case "delcase": {
 if (!isDeveloper) return joreply(mess.owner);
-if (!q) return joreply("Masukkan nama case yang ingin dihapus, contoh: delcase gpt4");
+if (!q) return joreply("Enter the name of the case you want to delete, for example: delcase gpt4");
 
 let caseName = q
 
@@ -3054,9 +3054,9 @@ fileContent = fileContent.replace(caseToDelete, "");
 
 fs.writeFileSync("./ryozingod.js", fileContent, "utf-8");
 
-joreply(`Case "${caseName}" berhasil dihapus!`);
+joreply(`Case "${caseName}" deleted successfully!`);
 } else {
-joreply(`Tidak dapat menemukan case "${caseName}" untuk dihapus.`);
+joreply(`Can't find case "${caseName}" to be deleted.`);
 }
 }
 break
@@ -3117,14 +3117,14 @@ packname: global.packname,
 author: global.author
 })
 } else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return joreply('Maksimal 10 detik!')
+if ((quoted.msg || quoted).seconds > 11) return joreply('Maximum 10 seconds!')
 let media = await quoted.download()
 let encmedia = await ryozingod.sendVideoAsSticker(m.chat, media, m, {
 packname: global.packname,
 author: global.author
 })
 } else {
-return joreply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Video 1-9 Detik`)
+return joreply(`Send Images/Videos With Captions ${prefix + command}\nVideo Duration 1-9 Seconds`)
 }
 }
 break
