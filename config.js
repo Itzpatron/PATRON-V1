@@ -30,8 +30,8 @@ global.sessionName = 'session';
 global.connect = true; // Set to false if using QR Code
 global.namabot = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
 global.author = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
-global.packname = '𝐂𝐎𝐒𝐓𝐒༑⃟'; // Change if needed
-global.url = 'https://Wa.me/2348133729715'; // Do not change
+global.packname = 'PATRON 🚹'; // Change if needed
+global.url = 'https://t.me/textpatron_bot'; // Do not change
 
 //===========================//
 
