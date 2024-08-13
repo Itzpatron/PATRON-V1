@@ -2191,7 +2191,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": " 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽"
+"text": " PATRON 🚹 & 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
