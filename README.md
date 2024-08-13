@@ -1,11 +1,11 @@
 <p align="center">  
   <a href="">
-    <img alt="NARUTO" height="300" src="https://telegra.ph/file/d92cb3a5e5ca3e490fcbf.jpg">
-    <h1 align="center">NARUTO-BUG 1.O</h1>
+    <img alt="𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆" height="300" src="https://telegra.ph/file/551d68eb74a30dda96c0c.jpg">
+    <h1 align="center">𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆</h1>
   </a>
 </p>
 <p align="center">
-<a href="https://t.me/ednut_x"><img title="Author" src="https://img.shields.io/badge/NARUTO-BOT-black?style=for-the-badge&logo=telegram"></a>
+<a href="https://t.me/textpatron_bot"><img title="Author" src="https://img.shields.io/badge/PATRON-BOT-black?style=for-the-badge&logo=telegram"></a>
 <p/>
 <p align="center">
 <a href="https://github.com/Ednut001?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Ednut001?label=Followers&style=social"></a>
@@ -15,7 +15,7 @@
 </p>
 
 ####  
-NARUTO-V1-BUG Whatsapp crasher Multi Device whatsapp bot.
+𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 Whatsapp crasher Multi Device whatsapp bot.
 
 ***
 
@@ -23,19 +23,19 @@ NARUTO-V1-BUG Whatsapp crasher Multi Device whatsapp bot.
 
 1. Fork the repo
     <br>
-<a href='https://github.com/Ednut001/Naruto-v1-bug/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+<a href='https://github.com/patronffx/PATRON-V1/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 
-2. Get Session ID (Server 1)
+2. Get Session ID (Server 2) (use this if server 1 Doesn't work)
+    <br>
+<a href='https://replit.com/@asmakev/Classic-Pairing?s=app' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+
+
+3. Get Session ID (Server 1)
    > if not generating code please use the second one or scan method
     
      <a href='https://ednut-pair-code.onrender.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
-
-
-3. Get Session ID (Server 2) (use this if server 1 Doesn't work)
-    <br>
-<a href='https://replit.com/@lolednut/ednut-pair-code' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 #### DEPLOY TO Toystack
@@ -52,7 +52,7 @@ NARUTO-V1-BUG Whatsapp crasher Multi Device whatsapp bot.
 ## `BUILDPACKS FOR HEROKU`
 
 ```
-heroku/nodejs
+bash heroku/nodejs
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
@@ -65,10 +65,18 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
  
  ## For more deployment platform join channel for update
 
-SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029VaefL9g0gcfLITSc841W"><img alt="WhatsApp" src="https://img.shields.io/badge/Join CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"><img alt="WhatsApp" src="https://img.shields.io/badge/Join CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
-- Star ⭐ the repo if you like NARUTO-BUG.
+#### DEPLOY TO PANEL
+1. 🖥 Go to panel and upload this Sc.
+2. extract or move it to a directory (container).
+3. ⌨ Use the following code to move into a container: "../"
+4. Open the session folder and replace the cred.json with yours.
+5. Then go to the console and press Start.
+
+
+- Star ⭐ the repo if you like 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆.
 
 
 ## `Main Dev` 
-<a href="https://github.com/Ednut001"><img src="https://i.imgur.com/QvvICDx.jpeg" width="250" height="250" alt="Ednut"/></a>
+<a href="https://github.com/Itzpatron"><img src="https://telegra.ph/file/551d68eb74a30dda96c0c.jpg" width="250" height="250" alt="PATRON 🚹"/></a>
