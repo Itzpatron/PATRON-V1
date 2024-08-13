@@ -81,3 +81,14 @@ SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"
 ## `Main Dev` 
 <a href="https://github.com/Itzpatron"><img src="https://telegra.ph/file/551d68eb74a30dda96c0c.jpg" width="250" height="250" alt="PATRON 🚹"/></a>
 <a href="https://github.com/asmakev930h"><img src="https://telegra.ph/file/229312c344db0a90bca65.jpg" width="250" height="250" alt="BLUE DEMON"/></a>
+
+`𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 BY PATRON 🚹 & BLUE DEMON`
+
+<h2 align="center">  Reminder
+</h2>
+
+## 
+- This bot is not made by `WhatsApp Inc.` So misusing the bot might `ban` your `WhatsApp account!`(Though your WhatsApp account can be unbanned only once.)
+- I am not responsible for banning your account.
+- Use at your own risk by keeping this warning in mind.
+- use this bot with wisdom if any report of misusing this im not responsible and you will bear for the consiquences 
