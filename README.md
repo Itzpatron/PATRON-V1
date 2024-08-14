@@ -7,17 +7,14 @@
 <p align="center">
 <a href="https://t.me/textpatron_bot"><img title="Author" src="https://img.shields.io/badge/PATRON-BOT-black?style=for-the-badge&logo=telegram"></a>
 <p/>
-<p align="center">
-<a href="https://github.com/Ednut001?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/Ednut001?label=Followers&style=social"></a>
-<a href="https://github.com/Ednut001/Naruto-v1-bug/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Ednut001/Naruto-v1-bug?&style=social"></a>
-<a href="https://github.com/Ednut001/Naruto-v1-bug/network/members"><img title="Fork" src="https://img.shields.io/github/forks/Ednut001/Naruto-v1-bug?style=social"></a>
-<a href="https://github.com/Ednut001/Naruto-v1-bug/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Ednut001/Naruto-v1-bug?label=Watching&style=social"></a>
-</p>
+
 
 ####  
 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 Whatsapp crasher Multi Device whatsapp bot.
 
 ***
+ ## For more deployment platform join channel for update
+SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"><img alt="WhatsApp" src="https://img.shields.io/badge/Join CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 #### SETUP
 
@@ -63,9 +60,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
    <br>
    <p align="center"><a href="https://app.koyeb.com/auth/signup"> <img src="https://img.shields.io/badge/Koyeb account-blue?style=for-the-badge&logo=koyeb" width="220" height="38.45"/></a></p>
  
- ## For more deployment platform join channel for update
 
-SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"><img alt="WhatsApp" src="https://img.shields.io/badge/Join CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+
 
 #### DEPLOY TO PANEL
 1. 🖥 Go to panel and upload this Sc.
@@ -73,6 +69,11 @@ SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"
 3. ⌨ Use the following code to move into a container: "../"
 4. Open the session folder and replace the cred.json with yours.
 5. Then go to the console and press Start.
+
+#### DEPLOY TO RENDER
+if you don't have a koyeb account. Create an account.
+   <br>
+   <p align="center"><a href="https://dashboard.render.com/"> <img src="https://img.shields.io/badge/Render account-grey?style=for-the-badge&logo=render" width="220" height="38.45"/></a></p>
 
 
 - Star ⭐ the repo if you like 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆.
