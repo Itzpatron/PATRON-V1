@@ -3099,29 +3099,26 @@ case 'runtime':
                 break
 //=================================================//
 case 'block':
-case 'block':
-    if (!isDeveloper) return joreply(mess.owner);
-
-    if (isGroup) {
-        let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
-        if (users) {
-            await ryozingod.updateBlockStatus(users, "block");
-            joreply(`Successfully blocked the user.`);
-        } else {
-            joreply("Please reply to a message, tag a user, or enter the number you want to block.");
-        }
-    } else { // For non-group (private) chats
-        if (q) {
-            var woke = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + '@s.whatsapp.net';
-            if (woke.startsWith("08")) return joreply("Start the number with 62.");
-            if (!woke.startsWith("62")) return joreply("Please enter a valid number starting with the country code (62).");
-
-            await ryozingod.updateBlockStatus(woke, "block");
-            joreply(`Successfully blocked user ${woke.split("@")[0]}.`);
-        } else {
-            joreply("Enter the number you want to block.");
-        }
-    }
+if (!isDeveloper) return joreply(mess.owner);
+if(isGroup){
+let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+if(users){
+await ryozingod.updateBlockStatus(users, "block")
+joreply(`Sucessfully block user`)
+} else {
+joreply("Please reply to the message or tag or enter the number you want to block")
+}
+} else if(!isGroup){
+if(q){
+var woke = q.replace(new RegExp("[()+-/ +/]", "gi"), "") + `@s.whatsapp.net`
+if(woke.startsWith("08")) return joreply("Start the number with 62")
+if(!woke.startsWith("62")) return joreply("Please reply to the message or tag or enter the number you want to block")
+await ryozingod.updateBlockStatus(woke, "block")
+} else if(!q){
+joreply("Enter the number you want to block")
+}
+joreply(`Successfully Blocked user ${woke.split("@")[0]}`)
+}
 break
 //=================================================//
 case 'unblock':
