@@ -2971,18 +2971,20 @@ break
 //=================================================//
 case "getpp": {
 if (Input) {
-case "getpp": {
-    let ppWong;
-    try {
-        // Use the input if available, otherwise use the sender's ID
-        ppWong = await ryozingod.profilePictureUrl(Input || m.sender, "image");
-    } catch {
-        // Fallback image URL if profile picture retrieval fails
-        ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60";
-    }
-    
-    // Send the image to the chat
-    ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m });
+try {
+var ppWong = await ryozingod.profilePictureUrl(Input, "image")
+} catch {
+var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
+}
+ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
+} else {
+try {
+var ppWong = await ryozingod.profilePictureUrl(m.sender, "image")
+} catch {
+var ppWong = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
+}
+ryozingod.sendMessage(m.chat, { image: { url: ppWong }}, { quoted: m })
+}
 }
 break
 //=================================================//
