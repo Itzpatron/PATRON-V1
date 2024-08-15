@@ -69,8 +69,11 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 1. 🖥 Go to panel and upload this Sc.
 2. extract or move it to a directory (container).
 3. ⌨ Use the following code to move into a container: "../"
-4. Open the session folder and replace the cred.json with yours.
-5. Then go to the console and press Start.
+4. Open the session folder and replace the cred.json with yours
+
+   or just wait for pair code after you start the console.
+6. Then go to the console and press Start.
+
 
 #### DEPLOY TO RENDER
 if you don't have a Render account. Create an account.
