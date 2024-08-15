@@ -71,7 +71,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 5. Then go to the console and press Start.
 
 #### DEPLOY TO RENDER
-if you don't have a koyeb account. Create an account.
+if you don't have a Render account. Create an account.
    <br>
    <p align="center"><a href="https://dashboard.render.com/"> <img src="https://img.shields.io/badge/Render account-grey?style=for-the-badge&logo=render" width="220" height="38.45"/></a></p>
 
