@@ -73,6 +73,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
    or just wait for pair code after you start the console.
 6. Then go to the console and press Start.
+Note: I recommend using starter + or higher for a fast bot
 
 
 #### DEPLOY TO RENDER
