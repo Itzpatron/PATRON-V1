@@ -2078,9 +2078,7 @@ let njing = `
     \`⭔${prefix}mainmenu\`
     \`⭔${prefix}changemenu button/non\`
     \`⭔${prefix}owner\`
-    \`⭔${prefix}botstatus\`
-
-  https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q  
+    \`⭔${prefix}botstatus\`  
 
 `
 
@@ -2107,7 +2105,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "BLUE "
+"text": "𝙱𝙻𝚄𝙴🌀𝙳𝙴𝙼𝙾𝙽 "
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -9017,14 +9015,14 @@ if (args.length < 1) return m.reply('ketik on untuk mengaktifkan\nketik off untu
 if (args[0] === "on") {
 if (AntiLink) return m.reply('Sudah Aktif')
 ntilink.push(m.chat)
-m.reply('Succes menyalakan antilink di group ini 🌷')
+m.reply('Successfully turned on antilink on the group🌷')
 } else if (args[0] === "off") {
 if (!AntiLink) return m.reply('Sudah Mati')
 let off = ntilink.indexOf(m.chat)
 ntilink.splice(off, 1)
-m.reply('Succes mematikan antilink di group ini 🌷')
+m.reply('Succesfully turned off antilink🌷')
 } else {
-m.reply('on untuk mengaktifkan, off untuk menonaktifkan')
+m.reply('on to activate, off to deactivate')
 }
 }
 break
