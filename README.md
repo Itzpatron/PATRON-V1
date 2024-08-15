@@ -11,7 +11,7 @@
 
 ####  
 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 Whatsapp crasher Multi Device whatsapp bot.
-
+<p align="center"><img src="https://profile-counter.glitch.me/{PATRON-V1}/count.svg" alt="itzpatron :: Visitor's Count" /></p>
 ***
  ## For more deployment platform join channel for update
 SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"><img alt="WhatsApp" src="https://img.shields.io/badge/Join CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
