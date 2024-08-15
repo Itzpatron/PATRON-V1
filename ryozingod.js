@@ -2117,13 +2117,13 @@ interactiveMessage: {
 "title": " ALL MENU ",
 "sections": [
 {
-"title": "🫠 Choose One Of Them😁 ",
+"title": "🗿 Select your command 🗿",
 "highlight_label": "#General",
 "rows": [
 {
-"header": "[ ❇️ ] • ALL CMD",
+"header": "[ ❇️ ] • MAINMENU",
 "title": "❗Show All Command",
-"id": ".allmenu"
+"id": ".mainmenu"
 },
 {
 "header": "👤 - CONTACT THE OWNER",
@@ -2195,7 +2195,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON 🚹', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'JOIN CHANNEL🚹', url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q", merchant_url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2241,6 +2241,7 @@ let itsmenu = `
 │⭔ ${prefix}autorecord on/off
 │⭔ ${prefix}autobio on/off
 │⭔ ${prefix}self
+│⭔ ${prefix}ping
 │⭔ ${prefix}runtime
 │⭔ ${prefix}public
 │⭔ ${prefix}shutdown
@@ -2295,17 +2296,17 @@ let itsmenu = `
 
 ╭❐   \`Convert\` 
 │
-│⭔ ${prefix}toimg | reply stiker
+│⭔ ${prefix}toimg | reply sticker 
 │⭔ ${prefix}toaudio | reply video
-│⭔ ${prefix}sticker | reply gambar
-│⭔ ${prefix}s | reply gambar 
+│⭔ ${prefix}sticker | reply 
+│⭔ ${prefix}s | reply 
 │⭔ ${prefix}smeme teks bawah|teks atas
 │⭔ ${prefix}tomp4 (sedang eror)
-│⭔ ${prefix}kalkulator 
-│⭔ ${prefix}removebg | reply gambar
-│⭔ ${prefix}wm | reply stiker
-│⭔ ${prefix}attp teks
-│⭔ ${prefix}styletext teks
+│⭔ ${prefix}calculator 
+│⭔ ${prefix}removebg | reply 
+│⭔ ${prefix}wm | reply sticker 
+│⭔ ${prefix}attp text
+│⭔ ${prefix}fancy text
 │
 ╰❐ 
 
@@ -2522,7 +2523,7 @@ interactiveMessage: {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"PATRON MD💀\nI WANNA SUCK YOU DICK DADDY😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"PATRON🚹\nhttps://t.me/textpatron_bot\",\"id\":\".follow\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2683,7 +2684,7 @@ interactiveMessage: {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"PATRON 🚹\nI REALLY WANNA SUCK YOUR DICK DADDY\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"PATRON 🚹\nHEY YOUR BOT LOOKS GOOD 😃\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2796,7 +2797,7 @@ interactiveMessage: {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"PATRON 🚹\nGAY ASS NIGGA😋😘\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"HEY 🚹\nYOUR BOT LOOKS GREAT❤️\",\"id\":\".terkentod\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2877,7 +2878,41 @@ joreply(`
     *Runtime : ${run}*
     https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
 `)
+}
+break
+//=================================================//
+case 'ping': {
+let os = require('os')
+let timestamp = speed()
+let latensi = speed() - timestamp
+let run = runtime(process.uptime())
+penis = fs.readFileSync("./ryozingod.js").toString(),
+matches = penis.match(/case '[^']+'(?!.*case '[^']+')/g) || [],
+caseCount = matches.length,
+caseNames = matches.map(match => match.match(/case '([^']+)'/)[1]);
+
+let totalCases = caseCount,
+listCases = caseNames.join('\n⭔ ');
+
+joreply(`*Patron ᴠ1 sᵖᵉᵉᵈ ➟${latensi.toFixed(4)}ᴍs*`)
 }	
+break
+//=================================================//
+case 'runtime': {
+let os = require('os')
+let timestamp = speed()
+let latensi = speed() - timestamp
+let run = runtime(process.uptime())
+penis = fs.readFileSync("./ryozingod.js").toString(),
+matches = penis.match(/case '[^']+'(?!.*case '[^']+')/g) || [],
+caseCount = matches.length,
+caseNames = matches.map(match => match.match(/case '([^']+)'/)[1]);
+
+let totalCases = caseCount,
+listCases = caseNames.join('\n⭔ ');
+
+joreply(`*Runtime : ${run}*`)
+}		
 break
 //=================================================//
 case 'ambilq': {
@@ -2909,8 +2944,48 @@ var contact = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
 break
 //=================================================//
-case 'assalamualaikum': {
-ryozingod.sendMessage(m.chat, { text: `waalaikumsalam`}, { quoted: m })
+case 'credit': {
+ryozingod.sendMessage(m.chat, { text: `*ALL HAILS TO 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽.wa.me/2347041039367*`}, { quoted: m })
+}
+break
+//=================================================//
+case 'follow': {
+ryozingod.sendMessage(m.chat, { text: `*DM ME FOR ANY QUESTION OR COMPLAIN*`}, { quoted: m })
+}
+break
+//=================================================//
+case 'ownermenu': {
+ryozingod.sendMessage(m.chat, { text: `
+╭❐   \`Owner Cmd\` 
+│
+│⭔ ${prefix}Addprem 62##/TAG 30d
+│⭔ ${prefix}Dellprem 62##/TAG 30d
+│⭔ ${prefix}addowner 62878####
+│⭔ ${prefix}delowner 62878####
+│⭔ ${prefix}zero-bug 62878####
+│⭔ ${prefix}addbadwords kata kasar
+│⭔ ${prefix}delbadwords kata kasar
+│⭔ ${prefix}changemenu button/non
+│⭔ ${prefix}autoread on/off
+│⭔ ${prefix}autotyping on/off
+│⭔ ${prefix}autorecord on/off
+│⭔ ${prefix}autobio on/off
+│⭔ ${prefix}self
+│⭔ ${prefix}ping
+│⭔ ${prefix}runtime
+│⭔ ${prefix}public
+│⭔ ${prefix}shutdown
+│⭔ ${prefix}addcase 
+│⭔ ${prefix}delcase
+│⭔ ${prefix}join [link group]
+│⭔ ${prefix}block [nomor]
+│⭔ ${prefix}unblock [nomor]
+│⭔ ${prefix}listblock
+│⭔ ${prefix}setppbot [reply gambar]
+│⭔ ${prefix}setbiobot [teks]
+│⭔ ${prefix}listpc
+│
+╰❐ `}, { quoted: m })
 }
 break
 //=================================================//
@@ -2934,7 +3009,7 @@ break
 */
 case 'shutdown': {
 if (!isDeveloper) return joreply(mess.owner)
-joreply(`Otsukaresama deshita🖐`)
+joreply(`BYE🖐`)
 await sleep(5000)
 process.exit()
 }
@@ -3305,7 +3380,7 @@ ryozingod.sendMessage(m.chat, { text: `_GAYYYYYYYYYYYYYYYYYYY 😣😖😫_` }, 
 break
 //=================================================//
 case 'terkentod' : {
-ryozingod.sendMessage(m.chat, { text: `Brooooo🤮🤮🤮. So you be gay🤧, I rebuke you🤧🤢` }, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `*YEA AM AWARE 💀*` }, { quoted: m })
 }
 break
 //=================================================//
@@ -3332,7 +3407,7 @@ await fs.unlinkSync(encmedia);
 break
 
 //Convert 
-case 'style': case 'styletext': {
+case 'fancy': case 'style': case 'styletext': {
 if (!text) return joreply('Enter Query text Nigga!')
 let anu = await styletext(q)
 let teks = `Style Text From ${q}\n\n`
@@ -3683,7 +3758,7 @@ return joreply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Vi
 }
 break
 //=================================================//
-case "kalkulator":{
+case "calculator":{
 if (text.split("+")[0] && text.split("+")[1]) {
 const nilai_one = Number(text.split("+")[0])
 const nilai_two = Number(text.split("+")[1])
