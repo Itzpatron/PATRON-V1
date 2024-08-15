@@ -69,9 +69,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 1. 🖥 Go to panel and upload this Sc.
 2. extract or move it to a directory (container).
 3. ⌨ Use the following code to move into a container: "../"
-4. Open the session folder and replace the cred.json with yours
-
-   or just wait for pair code after you start the console.
+4. Delete the cred.json in the session folder.
 6. Then go to the console and press Start.
    
 - Note: I recommend using starter + or higher for a fast bot
