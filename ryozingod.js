@@ -2605,7 +2605,7 @@ let itsmenu = `
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-gc amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}blue-demon 😈
+     ${prefix}demon-lock 😈
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}zxv1 (pc)🔥
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
