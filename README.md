@@ -12,10 +12,16 @@
 ####  
 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 Whatsapp crasher Multi Device whatsapp bot.
 <p align="center"><img src="https://profile-counter.glitch.me/{PATRON-V1}/count.svg" alt="itzpatron :: Visitor's Count" /></p>
+
 ***
- ## For more deployment platform join channel for update
+
+ #### For more deployment platform join channel for update
+
+
 SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"><img alt="WhatsApp" src="https://img.shields.io/badge/Join CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+
 ***
+
 SUPPORT GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img alt="WhatsApp" src="https://img.shields.io/badge/JOIN GROUP-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 #### SETUP
@@ -35,6 +41,16 @@ SUPPORT GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img a
 3. Get Session ID (Server 2) (use this if server 1 Doesn't work)
     
      <a href='https://ednut-pair-code.onrender.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+
+#### DEPLOY TO CODESPACE
+
+3. If You don't have a account in Codespace. Create a account.
+    <br>
+<a href='https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fcodespaces' target="_blank"><img alt='Codespaces' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
+
+4. Now Deploy
+    <br>
+<a href='https://github.com/codespaces/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
 
 
 #### DEPLOY TO Toystack
