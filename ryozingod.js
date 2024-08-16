@@ -2239,6 +2239,7 @@ let itsmenu = `
 │⭔ ${prefix}autorecord on/off
 │⭔ ${prefix}autobio on/off
 │⭔ ${prefix}self
+│⭔ ${prefix}panel
 │⭔ ${prefix}ping
 │⭔ ${prefix}runtime
 │⭔ ${prefix}public
@@ -2950,6 +2951,16 @@ break
 case 'follow': {
 ryozingod.sendMessage(m.chat, { text: `*DM ME FOR ANY QUESTION OR COMPLAIN*`}, { quoted: m })
 }
+break
+//=================================================//
+case 'freepanel': {
+ryozingod.sendMessage(m.chat, { text: `*To get a panel,kindly dm wa.me/2347041039367*`}, { quoted: m })
+}
+break
+//=================================================//
+case 'panel': {
+ryozingod.sendMessage(m.chat, { text: `To get a panel,kindly dm wa.me/2347041039367`}, { quoted: m })
+}			
 break
 //=================================================//
 case 'ownermenu': {
