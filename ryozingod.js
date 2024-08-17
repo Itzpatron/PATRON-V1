@@ -1034,9 +1034,9 @@ if (!isBotAdmins) return joreply(`${mess.botAdmin}, _Untuk menendang orang yang 
 let gclink = (`https://chat.whatsapp.com/`+await ryozingod.groupInviteCode(m.chat))
 let isLinkThisGc = new RegExp(gclink, 'i')
 let isgclink = isLinkThisGc.test(m.text)
-if (isgclink) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAnda tidak akan ditendang oleh bot karena yang Anda kirim adalah link ke grup ini`})
-if (isAdmins) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAdmin sudah mengirimkan link, admin bebas memposting link apapun`})
-if (isDeveloper) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\Owner telah mengirim link, owner bebas memposting link apa pun`})
+if (isgclink) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nYou won't get kicked by bots because what you sent was a link to this group`})
+if (isAdmins) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nAdmin has sent a link, admin is free to post any link`})
+if (isDeveloper) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nOwner has sent a link, owner is free to post any link`})
 await ryozingod.sendMessage(m.chat,
 {
 delete: {
@@ -1053,7 +1053,7 @@ ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Group Link Terdeteksi 」\`\`\`\n
 if (AntiWame)
 if (budy.toLowerCase().includes("wa.me")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Wa.me Link Terdeteksi 」\`\`\`\n\nAdmin sudah kirim link wa.me, admin bebas kirim link apapun`
+bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nAdmin has sent the wa.me link, admin is free to send any link`
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
