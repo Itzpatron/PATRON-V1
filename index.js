@@ -90,7 +90,7 @@ say(`Create By Thezetetsuboxygen\nYOUTUBE : Thezetetsuboxygen\nTelegram : ygen_g
   align: 'center',
   gradient: [randomcolor, randomcolor]
 })
-    const phoneNumber = await question(`<!> Input your phone number(By 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽)  ❌\n<✓> EXAMPLE : 2347041039367\n <+> your code  : `);
+    const phoneNumber = await question(`<!> Input your phone number(By PATRON)  ❌\n<✓> EXAMPLE : 2348133729715\n <+> your code  : `);
    // Request and display the pairing code
    const code = await ryoroyko.requestPairingCode(phoneNumber.trim());
    console.log(color(`[ # ] enter that code into WhatsApp, motherfucker : ${code}`, `${randomcolor}`));
