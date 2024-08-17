@@ -2969,7 +2969,7 @@ ryozingod.sendMessage(m.chat, { text: `*To get a panel,kindly dm wa.me/234704103
 break
 //=================================================//
 case 'panel': {
-ryozingod.sendMessage(m.chat, { text: `To get a panel,kindly dm wa.me/2347041039367`}, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `*To get a panel,kindly dm* wa.me/2347041039367`}, { quoted: m })
 }			
 break
 //=================================================//
