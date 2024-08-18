@@ -22,7 +22,7 @@ SUPPORT CHANNEL: <a href="https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q"
 
 ***
 
-SUPPORT GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img alt="WhatsApp" src="https://img.shields.io/badge/JOIN GROUP-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+TESTING GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img alt="WhatsApp" src="https://img.shields.io/badge/JOIN GROUP-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
 #### SETUP
 
