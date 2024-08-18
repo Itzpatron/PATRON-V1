@@ -3169,7 +3169,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
                           buttons: [
                             {
                               name: "cta_url",
-                              buttonParamsJson: `{ display_text : '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆', url : "https://t.me/textpatron_bot", merchant_url : "https://t.me/textpatron_bot" }`,
+                              buttonParamsJson: `{ display_text : '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆', url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q", merchant_url : "https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q" }`,
                             },
                           ],
                           messageParamsJson: "",
@@ -3303,7 +3303,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
                             {
                               name: "quick_reply",
                               buttonParamsJson:
-                                '{"display_text":"*HEY*\n*PLS DO WELL TO FOLLOW MY CHANNEL*","id":".channel"}',
+                                '{"display_text":"*HEY*\n*PLS DO WELL TO FOLLOW MY CHANNEL*, https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q","id":".channel"}',
                             },
                           ],
                           messageParamsJson: "",
@@ -3744,7 +3744,7 @@ Hi
                 ryozingod.sendMessage(
                   m.chat,
                   {
-                    text: `*DM ME FOR ANY QUESTION OR COMPLAIN* ,https://t.me/textpatron_bot `,
+                    text: `*DM ME FOR ANY QUESTION OR COMPLAIN* , https://t.me/textpatron_bot `,
                   },
                   { quoted: m }
                 );
