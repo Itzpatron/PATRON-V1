@@ -33,14 +33,10 @@ TESTING GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img a
 
 
 2. Get Session ID (Server 1)
-   > if not generating code please use the second one or scan method
+   
     
-     <a href='https://replit.com/@asmakev/Classic-Pairing?s=app' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+     <a href='[https://replit.com/@asmakev/Classic-Pairing?s=app](https://replit.com/@Itzpatron/Patron-Pairing)' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
-
-3. Get Session ID (Server 2) (use this if you wanna use session id)
-    
-     <a href='https://patronv1-session-ei0g.onrender.com' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 #### DEPLOY TO CODESPACE
 
