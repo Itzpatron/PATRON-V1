@@ -9,6 +9,8 @@
 <p/>
 
 
+> If y'all get any suggestions, click the patron bot
+
 ####  
 𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 Whatsapp crasher Multi Device whatsapp bot.
 <p align="center"><img src="https://profile-counter.glitch.me/{PATRON-V1}/count.svg" alt="itzpatron :: Visitor's Count" /></p>
