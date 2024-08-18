@@ -1607,13 +1607,13 @@ if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
 roof.pilih = reg.exec(m.text.toLowerCase())[0]
 roof.text = m.text
 joreply(`You have selected ${m.text} ${!roof.pilih2 ? `\n\nWaiting for opponent to choose` : ''}`)
-if (!roof.pilih2) ryozingod.sendText(roof.p2, '_Opponent has chosen_\nNow it's your turn', 0)
+if (!roof.pilih2) ryozingod.sendText(roof.p2, '_Opponent has chosen_\n\nNow it's your turn', 0)
 }
 if (jwb2 && reg.test(m.text) && !roof.pilih2 && !m.isGroup) {
 roof.pilih2 = reg.exec(m.text.toLowerCase())[0]
 roof.text2 = m.text
 joreply(`You have chosen ${m.text} ${!roof.choose ? `\n\nWaiting for opponent to choose` : ''}`)
-if (!roof.choose) ryozingod.sendText(roof.p, '_Opponent has chosen_\nNow it's your turn', 0)
+if (!roof.choose) ryozingod.sendText(roof.p, '_Opponent has chosen_\n\nNow it's your turn', 0)
 }
 let stage = roof.pilih
 let stage2 = roof.pilih2
