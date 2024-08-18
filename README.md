@@ -38,9 +38,9 @@ TESTING GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img a
      <a href='https://replit.com/@asmakev/Classic-Pairing?s=app' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
-3. Get Session ID (Server 2) (use this if server 1 Doesn't work)
+3. Get Session ID (Server 2) (use this if you wanna use session id)
     
-     <a href='https://ednut-pair-code.onrender.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+     <a href='https://patronv1-session-ei0g.onrender.com' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 #### DEPLOY TO CODESPACE
 
