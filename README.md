@@ -83,7 +83,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 #### DEPLOY TO PANEL
 1. Fork the repo
-2. Download your forked repo zip
+2. Edit then Download your forked repo zip
 2. 🖥 Go to panel and upload your Sc.
 3. extract or move it to a directory (container).
 4. ⌨ Use the following code to move into a container: "../"
