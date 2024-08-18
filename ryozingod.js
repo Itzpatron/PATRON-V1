@@ -1030,13 +1030,13 @@ await sleep(500)
 // Anti Link
 if (AntiLink) {
 if (budy.toLowerCase().includes("chat.whatsapp.com/")){
-if (!isBotAdmins) return joreply(`${mess.botAdmin}, _Untuk menendang orang yang mengirim link group_`)
+if (!isBotAdmins) return joreply(`${mess.botAdmin}, _To kick the person who sent the group link_`)
 let gclink = (`https://chat.whatsapp.com/`+await ryozingod.groupInviteCode(m.chat))
 let isLinkThisGc = new RegExp(gclink, 'i')
 let isgclink = isLinkThisGc.test(m.text)
-if (isgclink) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAnda tidak akan ditendang oleh bot karena yang Anda kirim adalah link ke grup ini`})
-if (isAdmins) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAdmin sudah mengirimkan link, admin bebas memposting link apapun`})
-if (isDeveloper) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\Owner telah mengirim link, owner bebas memposting link apa pun`})
+if (isgclink) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nYou will not be kicked by the bot because what you sent was a link to this group`})
+if (isAdmins) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\nAdmin has sent a link, admin is free to post any link`})
+if (isDeveloper) return ryozingod.sendMessage(m.chat, {text: `\`\`\`「 Group Link Detected 」\`\`\`\n\Owner has sent a link, owner is free to post any link`})
 await ryozingod.sendMessage(m.chat,
 {
 delete: {
@@ -1046,7 +1046,7 @@ id: mek.key.id,
 participant: mek.key.participant
 }
 })
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\n@${m.sender.split("@")[0]} Jangan kirim group link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Group Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Do not send group links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 }
 }
  // Antiwame by geekz and modified by thezetsuboxygen
@@ -1068,7 +1068,7 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Wa.me Link Terdeteksi 」\`\`\`\n\n@${kice.split("@")[0]} Jangan kirim wa.me link di group ini`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Do not send wa.me links in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 }
 //antivirtex by geekz and modified by thezetsuboxygen
   if (AntiVirtex) {
@@ -1084,14 +1084,14 @@ participant: mek.key.participant
 }
 })
 ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Virus Terdeteksi 」\`\`\`\n\n${pushname} Telah ditendang karena mengirim virus di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
-  }
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Virus Detected 」\`\`\`\n\n${pushname} Kicked for sending virus in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+}
   }
 //anti bad words by geekz and modified by thezetsuboxygen
 if (AntiToxic && !budy.includes("deletebadwords") && !budy.includes("delbadwords"))
 if (badwords.some(word => budy.toLowerCase().includes(word))){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Kata Kasar Terdeteksi 」\`\`\`\n\nAdmin bebas menggunakan kata kasar`
+bvl = `\`\`\`「 Abusive Words Detected 」\`\`\`\n\nAdmin is free to use abusive words`
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1105,8 +1105,7 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Kata Kasar Terdeteksi 」\`\`\`\n\n${pushname} Mohon tidak menggunakan kata kasar di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
-} else {
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Abusive Language Detected 」\`\`\`\n\n${pushname} Please do not use abusive language in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})} else {
 }
 //antiasing by geekz and modified by thezetsuboxygen
 if (m.isGroup && isBotAdmins && AntiAsing) {
@@ -1125,7 +1124,7 @@ await sleep(1000)
 if (AntiLinkYoutubeVid)
 if (budy.toLowerCase().includes("youtu.be")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 YouTube Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 YouTube Link Detected 」\`\`\`\n\nAdmins and Bot Contributors are free to send any link`
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1139,14 +1138,13 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 YouTube Video Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim youtube video link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
-} else {
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 YouTube Video Link Detected 」\`\`\`\n\n${pushname} Do not send youtube video links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})} else {
 }
 //antilink youtube channel by geekz and modified by thezetsuboxygen
 if (AntiLinkYoutubeChannel)
 if (budy.toLowerCase().includes("youtube.com")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 YouTube Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 YouTube Link Detected 」\`\`\`\n\nAdmins and Bot Contributors are free to send any link `
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1160,14 +1158,14 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 YouTube Channel Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim youtube channel link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 YouTube Channel Link Detected 」\`\`\`\n\n${pushname} Do not send youtube channel links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 //antilink instagram by geekz and modified by thezetsuboxygen
 if (AntiLinkInstagram)
 if (budy.toLowerCase().includes("instagram.com")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Instagram Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 Instagram Link Detected 」\`\`\`\n\nAdmin And Bot Contributors are free to send any link `
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1181,14 +1179,14 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Instagram Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim instagram link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Instagram Link Detected 」\`\`\`\n\n${pushname} Do not send instagram links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 //antilink facebook by geekz and modified by thezetsuboxygen
 if (AntiLinkFacebook)
 if (budy.toLowerCase().includes("facebook.com")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Facebook Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 Facebook Link Detected 」\`\`\`\n\nAdmin And Bot Contributors are free to send any link `
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1202,7 +1200,7 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Facebook Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim facebook link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Facebook Link Detected 」\`\`\`\n\n${pushname} Do not send facebook links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 //antilink telegram by geekz and modified by thezetsuboxygen
@@ -1210,7 +1208,7 @@ if (AntiLinkTelegram)
 if (budy.toLowerCase().includes("t.me")){
 if (AntiLinkTelegram)
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Telegram Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 Telegram Link Detected 」\`\`\`\n\nAdmins and Bot Contributors are free to send any link `
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1224,14 +1222,14 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Telegram Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim telegram link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Telegram Link Detected 」\`\`\`\n\n${pushname} Do not send telegram links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 //antilink tiktok by geekz and modified by thezetsuboxygen
 if (AntiLinkTiktok)
 if (budy.toLowerCase().includes("tiktok.com")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Tiktok Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 Tiktok Link Detected 」\`\`\`\n\nAdmin And Bot Contributors are free to send any link `
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1245,14 +1243,14 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Tiktok Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim tiktok link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n${pushname} Do not send tiktok links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 //antilink twitter by geekz and modified by thezetsuboxygen
 if (AntiLinkTwitter)
 if (budy.toLowerCase().includes("twitter.com")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Twitter Link Terdeteksi 」\`\`\`\n\nAdmin Dan Kontributor Bot bebas kirim link apapun `
+bvl = `\`\`\`「 Twitter Link Detected 」\`\`\`\n\nAdmins and Bot Contributors are free to send any link `
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1266,14 +1264,14 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Tiktok Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim twitter link di grup ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Tiktok Link Detected 」\`\`\`\n\n${pushname} Do not send twitter links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 //antilink all by geekz and modified by thezetsuboxygen
 if (AntiLinkAll)
 if (budy.toLowerCase().includes("http")){
 if (!isBotAdmins) return
-bvl = `\`\`\`「 Link Terdeteksi 」\`\`\`\n\nAdmin bebas kirim link apapun`
+bvl = `\`\`\`「 Link Detected 」\`\`\`\n\nAdmin is free to send any link`
 if (isAdmins) return joreply(bvl)
 if (mek.key.fromMe) return joreply(bvl)
 if (isDeveloper) return joreply(bvl)
@@ -1287,7 +1285,7 @@ participant: mek.key.participant
 }
 })
 /*ryozingod.groupParticipantsUpdate(m.chat, [m.sender], 'remove')*/
-ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Link Terdeteksi 」\`\`\`\n\n${pushname} Jangan kirim link di group ini`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+ryozingod.sendMessage(m.chat, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n${pushname} Do not send links in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 
@@ -1301,7 +1299,7 @@ if (budy.toLowerCase() == "nyerah") {
 await joreply('*Anda Telah menyerah*')
 delete tebakgambar[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Guess Picture 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakgambar[m.sender.split('@')[0]]
 } else joreply('*Jawaban Salah!*')
 }
@@ -1309,34 +1307,34 @@ delete tebakgambar[m.sender.split('@')[0]]
 if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = kuismath[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You have given up*')
 delete kuismath[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await joreply(`🎮 Kuis Matematika  🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? kirim ${prefix}math mode`)
+await joreply(`🎮 Math Quiz 🎮\n\nCorrect Answer 🎉\n\nWant to play again? send ${prefix}math mode`)
 delete kuismath[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebakasahotak.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakasahotak[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You have surrendered*')
 delete tebakasahotak[m.sender.split('@')[0]]
-} else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Asah Otak 🎮\n\nJawaban Benar 🎉`, m)
+} else if (budy.toLowerCase() == answer) {
+await ryozingod.sendText(m.chat, `🎮 Brain Teaser 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakasahotak[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebaksiapakahaku.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebaksiapakahaku[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
 delete tebaksiapakahaku[m.sender.split('@')[0]]
-} else if (budy.toLowerCase() == jawaban) {
+} else if (budy.toLowerCase() == answer) {
 await ryozingod.sendText(m.chat, `🎮 Siapakah Aku 🎮\n\nJawaban Benar 🎉`, m)
 delete tebaksiapakahaku[m.sender.split('@')[0]]
 } else joreply('*Jawaban Salah!*')
@@ -1345,133 +1343,133 @@ delete tebaksiapakahaku[m.sender.split('@')[0]]
 if (tebaksusunkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebaksusunkata[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You have given up*')
 delete tebaksusunkata[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Arrange Words 🎮\n\nCorrect Answer 🎉`, m)
 delete tebaksusunkata[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebakbendera.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakbendera[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
 delete tebakbendera[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Guess the Picture 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakbendera[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebakbendera2.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakbendera2[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
 delete tebakbendera2[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Guess the Picture 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakbendera2[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebakkabupaten.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakkabupaten[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
 delete tebakkabupaten[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Kabupaten 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Guess the Picture 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakkabupaten[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebakkimia.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakkimia[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
 delete tebakkimia[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Kimia 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Guess the Picture 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakkimia[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebaktekateki.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
-kuis = true
-jawaban = tebaktekateki[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
-delete tebaktekateki[m.sender.split('@')[0]]
+quiz = true
+answer = tekatekateki[m.sender.split('@')[0]]
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
+delete tekatekateki[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Teka Teki 🎮\n\nJawaban Benar 🎉`, m)
-delete tebaktekateki[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+await ryozingod.sendText(m.chat, `🎮 Teka Teki 🎮\n\nCorrect Answer 🎉`, m)
+delete tekatekateki[m.sender.split('@')[0]]
+} else joreply('*Answer Wrong!*')
 }
 
-if (tebaklagu.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
-kuis = true
-jawaban = tebaklagu[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
-delete tebaklagu[m.sender.split('@')[0]]
-} else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉`, m)
-delete tebaklagu[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+if (guessthesong.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+quiz = true
+answer = guessthesong[m.sender.split('@')[0]]
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
+delete guessthesong[m.sender.split('@')[0]]
+} else if (budy.toLowerCase() == answer) {
+await ryozingod.sendText(m.chat, `🎮 Guess the Song 🎮\n\nCorrect Answer 🎉`, m)
+delete guessthesong[m.sender.split('@')[0]]
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
 kuis = true
 jawaban = tebakkata[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
+if (budy.toLowerCase() == "give up") {
+await joreply('*You Have Given Up*')
 delete tebakkata[m.sender.split('@')[0]]
 } else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉`, m)
+await ryozingod.sendText(m.chat, `🎮 Guess the Song 🎮\n\nCorrect Answer 🎉`, m)
 delete tebakkata[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+} else joreply('*Wrong Answer!*')
 }
 
-if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
-kuis = true
-jawaban = tebakkalimat[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
-delete tebakkalimat[m.sender.split('@')[0]]
-} else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉`, m)
-delete tebakkalimat[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+if (guesssentence.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+quiz = true
+answer = guesssentence[m.sender.split('@')[0]]
+if (budy.toLowerCase() == "give up") {
+await joreply('*You have given up*')
+delete guesssentence[m.sender.split('@')[0]]
+} else if (budy.toLowerCase() == answer) {
+await ryozingod.sendText(m.chat, `🎮 Guess the Sentence 🎮\n\nCorrect Answer 🎉`, m)
+delete guesssentence[m.sender.split('@')[0]]
+} else joreply('*Wrong Answer!*')
 }
 
 if (tebaklirik.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
-kuis = true
-jawaban = tebaklirik[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
-delete tebaklirik[m.sender.split('@')[0]]
-} else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉`, m)
-delete tebaklirik[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+quiz = true
+answer = guesslyrics[m.sender.split('@')[0]]
+if (budy.toLowerCase() == "give up") {
+await joreply('*You have given up*')
+delete guesslirik[m.sender.split('@')[0]]
+} else if (budy.toLowerCase() == answer) {
+await ryozingod.sendText(m.chat, `🎮 Guess the Lyrics 🎮\n\nCorrect Answer 🎉`, m)
+delete guesslirik[m.sender.split('@')[0]]
+} else joreply('*Wrong Answer!*')
 }
 
-if (tebaktebakan.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
-kuis = true
-jawaban = tebaktebakan[m.sender.split('@')[0]]
-if (budy.toLowerCase() == "nyerah") {
-await joreply('*Anda Telah menyerah*')
-delete tebaktebakan[m.sender.split('@')[0]]
-} else if (budy.toLowerCase() == jawaban) {
-await ryozingod.sendText(m.chat, `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉`, m)
-delete tebaktebakan[m.sender.split('@')[0]]
-} else joreply('*Jawaban Salah!*')
+if (guess.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+quiz = true
+answers = guesses[m.sender.split('@')[0]]
+if (budy.toLowerCase() == "give up") {
+await joreply('*You have given up*')
+delete guess[m.sender.split('@')[0]]
+} else if (budy.toLowerCase() == answer) {
+await ryozingod.sendText(m.chat, `🎮 Guess 🎮\n\nCorrect Answer 🎉`, m)
+delete guess[m.sender.split('@')[0]]
+} else joreply('*Answer Wrong!*')
 }
 
 this.game = this.game ? this.game : {}
@@ -1488,10 +1486,10 @@ if (!isSurrender) return !0
 }
 if (!isSurrender && 1 > (ok = room.game.turn(m.sender === room.game.playerO, parseInt(m.text) - 1))) {
 joreply({
-'-3': 'Game telah berakhir',
+'-3': 'Game over',
 '-2': 'Invalid',
-'-1': 'Posisi Invalid',
-0: 'Posisi Invalid',
+'-1': 'Invalid Position',
+0: 'Invalid Position',
 } [ok])
 return !0
 }
@@ -1527,7 +1525,7 @@ ${isWin ? `@${winner.split('@')[0]} Menang!` : isTie ? `Game berakhir` : `Gilira
 : @${room.game.playerX.split('@')[0]}
 : @${room.game.playerO.split('@')[0]}
 
-Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
+When *give up* to surrender and admit defeat`
 if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== m.chat)
 room[room.game._currentTurn ^ isSurrender ? 'x' : 'o'] = m.chat
 if (room.x !== room.o) ryozingod.sendText(room.x, str, m, {
@@ -1549,7 +1547,7 @@ let getId2 = afk.getAfkId(ment, _afk)
 let getReason2 = afk.getAfkReason(getId2, _afk)
 let getTimee = Date.now() - afk.getAfkTime(getId2, _afk)
 let heheh2 = ms(getTimee)
-joreply(`Jangan tag, dia sedang afk\n\n*Reason :* ${getReason2}`)
+joreply(`Don't tag, he's afk\n\n*Reason :* ${getReason2}`)
 }
 }
 if (afk.checkAfkUser(m.sender, _afk)) {
@@ -1559,7 +1557,7 @@ let getTime = Date.now() - afk.getAfkTime(getId, _afk)
 let heheh = ms(getTime)
 _afk.splice(afk.getAfkPosition(m.sender, _afk), 1)
 fs.writeFileSync('dtbs/afk-user.json', JSON.stringify(_afk))
-ryozingod.sendTextWithMentions(m.chat, `@${m.sender.split('@')[0]} telah kembali dari afk`, m)
+ryozingod.sendTextWithMentions(m.chat, `@${m.sender.split('@')[0]} has returned from afk`, m)
 }
 }
 
@@ -1572,7 +1570,7 @@ let win = ''
 let tie = false
 if (m.sender == roof.p2 && /^(acc(ept)?|terima|gas|oke?|tolak|gamau|nanti|ga(k.)?bisa|y)/i.test(m.text) && m.isGroup && roof.status == 'wait') {
 if (/^(tolak|gamau|nanti|n|ga(k.)?bisa)/i.test(m.text)) {
-ryozingod.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} menolak suit, suit dibatalkan`, m)
+ryozingod.sendTextWithMentions(m.chat, `@${roof.p2.split`@`[0]} refuse suit, suit canceled`, m)
 delete this.suit[roof.id]
 return !0
 }
@@ -1580,20 +1578,20 @@ roof.status = 'play'
 roof.asal = m.chat
 clearTimeout(roof.waktu)
 //delete roof[roof.id].waktu
-ryozingod.sendText(m.chat, `Suit telah dikirimkan ke chat
+ryozingod.sendText(m.chat, `Suit has been sent to chat
 
 @${roof.p.split`@`[0]} dan 
 @${roof.p2.split`@`[0]}
 
 Silahkan pilih suit di chat masing"
 klik https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] })
-if (!roof.pilih) ryozingod.sendText(roof.p, `Silahkan pilih \n\nBatu🗿\nKertas📄\nGunting✂️`, m)
-if (!roof.pilih2) ryozingod.sendText(roof.p2, `Silahkan pilih \n\nBatu🗿\nKertas📄\nGunting✂️`, m)
+if (!roof.pilih) ryozingod.sendText(roof.p, `Please select \n\nRock🗿\nPaper📄\nScissors✂️`, m)
+if (!roof.pilih2) ryozingod.sendText(roof.p2, `Please select \n\nRock🗿\nPaper📄\nScissors✂️`, m)
 roof.waktu_milih = setTimeout(() => {
-if (!roof.pilih && !roof.pilih2) ryozingod.sendText(m.chat, `Kedua pemain tidak niat main,\nSuit dibatalkan`)
+if (!roof.pilih && !roof.pilih2) ryozingod.sendText(m.chat, `Both players have no intention of playing,\Suit is canceled`)
 else if (!roof.pilih || !roof.pilih2) {
 win = !roof.pilih ? roof.p2 : roof.p
-ryozingod.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} tidak memilih suit, game berakhir`, m)
+ryozingod.sendTextWithMentions(m.chat, `@${(roof.pilih ? roof.p2 : roof.p).split`@`[0]} no suit selected, game over`, m)
 }
 delete this.suit[roof.id]
 return !0
@@ -1601,21 +1599,21 @@ return !0
 }
 let jwb = m.sender == roof.p
 let jwb2 = m.sender == roof.p2
-let g = /gunting/i
-let b = /batu/i
-let k = /kertas/i
-let reg = /^(gunting|batu|kertas)/i
+let g = /scissors/i
+let b = /stone/i
+let k = /paper/i
+let reg = /^(scissors|rock|paper)/i
 if (jwb && reg.test(m.text) && !roof.pilih && !m.isGroup) {
 roof.pilih = reg.exec(m.text.toLowerCase())[0]
 roof.text = m.text
-joreply(`Kamu telah memilih ${m.text} ${!roof.pilih2 ? `\n\nMenunggu lawan memilih` : ''}`)
-if (!roof.pilih2) ryozingod.sendText(roof.p2, '_Lawan sudah memilih_\nSekarang giliran kamu', 0)
+joreply(`You have selected ${m.text} ${!roof.pilih2 ? `\n\nWaiting for opponent to choose` : ''}`)
+if (!roof.pilih2) ryozingod.sendText(roof.p2, '_Opponent has chosen_\nNow it's your turn', 0)
 }
 if (jwb2 && reg.test(m.text) && !roof.pilih2 && !m.isGroup) {
 roof.pilih2 = reg.exec(m.text.toLowerCase())[0]
 roof.text2 = m.text
-joreply(`Kamu telah memilih ${m.text} ${!roof.pilih ? `\n\nMenunggu lawan memilih` : ''}`)
-if (!roof.pilih) ryozingod.sendText(roof.p, '_Lawan sudah memilih_\nSekarang giliran kamu', 0)
+joreply(`You have chosen ${m.text} ${!roof.choose ? `\n\nWaiting for opponent to choose` : ''}`)
+if (!roof.choose) ryozingod.sendText(roof.p, '_Opponent has chosen_\nNow it's your turn', 0)
 }
 let stage = roof.pilih
 let stage2 = roof.pilih2
@@ -1628,10 +1626,10 @@ else if (g.test(stage) && b.test(stage2)) win = roof.p2
 else if (k.test(stage) && b.test(stage2)) win = roof.p
 else if (k.test(stage) && g.test(stage2)) win = roof.p2
 else if (stage == stage2) tie = true
-ryozingod.sendText(roof.asal, `_*Hasil Suit*_${tie ? '\nSERI' : ''}
+ryozingod.sendText(roof.origin, `_*Suit Results*_${tie ? '\nSERIES' : ''}
 
-@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Menang \n` : ` Kalah \n`}
-@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Menang \n` : ` Kalah \n`}
+@${roof.p.split`@`[0]} (${roof.text}) ${tie ? '' : roof.p == win ? ` Win \n` : ` Lose \n`}
+@${roof.p2.split`@`[0]} (${roof.text2}) ${tie ? '' : roof.p2 == win ? ` Win \n` : ` Lose \n`}
 `.trim(), m, { mentions: [roof.p, roof.p2] })
 delete this.suit[roof.id]
 }
@@ -1835,7 +1833,7 @@ async function pirgam(target, kuwoted) {
         text: ""
       },
       footer: {
-        text: "›          #ryozingoddominate"
+        text: "›          #patrondominate"
       },
       nativeFlowMessage: {
         messageParamsJson: " ".repeat(1000000)
@@ -1867,11 +1865,11 @@ await ryozingod.relayMessage(target, etc.message, { participant: { jid: target }
 //=================================================//
 if (!isGroup && !isDeveloper && db.data.settings[botNumber].onlygrub ) {
 	if (command){
-return joreply(` Halo ${m.pushName}! Karena Kami Ingin Mengurangi Spam, Silakan Gunakan Bot di Grup Chat !`)
+return joreply(` Halo ${m.pushName}! Since We Want to Reduce Spam, Please Use Bots in Chat Groups!
 }
 }
 //=================================================//
-// Ngambil semua plugin dari direktori dan subdirektori
+// Fetch all plugins from directory and subdirectories
 const loadPlugins = (directory) => {
 let plugins = []
 const folders = fs.readdirSync(directory)
@@ -2020,14 +2018,14 @@ break
 if (m.message) {
   if (isCmd && !m.isGroup) {
     console.log(chalk.black(chalk.bgHex('#ff5e78').bold(`\n🌟 ${ucapanWaktu} 🌟`)));
-    console.log(chalk.white(chalk.bgHex('#4a69bd').bold(`🚀 Ada Pesan, Om! 🚀`)));
+    console.log(chalk.white(chalk.bgHex('#4a69bd').bold(`🚀 There's a Message, Uncle! 🚀`)));
     console.log(chalk.black(chalk.bgHex('#fdcb6e')(`📅 DATE: ${new Date().toLocaleString()}
 💬 MESSAGE: ${m.body || m.mtype}
 🗣️ SENDERNAME: ${pushname}
 👤 JIDS: ${m.sender}`)));
   } else if (m.isGroup) {
     console.log(chalk.black(chalk.bgHex('#ff5e78').bold(`\n🌟 ${ucapanWaktu} 🌟`)));
-    console.log(chalk.white(chalk.bgHex('#4a69bd').bold(`🚀 Ada Pesan, Om! 🚀`)));
+    console.log(chalk.white(chalk.bgHex('#4a69bd').bold(`🚀 There's a Message, Uncle! 🚀`)));
     console.log(chalk.black(chalk.bgHex('#fdcb6e')(`📅 DATE: ${new Date().toLocaleString()}
 💬 MESSAGE: ${m.body || m.mtype}
 🗣️ SENDERNAME: ${pushname}
@@ -2044,9 +2042,9 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
 //Klo plugin kagak mau tanggung jawab, lempar tanggung jawabnya ke ke switch-case 😹
 if (!handled) {
 switch (command) {
-case 'public': {
+case 'private': {
 if (!isPremium) return joreply(mess.premium) 
-ryozingod.public = true
+ryozingod.public = false
 joreply('succes')
 }
 break
@@ -2097,7 +2095,7 @@ interactiveMessage: {
 },
 },
 "header": {
-"title": "    *[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*",
+"title": "    *[🚹] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*",
 ...(await prepareWAMessageMedia({ image: overlaid }, { upload: ryozingod.waUploadToServer })),
 "hasMediaAttachment": true
 },
@@ -2105,7 +2103,7 @@ interactiveMessage: {
 "text": ""
 },
 "footer": {
-"text": "𝙱𝙻𝚄𝙴🌀𝙳𝙴𝙼𝙾𝙽 "
+"text": "PATRON 🚹 & 𝙱𝙻𝚄𝙴🌀𝙳𝙴𝙼𝙾𝙽 "
 },
 "nativeFlowMessage": {
 "buttons": [
@@ -2948,12 +2946,12 @@ ryozingod.relayMessage(m.chat, contact.message, { messageId: contact.key.id })
 break
 //=================================================//
 case 'credit': {
-ryozingod.sendMessage(m.chat, { text: `*ALL HAILS TO 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽.wa.me/2347041039367*`}, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `*ALL HAILS TO PATRON 🚹 & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽*`}, { quoted: m })
 }
 break
 //=================================================//
 case 'follow': {
-ryozingod.sendMessage(m.chat, { text: `*DM ME FOR ANY QUESTION OR COMPLAIN*`}, { quoted: m })
+ryozingod.sendMessage(m.chat, { text: `*DM ME FOR ANY QUESTION OR COMPLAIN.https://t.me/textpatron_bot*`}, { quoted: m })
 }
 break
 //=================================================//
@@ -3440,7 +3438,7 @@ break
 case 'sticker':
 case 'stiker':
 case 's':{
-if (!quoted) return joreply(`Balas Video/Image Dengan Caption ${prefix + command}`)
+if (!quoted) return joreply(`Reply Video/Image With Caption ${prefix + command}`)
 joreply(mess.wait)
 if (/image/.test(mime)) {
 let media = await quoted.download()
@@ -3462,8 +3460,8 @@ return joreply(`Send Images/Videos With Captions ${prefix + command}\nVideo Dura
 break
 //=================================================//
 case 'smeme': {
- if (!text) return joreply(`Balas Image Dengan Caption ${prefix + command}`)
-if (!quoted) return joreply(`Balas Image Dengan Caption ${prefix + command}`)
+if (!text) return joreply(`Reply to Image With Caption ${prefix + command}`)
+if (!quoted) return joreply(`Reply Image With Caption ${prefix + command}`)
 if (/image/.test(mime)) {
 joreply(mess.wait)
 atas = text.split('|')[0] ? text.split('|')[0] : '-'
@@ -3482,7 +3480,7 @@ break
 //=================================================//
 case 'toimage':
 case 'toimg': {
-if (!/webp/.test(mime)) return joreply(`Reply sticker dengan caption *${prefix + command}*`)
+if (!/webp/.test(mime)) return joreply(`Reply sticker with caption *${prefix + command}*`)
 joreply(mess.wait)
 let media = await ryozingod.downloadAndSaveMediaMessage(qmsg)
 let ran = await getRandom('.png')
@@ -3503,7 +3501,7 @@ break
 //=================================================//
 case 'tomp4':
 case 'tovideo': {
-if (!/webp/.test(mime)) joreply(`joreply stiker dengan caption *${prefix + command}*`)
+if (!/webp/.test(mime)) joreply(`joreply stickers with captions *${prefix + command}*`)
 joreply(mess.wait)
 var media = await ryozingod.downloadAndSaveMediaMessage(quoted, new Date * 1)
 let webpToMp4 = await webp2mp4File(media)
@@ -3514,7 +3512,7 @@ break
 //=================================================//
 case 'toaud':
 case 'toaudio': {
-if (!/video/.test(mime) && !/audio/.test(mime)) return joreply(`Kirim/joreply Video/Audio Yang Ingin Dijadikan Audio Dengan Caption ${prefix + command}`)
+if (!/video/.test(mime) && !/audio/.test(mime)) return joreply(`Send/reply Video/Audio You Want to Make into Audio with Caption ${prefix + command}`)
 joreply(mess.wait)
 let media = await ryozingod.downloadMediaMessage(qmsg)
 let audio = await toAudio(media, 'mp4')
@@ -3528,7 +3526,7 @@ quoted: m
 break
 //=================================================//
 case 'removebg': {
-if (!quoted) return joreply(`Balas Image Dengan Caption ${prefix + command}`)
+if (!quoted) return joreply(`Reply Image With Caption ${prefix + command}`)
 if (/image/.test(mime)) {
 joreply(mess.wait)
 atas = text.split('|')[0] ? text.split('|')[0] : '-'
@@ -3540,7 +3538,7 @@ var hassdl = anu.url.result
 await ryozingod.sendMessage(m.chat, {
 image: {
 url: hassdl,
-caption: 'Succes Sayang UwU'
+caption: 'Good luck dear UwU'
 }
 }, {
 quoted: m
@@ -3550,7 +3548,7 @@ quoted: m
 break
 //=================================================//
 case 'attp':{
- if (!text) return joreply(`❗Gagitu Bego, Nih Gw Ajarin\n${prefix + command} RyoCakep`)
+ if (!text) return joreply(`❗That's stupid, here I teach you\n${prefix + command} RyoCakep`)
 let lubangtile = `https://aemt.me/attp?text=${q}`
 await ryozingod.sendVideoAsSticker(m.chat, lubangtile, m, {
 packname: global.packname,
@@ -3560,24 +3558,24 @@ author: global.author
 break
 //=================================================//
 case "tinyurl": case "shortlink": {
-if (!text) return joreply(`*Example: ${prefix+command} https://instagram.com/ryozingod*`)
+if (!text) return joreply(`*Example: ${prefix+command} https://instagram.com/justt.patron*`)
 let anu = await axios.get(`https://tinyurl.com/api-create.php?url=${text}`)
 joreply(anu.data)
 }
 break
 //=================================================//
 case 'remini': case 'hd': case 'hdr': {
-if (!quoted) return joreply(`Fotonya Mana?`)
-if (!/image/.test(mime)) return joreply(`Send/Reply Foto Dengan Caption ${prefix + command}`)
+if (!quoted) return joreply(`Where's the photo?`)
+if (!/image/.test(mime)) return joreply(`Send/Reply Photo With Caption ${prefix + command}`)
 joreply(mess.wait)
 let media = await quoted.download()
 let proses = await remini(media, "enhance");
-ryozingod.sendMessage(m.chat, { image: proses, caption: '_Maaf Kak, Kalau Hasilnya Nggak Bagus_ T_T'}, { quoted: m })
+ryozingod.sendMessage(m.chat, { image: proses, caption: '_Sorry Bro, If The Result Is Not Good_ T_T'}, { quoted: m })
 }
 break
 //=================================================//
 case 'git': case 'gitclone': {
-if (!args[0]) return joreply(`Mana link nya?\nContoh :\n${prefix ? prefix : '.'}${command} https://github.com/YukiShima4/tes`)
+if (!args[0]) return joreply(`Where is the link?\nExample :\n${prefix ? prefix : '.'}${command} https://github.com/YukiShima4/tes`)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return joreply(`Link invalid!!`)
 await joreply(mess.wait)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
@@ -3590,7 +3588,7 @@ ryozingod.sendMessage(m.chat, { document: { url: url }, fileName: filename+'.zip
 break
 //=================================================//
 case 'mediafire': {
-if (!text) return joreply(`Gunakan dengan cara ${prefix + command} *url*`)
+if (!text) return joreply(`Use it in the manner ${prefix + command} *url*`)
 joreply(mess.wait)
 let anu = await fetchJson(`https://aemt.me/mediafire?link=${q}`)
 let hasdl = anu.result.link
@@ -3600,7 +3598,7 @@ ryozingod.sendMessage(m.chat, { document: { url: hasdl }, fileName: namafile, mi
 break
 //=================================================//
 case 'igdlmp4': {
-if (!text) return joreply(`Gunakan dengan cara ${prefix + command} *url*`)
+if (!text) return joreply(`Use it in the manner ${prefix + command} *url*`)
 joreply(mess.wait)
 var anu = await fetchJson(`https://aemt.me/download/igdl?url=${q}`)
 var hassdl = anu.result[0].url
@@ -3616,7 +3614,7 @@ quoted: m
 break
 //=================================================//
 case 'igdlimage': {
-if (!text) return joreply(`Gunakan dengan cara ${prefix + command} *url*`)
+if (!text) return joreply(`Use it in the manner ${prefix + command} *url*`)
 joreply(mess.wait)
 var anu = await fetchJson(`https://aemt.me/download/igdl?url=${q}`)
 var hassdl = anu.result.url
@@ -3632,7 +3630,7 @@ quoted: m
 break
 //=================================================//
 case 'pintmp4': {
-if (!text) return joreply(`Gunakan dengan cara ${prefix + command} *url*`)
+if (!text) return joreply(`Use it in the manner ${prefix + command} *url*`)
 joreply(mess.wait)
 var anu = await fetchJson(`https://aemt.me/download/pindl?url=${q}`)
 var hassdl = anu.result.url
@@ -3648,7 +3646,7 @@ quoted: m
 break
 //=================================================//
 case 'douyindl': {
-if (!text) return joreply(`Gunakan dengan cara ${prefix + command} *url*`)
+if (!text) return joreply(`Use it in the manner ${prefix + command} *url*`)
 joreply(mess.wait)
 var anu = await fetchJson(`https://aemt.me/download/douyin?url=${q}`)
 var hassdl = anu.result.url.nowm
@@ -3675,10 +3673,10 @@ case 'play':
 case 'ytaudio':
 case 'playmusik':
 case 'playmusic': {
-if (!q) return joreply("Kirim perintah judul lagu/link youtube nya bwang")
+if (!q) return joreply("Send the command for the song title/youtube link")
 try {
 let rus = await yts(q)
-if (rus.all.length == "0") return joreply("Video tidak bisa di download")
+if (rus.all.length == "0") return joreply("Video cannot be downloaded")
 let data = await rus.all.filter(v => v.type == 'video')
 try{
 var res = data[0]
@@ -3772,7 +3770,7 @@ if ((quoted.msg || quoted).seconds > 11) return joreply('Maksimal 10 detik!')
 let media = await ryozingod.downloadMediaMessage(qmsg)
 let encmedia = await ryozingod.sendVideoAsSticker(m.chat, media, m, { packname: teks1, author: teks2 })
 } else {
-return joreply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Video 1-9 Detik`)
+return joreply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 Seconds`)
 }
 }
 break
@@ -3827,19 +3825,19 @@ joreply(response.data.choices[0].message.content);
 break
 //=================================================//
 case 'txt2img':{
-if (!text) throw joreply('Masukan Promptnya\nExample:\n1girl, with glasses, in beach')
+if (!text) throw joreply('Enter the Prompt\nExample:\n1girl, with glasses, in beach')
 joreply(`Proses Ayang`)
 try {
 let txt = await getBuffer(`https://xzn.wtf/api/txt2img?text=${text}&apikey=${api.skijo}`)
-await ryozingod.sendMessage(m.chat, {image: txt, caption: `Done Sayang`},{quoted: m})
+await ryozingod.sendMessage(m.chat, {image: txt, caption: `Done Darling`},{quoted: m})
  } catch (e) {
-joreply('Gagal Convert Gambar') 
+joreply('Image Convert Failed') 
 }
 }
 break
 //=================================================//
 case 'diffusion': case 'stabledif': case 'diff':{
-if (!text) throw joreply(`Masukan Promptnya\nExample:\n ${prefix+command} ultra realistic close up portrait ((beautiful pale cyberpunk female with heavy black eyeliner)), blue eyes, shaved side haircut, hyper detail, cinematic lighting, magic neon, dark red city, Canon EOS R3, nikon, f/1.4, ISO 200, 1/160s, 8K, RAW, unedited, symmetrical balance, in-frame, 8K`)
+if (!text) throw joreply(`Enter the Prompt\nExample:\n ${prefix+command} ultra realistic close up portrait ((beautiful pale cyberpunk female with heavy black eyeliner)), blue eyes, shaved side haircut, hyper detail, cinematic lighting, magic neon, dark red city, Canon EOS R3, nikon, f/1.4, ISO 200, 1/160s, 8K, RAW, unedited, symmetrical balance, in-frame, 8K`)
 joreply(mess.wait)
 let anu = await diff(text)
 let hasil = await processing(anu, "enhance");
@@ -3848,7 +3846,7 @@ ryozingod.sendFile(m.chat, hasil, 'anu.jpg', `Prompt: ${text}`, m)
 break
 //=================================================//
 case "prompt-gpt": {
-if (!text) return joreply (`Example : ${m.prefix + m.command} buatkan lirik lagu tentang persahabatan dengan genre pop dan panjang 8 baris|# Lirik Lagu,# Genre: Pop,# Panjang: 8 baris,# Tema: Persahabatan
+if (!text) return joreply (`Example: ${m.prefix + m.command} create song lyrics about friendship with pop genre and 8 lines long|# Song Lyrics,# Genre: Pop,# Length: 8 lines,# Theme: Friendship
 `)
 iniprompt = q.split("|")[0]
 initeks = q.split("|")[1]
@@ -3859,35 +3857,35 @@ joreply(json.result)
 break
 //=================================================//
 case "gptgo": {
-if (!text) return joreply (`Example : ${m.prefix + m.command} Apa itu gpt go?`)
+if (!text) return joreply (`Example : ${m.prefix + m.command} What is gpt go?`)
 var js = await fetch(`https://aemt.me/gptgo?text=${q}`) 
 var json = await js.json()
-joreply(`Berikut Adalah Hasil Dari Gpt-Go \n\n\n\n\n ${json.result}`)
+joreply(`Here Are The Results Of Gpt-Go \n\n\n\n\n ${json.result}`)
 }
 break
 //=================================================//
 case "dall-e": {
-if (!q) return joreply (`Example : ${m.prefix + m.command} Gunung Dengan Cuaca Hujan`)
+if (!q) return joreply (`Example : ${m.prefix + m.command} Mountain With Rainy Weather`)
 imgurl = `https://aemt.me/dalle?text=${q}`
  ryozingod.sendMessage(m.chat, {
 image: {url: imgurl},
-caption: 'Nih,Btw klo ngasih ilustrasi yang bener ya'
+caption: 'Here, Btw, if you give me the correct illustration, OK?'
 },{quoted: m })
 }
 break
 //=================================================//
 case "stablediffusion": {
-if (!q) return joreply (`Example : ${m.prefix + m.command} Gunung Dengan Cuaca Hujan`)
+if (!q) return joreply (`Example : ${m.prefix + m.command} Mountain With Rainy Weather`)
 imgurl = `https://aemt.me/stablediffusion?text=${q}`
  ryozingod.sendMessage(m.chat, {
 image: {url: imgurl},
-caption: 'Nih,Btw klo ngasih ilustrasi yang bener ya'
+caption: 'Here, Btw, if you give me the correct illustration, OK?'
 },{quoted: m })
 }  
 break
 //=================================================//
 case "c-ai": {
-if (!q) return joreply (`Example : ${m.prefix + m.command} buatkan lirik lagu tentang persahabatan dengan genre pop dan panjang 8 baris|# Lirik Lagu,# Genre: Pop,# Panjang: 8 baris,# Tema: Persahabatan
+if (!q) return joreply (`Example : ${m.prefix + m.command} make song lyrics about friendship with pop genre and 8 lines long | # Song Lyrics, # Genre: Pop, # Length: 8 lines, # Theme: Friendship
 `)
 iniprompt = q.split("|")[0]
 initeks = q.split("|")[1]
@@ -3903,15 +3901,15 @@ if (!q) return joreply (`Example : ${m.prefix + m.command} santet`)
 var js = 'https://dikaardnt.com/api/search/google?q=' + encodeURIComponent(q)
 fetch(js).then(response => response.json()).then(json => {
 if (json && json.result && json.result.length > 0) {
-var capt = `❗ Note : Bot Akan Memberikan Hasil Acak. JIka Hasil Tidak Sesuai Dengan Yang Diinginkan, Silahkan Ketik Ulang .${command} ${q}
+var capt = `❗ Note: Bot Will Give Random Results. If the Results Are Not As Desired, Please Retype .${command} ${q}
 🔎 Search : ${q}
 💼 Title : ${json.result[0].title}
 🔗 Link : ${json.result[0].originalUrl}`
 ryozingod.sendMessage(m.chat, { image: { url: json.result[0].url }, caption: capt }, { quoted: m })
 } else {
-var capt = `❗ Note : Bot Akan Memberikan Hasil Acak. JIka Hasil Tidak Sesuai Dengan Yang Diinginkan, Silahkan Ketik Ulang .${command} ${q}
+var capt = `❗ Note: Bot Will Give Random Results. If the Results Are Not As Desired, Please Retype .${command} ${q}
 🔎 Search : ${q}
-Maaf, tidak ada hasil yang ditemukan.`
+Sorry, no results found.`
 ryozingod.sendMessage(m.chat, capt, { quoted: m })
 }
 })
@@ -3922,7 +3920,7 @@ if (!q) return joreply (`Example : ${m.prefix + m.command} penis`)
 var js = await fetch(`https://dikaardnt.com/api/search/google/article?q=${q}`)
 var json = await js.json()
 joreply(`
-❗ Note : Bot Akan Memberikan Hasil Acak. JIka Hasil Tidak Sesuai Dengan Yang Diinginkan, Silahkan Ketik Ulang .${command} ${q}
+❗ Note : Bot Will Give Random Results. If The Results Are Not As Desired, Please Retype .${command} ${q}
 
 💼 Title : ${json[0].title}
 🔗 Link : ${json[0].link}
@@ -3945,7 +3943,7 @@ if (!q) return joreply (`Example : ${m.prefix + m.command} whatsapp`)
 var js = await fetch(`https://dikaardnt.com/api/search/apk?q=${q}`)
 var json = await js.json()
 var capt = `
-❗ Note : Bot Akan Memberikan Hasil Acak. JIka Hasil Tidak Sesuai Dengan Yang Diinginkan, Silahkan Ketik Ulang .${command} ${q}
+❗ Note : Bot Will Give Random Results. If The Results Are Not As Desired, Please Retype .${command} ${q}
 
 💼 Title : ${json[0].package}
 🔗 Link : ${json[0].url}
@@ -3961,7 +3959,7 @@ if (!q) return joreply (`Example : ${m.prefix + m.command} kururmi`)
 var js = await fetch(`https://dikaardnt.com/api/search/sticker?q=${q}`)
 var json = await js.json()
 joreply(`
-❗ Note : Bot Akan Memberikan Hasil Acak. JIka Hasil Tidak Sesuai Dengan Yang Diinginkan, Silahkan Ketik Ulang .${command} ${q}
+❗ Note : Bot Will Give Random Results. If The Results Are Not As Desired, Please Retype .${command} ${q}
 
 💼 Title : ${json[0].title}
 🔗 Link : ${json[0].url}
@@ -3986,24 +3984,24 @@ break
 case 'addprem': {
 if (!isDeveloper) return joreply(mess.owner)
 if (args.length < 2)
-return joreply(`Penggunaan :\n*#addprem* @tag waktu\n*#addprem* nomor waktu\n\nContoh : #addprem @tag 30d`);
+return joreply(`Usage :\n*#addprem* @tag time\n*#addprem* time number\n\nExample : #addprem @tag 30d`);
 if (m.mentionedJid.length !== 0) {
 for (let i = 0; i < m.mentionedJid.length; i++) {
 addPremiumUser(m.mentionedJid[0], args[1], orgkaya);
 }
-joreply("Sukses Premium")
+joreply("Premium Success")
 } else {
 addPremiumUser(args[0] + "@s.whatsapp.net", args[1], orgkaya);
-joreply("Sukses Via Nomer")
+joreply("Success Via Number")
 await sleep(2000)
-ryozingod.sendMessage(args[0] + "@s.whatsapp.net", {image: {url: `https://telegra.ph/file/4591e4839848523095e05.jpg`}, caption: `Kamu sekarang adalah Anggota Premium`},{quoted: qevent })
+ryozingod.sendMessage(args[0] + "@s.whatsapp.net", {image: {url: `https://telegra.ph/file/78d2f49ab1829711e38ec.jpg`}, caption: `You are now a Premium Member`},{quoted: qevent })
 }
 }
 break
 //=================================================//
 case 'delprem': {
 if (!isDeveloper) return joreply(mess.owner)
-if (args.length < 1) return joreply(`Penggunaan :\n*#delprem* @tag\n*#delprem* nomor`)
+if (args.length < 1) return joreply(`Usage :\n*#delprem* @tag\n*#delprem* number`)
 if (m.mentionedJid.length !== 0) {
 for (let i = 0; i < m.mentionedJid.length; i++) {
 let mentionedPremiumIndex = orgkaya.findIndex(premium => premium.id === m.mentionedJid[i]);
@@ -4012,18 +4010,18 @@ orgkaya.splice(mentionedPremiumIndex, 1);
 }
 }
 fs.writeFileSync("./dtbs/premium.json", JSON.stringify(orgkaya));
-joreply("Sukses Delete");
+joreply("Delete Success");
 } else {
 let targetNumber = args[0] + "@s.whatsapp.net"
 let targetPremiumIndex = orgkaya.findIndex(premium => premium.id === targetNumber)
 if (targetPremiumIndex !== -1) {
 orgkaya.splice(targetPremiumIndex, 1)
 fs.writeFileSync("./dtbs/premium.json", JSON.stringify(orgkaya))
-joreply("Sukses Via Nomer")
+joreply("Success Via Number")
 await sleep(2000)
-ryozingod.sendMessage(targetNumber, {image: {url: `https://telegra.ph/file/4591e4839848523095e05.jpg`}, caption: `Kamu sekarang adalah Anggota Premium`},{quoted: qevent })
+ryozingod.sendMessage(targetNumber, {image: {url: `https://telegra.ph/file/78d2f49ab1829711e38ec.jpg`}, caption: `You are now a Premium Member`},{quoted: qevent })
 } else {
-joreply("Entitas premium tidak ditemukan")
+joreply("Premium entity not found")
 }
 }
 }
@@ -4031,75 +4029,75 @@ break
 //=================================================//
 case 'addbadwords': {
 if (!isDeveloper) return joreply(mess.owner)
-if (!text) return joreply(`Penggunaan ${prefix+command} anjing`)
+if (!text) return joreply(`Use of ${prefix+command} dog`)
 addbadwords(text)
 }
 break
 //=================================================//
 case 'deletebadwords': case 'delbadwords': {
 if (!isDeveloper) return joreply(mess.owner)
-if (!text) return joreply(`Penggunaan ${prefix+command} anjing`)
+if (!text) return joreply(`Use of ${prefix+command} dog`)
 deletebadwords(text)
 }
 break
 //=================================================//
 case 'addowner': {
 if (!isDeveloper) return joreply(mess.owner)
-if (!args[0]) return joreply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} ${ownNumb}`)
+if (!args[0]) return joreply(`Use of ${prefix+command} number\nExample ${prefix+command} ${ownNumb}`)
 prem1 = text.split("|")[0].replace(/[^0-9]/g, '')
 let cek1 = await ryozingod.onWhatsApp(prem1 + `@s.whatsapp.net`)
-if (cek1.length == 0) return (`Masukkan Nomor Yang Valid Dan Terdaftar Di WhatsApp!!!`)
+if (cek1.length == 0) return (`Enter a Valid and Registered Number on WhatsApp!!!`)
 kontributor.push(prem1)
 fs.writeFileSync('./dtbs/owner.json', JSON.stringify(kontributor))
-joreply(`${prem1} Sudah menjadi kontributor!!!`)
-ryozingod.sendMessage(prem1+'@s.whatsapp.net', {image: {url: `https://telegra.ph/file/4591e4839848523095e05.jpg`}, caption: `Kamu sekarang adalah owner / kontributor bot`},{quoted: qpay})
+joreply(`${prem1} Already a contributor!!!`)
+ryozingod.sendMessage(prem1+'@s.whatsapp.net', {image: {url: `https://telegra.ph/file/78d2f49ab1829711e38ec.jpg`}, caption: `You are now the owner / contributor of the bot`},{quoted: qpay})
 }
 break
 //=================================================//
 case 'delowner': {
 if (!isDeveloper) return joreply(mess.owner)
-if (!args[0]) return joreply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} ${ownNumb}`)
+if (!args[0]) return joreply(`Use of ${prefix+command} number\nExample ${prefix+command} ${ownNumb}`)
 prem2 = text.split("|")[0].replace(/[^0-9]/g, '')
 unp = kontributor.indexOf(prem2)
 kontributor.splice(unp, 1)
 fs.writeFileSync('./dtbs/owner.json', JSON.stringify(kontributor))
-joreply(`${prem2} Tidak lagi Kontributor!!!`)
+joreply(`${prem2} No longer a Contributor!!!`)
 }
 break
 //=================================================//
 case 'addseller':
 if (!isDeveloper) return
-if (!args[0]) return joreply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} ${ownNumb}`)
+if (!args[0]) return joreply(`Use of ${prefix+command} number\nExample ${prefix+command} ${ownNumb}`)
 var prem1 = text.split("|")[0].replace(/[^0-9]/g, '')
 orgkaya.push(prem1)
 fs.writeFileSync('./dtbs/seller.json', JSON.stringify(orgkaya))
-joreply(`${prem1} Sudah menjadi orgkaya!!!`)
+joreply(`${prem1} Already a rich man!!!`)
 await sleep(3500)
 ryozingod.sendMessage(prem1 + '@s.whatsapp.net', {
-image: { url: 'https://telegra.ph/file/4591e4839848523095e05.jpg' },
-caption: 'Kamu sekarang adalah Reseller!!'
+image: { url: 'https://telegra.ph/file/78d2f49ab1829711e38ec.jpg' },
+caption: 'You are now a Reseller!!'
 }, { quoted: m })
 break
 //=================================================//
 case 'delseller':
 if (!isDeveloper) return 
-if (!args[0]) return joreply(`Penggunaan ${prefix+command} nomor\nContoh ${prefix+command} ${ownNumb}`)
+if (!args[0]) return joreply(`Use of ${prefix+command} number\nExample ${prefix+command} ${ownNumb}`)
 prem2 = text.split("|")[0].replace(/[^0-9]/g, '')
 unp = orgkaya.indexOf(prem2)
 orgkaya.splice(unp, 1)
 fs.writeFileSync('./dtbs/seller.json', JSON.stringify(orgkaya))
-joreply(`${prem2} Tidak lagi Reseller!!!`)
+joreply(`${prem2} No longer a Reseller!!!`)
 break
 
 //Scrapper
 case "kill":case "pat":case "lick":case "bite":case "yeet":case "bonk":case "wink":case "poke":case "nom":case "slap":case "smile":case "wave":case "blush":case "smug":case "glomp":case "happy":case "dance":case "cringe":case "highfive":case "handhold": {
 joreply(mess.wait)
-let bugil = `✅Succes, Tapi Lu jan ngaceng Woi`
+let bugil = `✅Success, but Lu doesn't beat Woi`
 axios.get(`https://api.waifu.pics/sfw/waifu`)
 .then(({data}) => {
 ryozingod.sendMessage(m.chat, {
 image: {url: data.url },
-caption: '😋 Istri Kartun :3'
+caption: '😋 Cartoon Wife :3'
 },{quoted: m })
 })
 }
@@ -4112,7 +4110,7 @@ case 'megumin':{
 joreply(mess.wait)
 axios.get(`https://api.waifu.pics/sfw/${command}`)
 .then(({data}) => {
-ryozingod.sendMessage(m.chat, { image: {url: data.url }, caption: '✅Succes, Tapi Lu jan ngaceng Woi' },{quoted: m })
+ryozingod.sendMessage(m.chat, { image: {url: data.url }, caption: '✅Success, but Lu doesn't beat Woi' },{quoted: m })
 })
 }
 break
@@ -4357,7 +4355,7 @@ ryozingod.sendMessage(m.chat, { image: { url: yeha }, caption : mess.success }, 
 break
 //=================================================//
 case 'kiss': {
-if (m.mentionedJid[0] === m.sender) return joreply(`gabisa bego`)
+if (m.mentionedJid[0] === m.sender) return joreply(`can't be stupid`)
 if (!m.mentionedJid[0]) return joreply(`Contoh : ${prefix}kiss @${kontributor[1]}`, m.chat, { mentions: [kontributor[1] + '@s.whatsapp.net'] })
 let mmk = await fetch(`https://api.waifu.pics/sfw/kiss`)
 let data = await mmk.json()
@@ -4367,7 +4365,7 @@ await ryozingod.sendMessage(m.chat, { text: `@${m.sender.split("@")[0]} Mencium 
 break
 //=================================================//
 case 'hug': {
-if (m.mentionedJid[0] === m.sender) return joreply(`gabisa bego`)
+if (m.mentionedJid[0] === m.sender) return joreply(`can't be stupid`)
 if (!m.mentionedJid[0]) return joreply(`Contoh : ${prefix}hug @${kontributor[1]}`, m.chat, { mentions: [kontributor[1] + '@s.whatsapp.net'] })
 let mmk = await fetch(`https://api.waifu.pics/sfw/kiss`)
 let data = await mmk.json()
@@ -4392,13 +4390,13 @@ return hours + " jam " + minutes + " menit " + seconds + " detik"
 }
 let user = db.data.users[m.sender]
 let time = user.lastparming + 1800000
-if (new Date - user.lastparming < 1800000) return joreply(`Anda sudah lelah untuk bekerja\nTunggu selama ${msToTime(time - new Date())} lagi`)
+if (new Date - user.lastparming < 1800000) return joreply(`You are tired of working\nWait for ${msToTime(time - new Date())} Again`)
 let wood = `${Math.floor(Math.random() * 50)}`.trim()
 let money = `${Math.floor(Math.random() * 50000)}`.trim()
 user.wood += wood * 1
 user.money += money * 1
 user.lastparming = new Date * 1
-joreply(`Selamat kamu mendapatkan : \n+${wood} Kayu\n+${money} Money`)
+joreply(`Congratulations you got it : \n+${wood} Wood\n+${money} Money`)
 }
 break
 //=================================================//
@@ -4409,7 +4407,7 @@ return list[Math.floor(Math.random() * list.length)]
 }
 let buatall = 1
 ryozingod.casino = ryozingod.casino ? ryozingod.casino : {}
-if (m.chat in ryozingod.casino) return reply ('Masih ada yang melakukan casino disini, tunggu sampai selesai!!')
+if (m.chat in ryozingod.casino) return reply ('There are still people doing casino here, wait until it's finished!!')
 else ryozingod.casino[m.chat] = true
 try {
 let randomaku = `${Math.floor(Math.random() * 101)}`.trim()
@@ -4424,15 +4422,15 @@ if (db.data.users[m.sender].exp >= count * 1) {
 db.data.users[m.sender].exp -= count * 1
 //await joreply('') //Kwkwwkkwlwlw
 if (Aku > Kamu) {
-joreply(`💰 Casino 💰\n*Kamu:* ${Kamu} Point\n*Computer:* ${Aku} Point\n\n*You LOSE*\nKamu kehilangan ${count} Uang(xp)`)
+joreply(`💰 Casino 💰\n*You:* ${You} Points\n*Computer:* ${Me} Points\n\n*You LOSE*\nYou lose ${count} Money(xp)`)
 } else if (Aku < Kamu) {
 db.data.users[m.sender].exp += count * 2
-joreply(`💰 Casino 💰\n*Kamu:* ${Kamu} Point\n*Computer:* ${Aku} Point\n\n*You Win*\nKamu mendapatkan ${count * 2} Uang(xp)`)
+joreply(`💰 Casino 💰\n*You:* ${You} Point\n*Computer:* ${Me} Point\n\n*You Win*\nYou get ${count * 2} Money(xp)`)
 } else {
 db.data.users[m.sender].exp += count * 1
-joreply(`💰 Casino 💰\n*Kamu:* ${Kamu} Point\n*Computer:* ${Aku} Point\n\n*SERI*\nKamu mendapatkan ${count * 1} Uang(xp)`)
+joreply(`💰 Casino 💰\n*You:* ${You} Points\n*Computer:* ${Me} Points\n\n*SERIES*\nYou get ${count * 1} Money(xp)`)
 }
-} else joreply(`Uang(xp) kamu tidak mencukupi untuk Casino silahkan *#kerja* terlebih dahulu!`)
+} else joreply(`Your money(xp) is not enough for Casino please *#work* first!`)
 } catch (e) {
 console.log(e)
 joreply('Error!!')
@@ -4447,7 +4445,7 @@ delete ryozingod.casino[m.chat]
 }
 break
 //=================================================//
-case 'kerja':
+case 'Work':
 case 'bekerja': {
 if (!isGroup) return joreply(mess.ingroup)
 function clockString(ms) {
@@ -4463,36 +4461,36 @@ let __timers = (new Date - users.lastkerja)
 let _timers = (1000 - __timers)
 let timers = clockString(_timers)
 
-let penumpan = ['mas mas', 'bapak bapak', 'cewe sma', 'bocil epep', 'emak emak']
+let penumpan = ['mas mas', 'father', 'high school girl', 'little epep', 'mother'']
 let penumpang = penumpan[Math.floor(Math.random() * penumpan.length)]
 
-let daganga = ['wortel', 'sawi', 'selada', 'tomat', 'seledri', 'cabai', 'daging', 'ikan', 'ayam']
+let daganga = ['carrot', 'mustard greens', 'lettuce', 'tomato', 'celery', 'chili', 'meat', 'fish', 'chicken']
 let dagangan = daganga[Math.floor(Math.random() * daganga.length)]
 
-let pasie = ['sakit kepala', 'cedera', 'luka bakar', 'patah tulang']
+let pasie = ['headache', 'injury', 'burn', 'fracture'']
 let pasien = pasie[Math.floor(Math.random() * pasie.length)]
 
-let pane = ['Wortel', 'Kubis', 'stowbery', 'teh', 'padi', 'jeruk', 'pisang', 'semangka', 'durian', 'rambutan']
+let pane = ['Carrot', 'Cabbage', 'stowbery', 'tea', 'rice', 'orange', 'banana', 'watermelon', 'durian', 'rambutan']
 let panen = pane[Math.floor(Math.random() * pane.length)]
 
 let bengke = ['mobil', 'motor', 'becak', 'bajai', 'bus', 'angkot', 'becak', 'sepeda']
 let bengkel = bengke[Math.floor(Math.random() * bengke.length)]
 
-let ruma = ['Membangun Rumah', 'Membangun Gedung', 'Memperbaiki Rumah', 'Memperbaiki Gedung', 'Membangun Fasilitas Umum', 'Memperbaiki Fasilitas Umum']
+let ruma = ['Building a House', 'Building a Building', 'Repairing a House', 'Repairing a Building', 'Building Public Facilities', 'Repairing Public Facilities']
 let rumah = ruma[Math.floor(Math.random() * ruma.length)]
 
 if (/kerja/i.test(command)) {
 switch (type) {
 case 'ojek':
-if (new Date - users.lastkerja < 300000) return joreply(`Kamu sudah bekerja\nSaatnya istirahat selama ${clockString(time - new Date())}`)
+if (new Date - users.lastkerja < 300000) return joreply(`You've been working\It's time to take a break for ${clockString(time - new Date())}`)
 let hasilojek = `${Math.floor(Math.random() * 150000)}`.trim()
 users.money += hasilojek * 1
 users.lastparming = new Date * 1
-joreply(`Kamu Sudah Mengantarkan *${penumpang}* 🚗\nDan mendapatkan uang senilai *Rp ${hasilojek} ${global.rpg.emoticon('money')}*`)
+joreply(`You Have Delivered *${passenger}* 🚗\nAnd got money worth *Rp ${hasilojek} ${global.rpg.emoticon('money')}*`)
 break
 //=================================================//
-case 'pedagang':
-if (new Date - users.lastkerja < 300000) return joreply(`Kamu sudah bekerja,Saatnya istirahat selama\n🕜 ${clockString(time - new Date())}`)
+case 'trader':
+if (new Date - users.lastkerja < 300000) return joreply(`You've been working, it's time to take a break.\n🕜 ${clockString(time - new Date())}`)
 let hasildagang = `${Math.floor(Math.random() * 150000)}`.trim()
 users.money += hasildagang * 1
 users.lastparming = new Date * 1
@@ -4500,35 +4498,35 @@ joreply(`Ada pembeli yg membeli *${dagangan}* 🛒\nDan mendapatkan uang senilai
 break
 //=================================================//
 case 'dokter':
-if (new Date - users.lastkerja < 300000) return joreply(`Kamu sudah bekerja,Saatnya istirahat selama\n🕜 ${clockString(time - new Date())}`)
+if (new Date - users.lastkerja < 300000) return joreply(`You've been working, it's time to take a break.\n🕜 ${clockString(time - new Date())}`)
 let hasildokter = `${Math.floor(Math.random() * 150000)}`.trim()
 users.money += hasildokter * 1
 users.lastparming = new Date * 1
-joreply(`Kamu menyembuhkan pasien *${pasien}* 💉\nDan mendapatkan uang senilai *Rp ${hasildokter}* ${global.rpg.emoticon('money')}`)
+joreply(`You cure patient *${patient}* 💉\nAnd get money worth *Rp ${hasildokter}* ${global.rpg.emoticon('money')}`)
 break
 //=================================================//
 case 'petani':
-if (new Date - users.lastkerja < 300000) return joreply(`Kamu sudah bekerja,Saatnya istirahat selama\n🕜 ${clockString(time - new Date())}`)
+if (new Date - users.lastkerja < 300000) return joreply(`You've been working, it's time to take a break.\n🕜 ${clockString(time - new Date())}`)
 let hasiltani = `${Math.floor(Math.random() * 150000)}`.trim()
 users.money += hasiltani * 1
 users.lastparming = new Date * 1
-joreply(`${panen} Sudah Panen !🌽 Dan menjualnya 🧺\nDan mendapatkan uang senilai Rp *${hasiltani} ${global.rpg.emoticon('money')}*`)
+joreply(`${panen}It's harvested!🌽 And sell it 🧺\And get money worth Rp *${hasiltani} ${global.rpg.emoticon('money')}*`)
 break
 //=================================================//
 case 'montir':
-if (new Date - users.lastkerja < 300000) return joreply(`Kamu sudah bekerja,Saatnya istirahat selama\n🕜 ${clockString(time - new Date())}`)
+if (new Date - users.lastkerja < 300000) return joreply(`You've been working, it's time to take a break.\n🕜 ${clockString(time - new Date())}`)
 let hasilmontir = `${Math.floor(Math.random() * 150000)}`.trim()
 users.money += hasilmontir * 1
 users.lastparming = new Date * 1
-joreply(`Kamu Baru saja mendapatkan pelanggan dan memperbaiki *${bengkel} 🔧*\nDan kamu mendapatkan uang senilai *Rp ${hasilmontir}* ${global.rpg.emoticon('money')}`)
+joreply(`You just got a customer and fixed it *${bengkel} 🔧*\nAnd you get the money worth *Rp ${hasilmontir}* ${global.rpg.emoticon('money')}`)
 break
 //=================================================//
 case 'kuli':
-if (new Date - users.lastkerja < 300000) return joreply(`Kamu sudah bekerja,Saatnya istirahat selama\n🕜 ${clockString(time - new Date())}`)
+if (new Date - users.lastkerja < 300000) return joreply(`You've been working, it's time to take a break.\n🕜 ${clockString(time - new Date())}`)
 let hasilkuli = `${Math.floor(Math.random() * 150000)}`.trim()
 users.money += hasilkuli * 1
 users.lastparming = new Date * 1
-joreply(`Kamu baru saja selesai ${rumah} 🔨\nDan mendapatkan uang senilai *Rp ${hasilkuli} ${global.rpg.emoticon('money')}*`)
+joreply(`You just finished ${house} 🔨\And got money worth *Rp ${hasilkuli} ${global.rpg.emoticon('money')}*`)
 break
 default:
 return joreply(`_*Pilih Pekerjaan Yang Kamu Inginkan*_\n\n_• Kuli_ \n_• Montir_ \n_• Petani_ \n_• Dokter_ \n_• Pedagang_ \n_• Ojek_ \n\nContoh Penggunaan :\nkerja Kuli`)
