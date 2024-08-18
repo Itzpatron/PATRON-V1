@@ -34,7 +34,7 @@ TESTING GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img a
 
 
 
-2. Get Session ID (Server 1)
+2. Get Cred.json 
    
     
      <a href='[https://replit.com/@asmakev/Classic-Pairing?s=app](https://replit.com/@Itzpatron/Patron-Pairing)' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
