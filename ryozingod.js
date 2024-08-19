@@ -2693,7 +2693,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
                         header: {
                           title: "    *[🕷️] •𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆*",
                           ...(await prepareWAMessageMedia(
-                            { image: overlaid },
+                            { image: nulll },
                             { upload: ryozingod.waUploadToServer }
                           )),
                           hasMediaAttachment: true,
