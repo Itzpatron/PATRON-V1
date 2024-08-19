@@ -97,6 +97,10 @@ if you don't have a Render account. Create an account.
    <br>
    <p align="center"><a href="https://dashboard.render.com/"> <img src="https://img.shields.io/badge/Render account-grey?style=for-the-badge&logo=render" width="220" height="38.45"/></a></p>
 
+#### DEPLOY TO CODESPACE
+
+Koyeb method aint available for now
+
 
 #### COPY THESE COMMANDS AND PASTE IF YOU TRYING TO DEPLOY [PATRON-V1](https://github.com/Itzpatron/PATRON-V1) ON ANY TERMINAL
 > Pair and upload cred to session folder first
