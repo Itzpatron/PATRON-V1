@@ -37,7 +37,7 @@ TESTING GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img a
 2. Get Cred.json 
    
     
-     <a href='https://replit.com/@Itzpatron/Patron-Pairing' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+     <a href='https://replit.com/@Itzpatron/Patron-Pairing' target="_blank"><img alt='CRED JSON' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
 #### DEPLOY TO CODESPACE
@@ -81,14 +81,13 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 #### DEPLOY TO PANEL
 1. Fork the repo
-2. Pair the bot and paste cred in session folder
 2. Edit then Download your forked repo zip
 3. 🖥 Go to panel and upload your Sc.
-4. Extract or move it to a directory (container).
-5. ⌨ Use the following code to move into a container: "../"
-6. Then go to the console and press Start.
+4. Delete the cred file from the session then start console
+5. Extract or move it to a directory (container).
+6. ⌨ Use the following code to move into a container: "../"
+7. Then go to the console and press Start.
 
-Alt. Delete the cred file from the session then start console
    
 - Note: I recommend using starter + or higher for a fast bot
 
