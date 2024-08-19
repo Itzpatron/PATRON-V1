@@ -3293,7 +3293,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
                           hasMediaAttachment: true,
                         },
                         body: {
-                          text: "",
+                          text: "BLUE",
                         },
                         footer: {
                           text: "JOIN CHANNEL",
