@@ -3580,7 +3580,10 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
             case "sc":
             case "script":
               {
-                joreply(`𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 SCRIPT 👇
+                ryozingod.sendMessage(
+                  m.chat,
+                  {
+                    text: `𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆 SCRIPT 👇
 
 🌐 *_Git:_* https://github.com/Itzpatron/PATRON-V1
 
@@ -3588,7 +3591,10 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
 
 🪀 *_Channel:_* https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q
 
-🚹 *_The Devs:_* https://t.me/textpatron_bot and https://tinyurl.com/2xrw69su`);
+🚹 *_The Devs:_* https://t.me/textpatron_bot and https://tinyurl.com/2xrw69su`,
+                  },
+                  { quoted: m }
+                );
               }
               break;
             //=================================================//
@@ -3733,7 +3739,7 @@ Hi
               {
                 ryozingod.sendMessage(
                   m.chat,
-                  { text: `*ALL HAILS TO PATRON & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽 *` },
+                  { text: `*ALL HAILS TO 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽,wa.me/2347041039367*` },
                   { quoted: m }
                 );
               }
