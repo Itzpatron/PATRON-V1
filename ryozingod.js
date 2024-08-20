@@ -194,7 +194,7 @@ module.exports =
           expiredCheck,
           checkPremiumUser,
           getAllPremiumUser,
-        } = require("./lib/premium");
+        } = require("./lib/premiun");
         let afk = require("./lib/afk"); //afk
 
         //=================================================//
