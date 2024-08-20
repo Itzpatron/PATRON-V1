@@ -100,7 +100,7 @@ if you don't have a Render account. Create an account.
    <br>
    <p align="center"><a href="https://dashboard.render.com/"> <img src="https://img.shields.io/badge/Render account-grey?style=for-the-badge&logo=render" width="220" height="38.45"/></a></p>
 
-#### DEPLOY TO CODESPACE
+#### DEPLOY TO Koyeb
 
 Koyeb method aint available for now
 
@@ -134,6 +134,54 @@ git clone https://github.com/type-your-username-here/PATRON-V1
 ```
 cd PATRON-V1
 yarn install 
+npm start
+```
+
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+# Termux Deployment
+```
+termux-setup-storage
+```
+```
+apt update
+```
+```
+apt upgrade
+```
+```
+pkg update && pkg upgrade
+```
+```
+pkg install bash
+```
+```
+pkg install libwebp
+```
+```
+pkg install git -y
+```
+```
+pkg install nodejs -y
+```
+```
+pkg install ffmpeg -y 
+```
+```
+pkg install wget
+```
+```
+pkg install yarn
+```
+```
+git clone (copy and paste your forked repo link not mine to save changes your changes) 
+```
+```
+cd Venom-2
+```
+```
+yarn install
+```
+```
 npm start
 ```
 
