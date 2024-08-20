@@ -1,8 +1,8 @@
 {
-  "name": "PATRON V1 BUG",
-  "description": "whatsapp bot by PATRON 🚹",
+  "name": "꧁༒☬𝓞𝔀𝓮𝓷 𝓖𝓪𝓫𝓻𝓲𝓮𝓵 𝓞𝓯𝓯𝓲𝓬𝓲𝓪𝓵☬༒꧂",
+  "description": "whatsapp bot by Owen Gabriel",
   "repository": "https://github.com/itzpatron",
-  "logo": "https://telegra.ph/file/e4ec68215314010a0f1f7.jpg",
+  "logo": "https://www.imghippo.com/i/fcBLB1724157593.png",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
