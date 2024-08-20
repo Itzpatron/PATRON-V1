@@ -2651,7 +2651,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
             //Menu
             case "patronmenu":
             case "help":
-            case "bluemenu":
+            case "menu":
               {
                 //text menu
                 let njing = `
