@@ -23,15 +23,15 @@ global.location = '1'; // Replace with your location panel
 //===========================//
 
 global.prefa = ['', '!', '.', ',', '🐤', '🗿'];
-global.owner = ['2348133729715'];
-global.ownMain = '2348133729715';
-global.NamaOwner = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Do not change 
+global.owner = ['2347067161378'];
+global.ownMain = '2347067161378';
+global.NamaOwner = '꧁༒☬𝓞𝔀𝓮𝓷 𝓖𝓪𝓫𝓻𝓲𝓮𝓵 𝓞𝓯𝓯𝓲𝓬𝓲𝓪𝓵☬༒꧂'; // Do not change 
 global.sessionName = 'session';
 global.connect = true; // Set to false if using QR Code
 global.namabot = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
-global.author = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
-global.packname = 'PATRON 🚹'; // Change if needed
-global.url = 'https://t.me/textpatron_bot'; // Do not change
+global.author = '𝓞𝔀𝓮𝓷 𝓖𝓪𝓫𝓻𝓲𝓮𝓵'; // Change if needed
+global.packname = '𝓞𝔀𝓮𝓷 𝓖𝓪𝓫𝓻𝓲𝓮𝓵 𝓞𝓯𝓯𝓲𝓬𝓲𝓪𝓵'; // Change if needed
+global.url = 'https://wa.me/2347067161378'; // Do not change
 
 //===========================//
 
@@ -48,7 +48,7 @@ global.listr = ` │⬡ 1GB Cpu: 50% - 3.000/bln
 
 global.country = '234';
 global.system = {
-  gmail: 'winneraileme6@gmail.com',
+  gmail: 'gowen1689@gmail.com',
 };
 
 //===========================//
