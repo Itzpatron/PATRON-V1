@@ -39,6 +39,9 @@ TESTING GROUP: <a href="https://chat.whatsapp.com/HSC7DAJOD9nBKbl7CmxxLb"><img a
     
      <a href='https://replit.com/@Itzpatron/Patron-Pairing' target="_blank"><img alt='CRED JSON' src='https://img.shields.io/badge/Cred.json-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
+## Watch Tutorial videos.
+* [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-PANEL-blue?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/ELsmTeFsHsI?si=-SP-FDYaels_0zEO)
+
 
 #### DEPLOY TO CODESPACE
 
