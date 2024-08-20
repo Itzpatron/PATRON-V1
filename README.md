@@ -75,11 +75,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 #### DEPLOY TO KOYEB
 
-1. if you don't have a koyeb account. Create an account.
-   <br>
-   <p align="center"><a href="https://app.koyeb.com/auth/signup"> <img src="https://img.shields.io/badge/Koyeb account-blue?style=for-the-badge&logo=koyeb" width="220" height="38.45"/></a></p>
- 
-
+1. AINT AVAILABLE FOR NOW
 
 
 #### DEPLOY TO PANEL
@@ -96,13 +92,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 
 #### DEPLOY TO RENDER
-if you don't have a Render account. Create an account.
-   <br>
-   <p align="center"><a href="https://dashboard.render.com/"> <img src="https://img.shields.io/badge/Render account-grey?style=for-the-badge&logo=render" width="220" height="38.45"/></a></p>
-
-#### DEPLOY TO Koyeb
-
-Koyeb method aint available for now
+AINT AVAILABLE FOR NOW
 
 
 #### COPY THESE COMMANDS AND PASTE IF YOU TRYING TO DEPLOY [PATRON-V1](https://github.com/Itzpatron/PATRON-V1) ON ANY TERMINAL
