@@ -127,6 +127,7 @@ npm start
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 # Termux Deployment
+> Pair and upload cred to session folder first
 ```
 termux-setup-storage
 ```
