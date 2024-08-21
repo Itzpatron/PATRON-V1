@@ -28,10 +28,10 @@ global.ownMain = '2348133729715';
 global.NamaOwner = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Do not change 
 global.sessionName = 'session';
 global.connect = true; // Set to false if using QR Code
-global.namabot = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
-global.author = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Change if needed
+global.namabot = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Do not change
+global.author = '𝚸𝚫𝚻𝚪𝚯𝚴 𝛁1 𝚩𝐔𝐆'; // Do not change
 global.packname = 'PATRON 🚹'; // Change if needed
-global.url = 'https://t.me/textpatron_bot'; // Do not change
+global.url = 'https://whatsapp.com/channel/0029Val0s0rIt5rsIDPCoD2q'; // Do not change
 
 //===========================//
 
