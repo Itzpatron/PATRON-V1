@@ -139,7 +139,7 @@ apt update
 apt upgrade
 ```
 ```
-git clone (copy and paste your forked repo link not mine to save changes your changes) 
+git clone (copy and paste your forked repo link not mine to save your changes) 
 ```
 ```
 cd PATRON-V1
