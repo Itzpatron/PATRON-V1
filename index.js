@@ -85,7 +85,7 @@ const ryoroyko = ryoroykoConnect({
         gradient: [randomcolor, randomcolor]
     })
 
-say(`Create By Thezetetsuboxygen\nYOUTUBE : Thezetetsuboxygen\nTelegram : ygen_good\nInstagram : ryo.r0yko`, {
+say(`Created By 𝙿𝙰𝚃𝚁𝙾𝙽\nYOUTUBE : itzpatron1\nTelegram : https://t.me/textpatron_bot\nInstagram : justt.patron`, {
   font: 'console',
   align: 'center',
   gradient: [randomcolor, randomcolor]
