@@ -79,7 +79,7 @@ const ryoroyko = ryoroykoConnect({
 })
 
     if (usePairingCode && !ryoroyko.authState.creds.registered) {
-    say(`ZxV\nV4\n`, {
+    say(`𝚸𝚫𝚻𝚪𝚯𝚴\n𝛁1\n`, {
         font: 'block',
         align: 'center',
         gradient: [randomcolor, randomcolor]
