@@ -226,16 +226,16 @@ ryoroyko.setStatus = (status) => {
                 } else ryoroyko.end(`Unknown DisconnectReason: ${reason}|${connection}`)
             }
             if (update.connection == "connecting" || update.receivedPendingNotifications == "false") {
-                console.log(color(`Mengkoneksikan`,`${randomcolor}`)) //Console-1
+                console.log(color(`Connecting`,`${randomcolor}`)) //Console-1
             }
             
             if (update.connection == "open" || update.receivedPendingNotifications == "true") {
-    say(`ZxV\nV4\n`, {
+    say(`𝚸𝚫𝚻𝚪𝚯𝚴\n𝛁1\n`, {
         font: 'block',
         align: 'center',
         gradient: [randomcolor, randomcolor]
     })
-    say(`Create By Thezetetsuboxygen\nYOUTUBE : Thezetetsuboxygen\nTelegram : ygen_good\nInstagram : ryo.r0yko`, {
+    say(`Created By 𝙿𝙰𝚃𝚁𝙾𝙽\nYOUTUBE : itzpatron1\nTelegram : https://t.me/textpatron_bot\nInstagram : justt.patron`, {
     font: 'console',
     align: 'center',
     gradient: [randomcolor, randomcolor]
