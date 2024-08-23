@@ -3340,7 +3340,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
                           text: "",
                         },
                         footer: {
-                          text: "𝙿𝙰𝚃𝚁𝙾𝙽 & BLUE DEMON",
+                          text: "𝙿𝙰𝚃𝚁𝙾𝙽 & 𝙱𝙻𝚄𝙴 𝙳𝙴𝙼𝙾𝙽",
                         },
                         nativeFlowMessage: {
                           buttons: [
@@ -3423,7 +3423,7 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
                           text: "",
                         },
                         footer: {
-                          text: "BLUE",
+                          text: "𝙿𝙰𝚃𝚁𝙾𝙽",
                         },
                         nativeFlowMessage: {
                           buttons: [
