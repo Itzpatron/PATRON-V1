@@ -85,7 +85,7 @@ global.mess = {
   seller: 'This feature can only be used by resellers and the owner.',
   usingsetpp: 'Setpp can only be used by the owner, do you think I\'m stupid? 😡🫵',
   wait: '*processing♻️ chillax....♻️*',
-  success: '*successfully terminated* 😈💯.....',
+  success: '*Successful* 😈💯.....',
   bugrespon: '♻️😈😭 *Sent target to the afterlife.....* 🦠🕷️👾'
 };
 
