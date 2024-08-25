@@ -79,7 +79,7 @@ const ryoroyko = ryoroykoConnect({
 })
 
     if (usePairingCode && !ryoroyko.authState.creds.registered) {
-    say(`𝚸𝚫𝚻𝚪𝚯𝚴\n𝛁1\n`, {
+    say(`PATRON\nV1\n`, {
         font: 'block',
         align: 'center',
         gradient: [randomcolor, randomcolor]
@@ -230,7 +230,7 @@ ryoroyko.setStatus = (status) => {
             }
             
             if (update.connection == "open" || update.receivedPendingNotifications == "true") {
-    say(`𝚸𝚫𝚻𝚪𝚯𝚴\n𝛁1\n`, {
+    say(`PATRON\nV1\n`, {
         font: 'block',
         align: 'center',
         gradient: [randomcolor, randomcolor]
