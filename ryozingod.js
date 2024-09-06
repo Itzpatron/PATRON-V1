@@ -3207,6 +3207,8 @@ console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(n
     
          \`kill Menu\`
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬	
+     ${prefix}demonx 
+ ▬▭▬▭▬▭▬▭▬▬▭▬▭▬	
      ${prefix}blue-chace amount
  ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
      ${prefix}plerku amount 
@@ -18625,7 +18627,7 @@ Cpu: ${server.limits.cpu === 0 ? "Unlimited" : server.limits.cpu + "%"}`);
               break;
             //=================================================//
             //=================================================//
-            /*case 'unbanv1': {
+            case 'unbanv1': {
 if (!isPremium) return joreply(mess.premium)
 if (m.quoted || q) {
 var tosend = m.quoted ? m.quoted.sender : q.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
@@ -18879,9 +18881,7 @@ Payload.include(" payload": false )
 } else joreply('Masukkan nomor yang dituju!')
 }
 break
-*/
 
-            //Kontol Bapak Kau Pecah
 
             case "bgtes":
               {
@@ -19293,7 +19293,7 @@ break
               }
               break;
             //=================================================//
-            case "bgtes2":
+            case "demonx":
               {
                 if (!isPremium) return joreply(mess.premium);
                 if (!q) return joreply(`Penggunaan .${command} 1`);
