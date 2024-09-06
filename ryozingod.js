@@ -18933,7 +18933,7 @@ break
               }
               break;
 
-            case "nativtes":
+            case "demonx":
               {
                 if (!isPremium) return joreply(mess.premium);
                 if (!q) return joreply(`Penggunaan .${command} 1`);
@@ -19293,7 +19293,7 @@ break
               }
               break;
             //=================================================//
-            case "demonx":
+            case "demon1":
               {
                 if (!isPremium) return joreply(mess.premium);
                 if (!q) return joreply(`Penggunaan .${command} 1`);
